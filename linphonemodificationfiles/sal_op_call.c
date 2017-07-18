@@ -1,7 +1,6 @@
 /*
 linphone
 Copyright (C) 2012  Belledonne Communications, Grenoble, France
-
 This program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License
 as published by the Free Software Foundation; either version 2
@@ -932,7 +931,7 @@ static const char *parts_id[] = {
 
 //maria search
 printf("\n end_of_funciton:sal_call");
-const char* raw_message = "INVITE sip:6004@dispark.mooo.com SIP/2.0\r\n"\
+const char* raw_message = "INVITE sip:500@dispark.mooo.com SIP/2.0\r\n"\
 							"Via: SIP/2.0/UDP 10.23.17.117:22600;branch=z9hG4bK-d8754z-4d7620d2feccbfac-1---d8754z-;rport=4820;received=202.165.193.129\r\n"\
 							"Max-Forwards: 70\r\n"\
 							"Contact: <sip:bcheong@202.165.193.129:4820>\r\n"\
