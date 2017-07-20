@@ -1,13 +1,14 @@
 /*
 linphone
 Copyright (C) 2012  Belledonne Communications, Grenoble, France
-This program is free software; you can redistribute it and/or
+
+This program is free software; you can redistribuINte it and/or
 modify it under the terms of the GNU General Public License
 as published by the Free Software Foundation; either version 2
 of the License, or (at your option) any later version.
 
 This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
+but WITHOUT ANY WARRANTY; without even the implied warranty ofi
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
 
@@ -23,7 +24,7 @@ static int extract_sdp(SalOp* op,belle_sip_message_t* message,belle_sdp_session_
 /*used for calls terminated before creation of a dialog*/
 static void call_set_released(SalOp* op){
 	if (!op->call_released){
-		op->state=SalOpStateTerminated;
+		op->state=SalOpStateTerminated;\
 		op->base.root->callbacks.call_released(op);
 		op->call_released=TRUE;
 		/*be aware that the following line may destroy the op*/
@@ -136,9 +137,6 @@ static int set_sdp_from_desc(belle_sip_message_t *msg, const SalMediaDescription
 	int err;
 	belle_sdp_session_description_t *sdp=media_description_to_sdp(desc);
 	err=set_sdp(msg,sdp);
-	/*Maria added*/
-	//err=set_msd(msg,sdp);
-	//printf("MARIA1");
 	belle_sip_object_unref(sdp);
 	return err;
 
@@ -240,12 +238,12 @@ static void cancelling_invite(SalOp *op) {
 	op->state=SalOpStateTerminating;
 }
 
-static int vfu_retry (void *user_data, unsigned int events) {
+/*static int vfu_retry (void *user_data, unsigned int events) {
 	SalOp *op=(SalOp *)user_data;
 	sal_call_send_vfu_request(op);
 	sal_op_unref(op);
 	return BELLE_SIP_STOP;
-}
+}*/
 
 static void call_process_response(void *op_base, const belle_sip_response_event_t *event){
 	SalOp* op = (SalOp*)op_base;
@@ -343,9 +341,7 @@ else if (code >= 180 && code<200) {
 							}
 							if (op->sdp_answer){
 								set_sdp(BELLE_SIP_MESSAGE(ack),op->sdp_answer);
-								/*Maria added*/
-								//set_msd(BELLE_SIP_MESSAGE(ack),op->sdp_answer);
-								printf("Maria");
+								
 								belle_sip_object_unref(op->sdp_answer);
 								op->sdp_answer=NULL;
 							}
@@ -357,17 +353,29 @@ else if (code >= 180 && code<200) {
 							call_set_error(op,response, FALSE);
 						}
 					}else if (strcmp("INFO",method)==0){
-						if (code == 491
-							&& (header_content_type = belle_sip_message_get_header_by_type(req,belle_sip_header_content_type_t))
-							&& strcmp("application",belle_sip_header_content_type_get_type(header_content_type))==0
+					//maria: here we need to do inco ecall metadata 
+					//respond ok
+					//respond INFO (eCall MSD)
+						/*if ((code == 491) && strcmp("application",belle_sip_header_content_type_get_type(header_content_type))==0
 							&& strcmp("media_control+xml",belle_sip_header_content_type_get_subtype(header_content_type))==0) {
 							unsigned int retry_in = (unsigned int)(1000*((float)rand()/RAND_MAX));
 							belle_sip_source_t *s=sal_create_timer(op->base.root,vfu_retry,sal_op_ref(op), retry_in, "vfu request retry");
 							ms_message("Rejected vfu request on op [%p], just retry in [%ui] ms",op,retry_in);
 							belle_sip_object_unref(s);
 						}else {
-								/*ignoring*/
+								//ignore
+						}*/
+						//maria above replaced by
+						if( strcmp("application",belle_sip_header_content_type_get_type(header_content_type))==0 && strcmp("application/emergencyCallData.control+xml",belle_sip_header_content_type_get_subtype(header_content_type))==0)	//this is a info request.
+						{
+				/*first answer 200 ok to cancel*/
+belle_sip_server_transaction_send_response(BELLE_SIP_SERVER_TRANSACTION(op->pending_client_trans),sal_op_create_response_from_request(op,req,200));
+						
 						}
+						else { // do nothing
+							}
+							
+						
 					}else if (strcmp("UPDATE",method)==0){
 						op->base.root->callbacks.call_accepted(op); /*INVITE*/
 					}else if (strcmp("CANCEL",method)==0){
@@ -702,7 +710,7 @@ static void process_request_event(void *op_base, const belle_sip_request_event_t
 					op->base.root->callbacks.call_updating(op,is_update);
 			}
 		
-			//maria here we need to send msd
+		
 		}else if (strcmp("REFER",method)==0) {
 			sal_op_process_refer(op,event,server_transaction);
 		} else if (strcmp("NOTIFY",method)==0) {
@@ -794,8 +802,8 @@ void sal_op_call_fill_cbs(SalOp*op) {
 	op->callbacks=&call_op_callbacks;
 	op->type=SalOpCall;
 }
-
 /*
+
 int sal_call(SalOp *op, const char *from, const char *to){
 	belle_sip_request_t* invite;
 	op->dir=SalOpDirOutgoing;
@@ -822,20 +830,14 @@ int sal_call(SalOp *op, const char *from, const char *to){
 
 	return sal_op_send_request(op,invite);
 }
+
+
 */
-
-
 //replaced by 
 
 int sal_call(SalOp *op, const char *from, const char *to){
 printf("\n sal_call\n");
 
-/*maria :
-
-belle_sip_request_t* invite;
-
-
-*/
 	
 
 	belle_sip_request_t* invite;
@@ -850,7 +852,7 @@ belle_sip_request_t* invite;
 	invite=sal_op_build_request(op,"INVITE");
 
 	if( invite == NULL ){
-		/* can happen if the op has an invalid address */
+		
 		return -1;
 	}
 	printf("\n sal_call: fill request INVITE\n");
@@ -864,17 +866,75 @@ belle_sip_request_t* invite;
 		belle_sip_message_add_header(BELLE_SIP_MESSAGE(invite),BELLE_SIP_HEADER(op->referred_by));
 
 
+static const char *parts_id[] = {
+	"maria1@sip.iotlab.cy",
+	"maria2@sip.iotlab.cy",
+	"maria3@sip.iotlab.cy"
+	
+};
+static const char *parts_content[] = {
+	"msd in ANS.1 Per encoding goes here",
+	"<presence xmlns=\"urn:ietf:params:xml:ns:xml\" entity=\"sip:mariaterzi@sip.cut.cy\">\n"
+	"  <tuple id=\"pfaa79\">\n"
+	"    <status>\n"
+	"      <basic>open</basic>\n"
+	"    </status>\n"
+	"    <contact>sip:mariaterzi@sip.cut.cy</contact>\n"
+	"    <timestamp>2016-06-13T16:12:48</timestamp>\n"
+	"  </tuple>\n"
+	"</presence>",
+	"v=0\r\n"\
+								"o=jehan-mac 1239 1239 IN IP4 192.168.0.18\r\n"\
+								"s=Talk\r\n"\
+								"c=IN IP4 192.168.0.18\r\n"\
+								"t=0 0\r\n"\
+								"m=audio 7078 RTP/AVP 111 110 3 0 8 101\r\n"\
+								"a=rtpmap:111 speex/16000\r\n"\
+								"a=fmtp:111 vbr=on\r\n"\
+								"a=rtpmap:110 speex/8000\r\n"\
+								"a=fmtp:110 vbr=on\r\n"\
+								"a=rtpmap:101 telephone-event/8000\r\n"\
+								"a=fmtp:101 0-11\r\n"\
+								"m=video 8078 RTP/AVP 99 97 98\r\n"\
+								"c=IN IP4 192.168.0.18\r\n"\
+								"b=AS:380\r\n"\
+								"a=rtpmap:99 MP4V-ES/90000\r\n"\
+								"a=fmtp:99 profile-level-id=3\r\n"\
+								"a=rtpmap:97 theora/90000\r\n"\
+								"a=rtpmap:98 H263-1998/90000\r\n"\
+								"a=fmtp:98 CIF=1;QCIF=1\r\n"
+};
+
+
+#define MULTIPART_BOUNDARY "---------------------------boundary1"
+/*
+FILE *out;
+if ((out = fopen("invitefile.txt", "w")) != NULL)
+{
+  fprintf(out,"%s", raw_message);
+  fclose(out);
+}
+*/
+
+
+const char *multipart_boudary=MULTIPART_BOUNDARY;
+char *content_type;
+
+content_type=belle_sip_strdup_printf("multipart/mixed; boundary=%s",multipart_boudary);
+
 //read msd
- FILE *fp1;
+FILE *fp1;
 char a;
 
 char msd[140];   
+
 //clrscr();
 
 fp1 = fopen("msd.per", "r");
 if (fp1 == NULL) {
 puts("cannot open this file");
 }
+
 
 int j=0;
 do {
@@ -886,137 +946,78 @@ int k=0;
 for ( k=0; k<j; k++) {
 printf("%c",msd[k]);
 }
-msd[k+1]='\n';
-
-//fcloseall();
-  char* msd1=&msd[0];
-
-static const char *parts_id[] = {
-	"1@sip.iotlab.cy",
-	"1@sip.iotlab.cy",
-	"1@sip.iotlab.cy",
-	"1@sip.iotlab.cy"
-	
-};
-  char *parts_content[] = {
-"v=0\r\n"\
-								"o=jehan-mac 1239 1239 IN IP4 192.168.0.18\r\n"\
-								"s=Talk\r\n"\
-								"c=IN IP4 192.168.0.18\r\n"\
-								"t=0 0\r\n"\
-								"m=audio 7078 RTP/AVP 111 110 3 0 8 101\r\n"\
-								"a=rtpmap:111 speex/16000\r\n"\
-								"a=fmtp:111 vbr=on\r\n"\
-								"a=rtpmap:110 speex/8000\r\n"\
-								"a=fmtp:110 vbr=on\r\n"\
-								"a=rtpmap:101 telephone-event/8000\r\n"\
-								"a=fmtp:101 0-11\r\n"\
-								"m=video 8078 RTP/AVP 99 97 98\r\n"\
-								"c=IN IP4 192.168.0.18\r\n"\
-								"b=AS:380\r\n"\
-								"a=rtpmap:99 MP4V-ES/90000\r\n"\
-								"a=fmtp:99 profile-level-id=3\r\n"\
-								"a=rtpmap:97 theora/90000\r\n"\
-								"a=rtpmap:98 H263-1998/90000\r\n"\
-								"a=fmtp:98 CIF=1;QCIF=1\r\n",
-	
-	msd1,
-"<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\" ?>\n"
-	"<presence xmlns=\"urn:ietf:params:xml:ns:pidf\" entity=\"sip:maria@sip.iotlab.cy\">\n"
-	"</presence>",
-
-	
-};
-
-
-//maria search
-printf("\n end_of_funciton:sal_call");
-const char* raw_message = "INVITE sip:500@dispark.mooo.com SIP/2.0\r\n"\
-							"Via: SIP/2.0/UDP 10.23.17.117:22600;branch=z9hG4bK-d8754z-4d7620d2feccbfac-1---d8754z-;rport=4820;received=202.165.193.129\r\n"\
-							"Max-Forwards: 70\r\n"\
-							"Contact: <sip:bcheong@202.165.193.129:4820>\r\n"\
-							"To: \"ecall\" <sip:500@dispark.mooo.com>\r\n"\
-							"From: \"Maria Terzi\" <sip:6001@dispark.mooo.com>;tag=7326e5f6\r\n"\
-							"Call-ID: Y2NlNzg0ODc0ZGIxODU1MWI5MzhkNDVkNDZhOTQ4YWU.\r\n"\
-							"CSeq: 1 INVITE\r\n"\
-							"Allow: INVITE, ACK, CANCEL, OPTIONS, BYE, REFER, NOTIFY, MESSAGE, SUBSCRIBE, INFO\r\n"\
-							"Supported: replaces\r\n"\
-							"Authorization: Digest username=\"003332176\", realm=\"sip.ovh.net\", nonce=\"24212965507cde726e8bc37e04686459\", uri=\"sip:sip.ovh.net\", response=\"896e786e9c0525ca3085322c7f1bce7b\", algorithm=MD5, opaque=\"241b9fb347752f2\"\r\n"\
-							"User-Agent: X-Lite 4 release 4.0 stamp 58832\r\n"\
-							"Content-Length: 230\r\n\r\n"
-;
-#define MULTIPART_BOUNDARY "---------------------------boundaryX"
 
 
 
+FILE *fp;
+long lSize;
+char *buffer;
+
+fp = fopen ( "invitefile.txt" , "rb" );
+if( !fp ) perror("invitefile.txt"),exit(1);
+
+fseek( fp , 0L , SEEK_END);
+lSize = ftell( fp );
+rewind( fp );
+
+/* allocate memory for entire content */
+buffer = calloc( 1, lSize+1 );
+if( !buffer ) fclose(fp),fputs("memory alloc fails",stderr),exit(1);
+
+/* copy the file into the buffer */
+if( 1!=fread( buffer , lSize, 1 , fp) )
+  fclose(fp),free(buffer),fputs("entire read fails",stderr),exit(1);
+
+/* do your work here, buffer is a string contains the whole text */
 
 
+char* msd1=&msd[0];
+char* str1="by-reference;handling-optional";
+printf("%s",msd1);
 
-const char *multipart_boudary=MULTIPART_BOUNDARY;
-char *content_type;
-content_type=belle_sip_strdup_printf("multipart/mixed; boundary=%s",multipart_boudary);
-/*
-	char info_body[] =
-			"msd in ANS.1 Per encoding goes here";
-
-
-
-static const char* sdp = 		"v=0\r\n"\
-								"o=jehan-mac 1239 1239 IN IP4 192.168.0.18\r\n"\
-								"s=Talk\r\n"\
-								"c=IN IP4 192.168.0.18\r\n"\
-								"t=0 0\r\n"\
-								"m=audio 7078 RTP/AVP 111 110 3 0 8 101\r\n"\
-								"a=rtpmap:111 speex/16000\r\n"\
-								"a=fmtp:111 vbr=on\r\n"\
-								"a=rtpmap:110 speex/8000\r\n"\
-								"a=fmtp:110 vbr=on\r\n"\
-								"a=rtpmap:101 telephone-event/8000\r\n"\
-								"a=fmtp:101 0-11\r\n"\
-								"m=video 8078 RTP/AVP 99 97 98\r\n"\
-								"c=IN IP4 192.168.0.18\r\n"\
-								"b=AS:380\r\n"\
-								"a=rtpmap:99 MP4V-ES/90000\r\n"\
-								"a=fmtp:99 profile-level-id=3\r\n"\
-								"a=rtpmap:97 theora/90000\r\n"\
-								"a=rtpmap:98 H263-1998/90000\r\n"\
-								"a=fmtp:98 CIF=1;QCIF=1\r\n";
-*/
-//size_t content_length = sizeof(info_body) - 1;
-
-//size_t content_length1 = sizeof(sdp) - 1;
+ char * msd_type = (char *) malloc(1 + strlen(str1)+ strlen(msd1) );
+      strcpy(msd_type, str1);
 
 	belle_sip_request_t* request;
-	belle_sip_message_t* message = belle_sip_message_parse(raw_message);
+	belle_sip_message_t* message = belle_sip_message_parse(buffer);
 	char* encoded_message = belle_sip_object_to_string(BELLE_SIP_OBJECT(message));
 	belle_sip_object_unref(BELLE_SIP_OBJECT(message));
 	message = belle_sip_message_parse(encoded_message);
+fclose(fp);
+free(buffer);
 
 //new test
 char *desc;
 	unsigned int i;
-
+	 int re=0;
 	belle_sip_memory_body_handler_t *mbh;
 	belle_sip_multipart_body_handler_t *mpbh = belle_sip_multipart_body_handler_new(NULL, NULL, NULL, MULTIPART_BOUNDARY);
 	belle_sip_object_ref(mpbh);
 	for (i = 0; i < 3; i++) {
 		belle_sip_header_t *content_transfer_encoding = belle_sip_header_create("Content-Transfer-Encoding", "binary");
-		belle_sip_header_t *content_id = belle_sip_header_create("Content-Id", parts_id[i]);
+		belle_sip_header_t *content_id = belle_sip_header_create("Content-ID", parts_id[i]);
 		belle_sip_header_t *content_type;
 		belle_sip_header_t *content_disposition;
 		printf ("i %d", i);
-			if (i == 0) {
+		printf ("re %d", re);
+			if (i == 2) {
 
 				content_type = BELLE_SIP_HEADER(belle_sip_header_content_type_create("application", "sdp; charset=\"UTF-8\""));
-			} else if (i ==2) {
+				content_disposition=belle_sip_header_create("Content-Disposition","by-reference;handling-optional");
+			} else if (i ==1) {
 				content_type = BELLE_SIP_HEADER(belle_sip_header_content_type_create("application", "pidf+xml; charset=\"UTF-8\""));
+content_disposition=belle_sip_header_create("Content-Disposition","by-reference;handling-optional");
 			}
 				
-			else {
+			 else if (i ==0) {
 				content_type = BELLE_SIP_HEADER(belle_sip_header_content_type_create("application", "emergencyCallData.eCall.MSD"));
-			}
+content_disposition=belle_sip_header_create("Content-Disposition","by-reference;handling-optional");
 		
-		content_disposition=belle_sip_header_create("Content-Disposition","by-reference;handling-optional");
+	
+
+				//content_disposition=belle_sip_header_create("Content-Disposition",msd_type);
+				
+			}
 		mbh = belle_sip_memory_body_handler_new_copy_from_buffer((void *)parts_content[i], strlen(parts_content[i]), NULL, NULL);
 		belle_sip_body_handler_add_header(BELLE_SIP_BODY_HANDLER(mbh), content_transfer_encoding);
 		belle_sip_body_handler_add_header(BELLE_SIP_BODY_HANDLER(mbh), content_id);
@@ -1027,15 +1028,19 @@ char *desc;
 	desc = belle_sip_object_to_string(mpbh);
 //new test ends here
 	request = BELLE_SIP_REQUEST(message);
-belle_sip_message_set_body(BELLE_SIP_MESSAGE(request),desc,15400);
+size_t content_lenth = sizeof(parts_content) - 1;
+belle_sip_message_set_body(BELLE_SIP_MESSAGE(request),desc,content_lenth);
 	
 
-belle_sip_message_add_header(BELLE_SIP_MESSAGE(request),BELLE_SIP_HEADER(belle_sip_header_create("Content-type",content_type)));
+belle_sip_message_add_header(BELLE_SIP_MESSAGE(request),BELLE_SIP_HEADER(belle_sip_header_create("Content-Type",content_type)));
 
+//belle_sip_message_add_header(BELLE_SIP_MESSAGE(request),BELLE_SIP_HEADER(belle_sip_header_create("Content-Disposition",content_disposition)));
 
 	return sal_op_send_request(op,request);
 
+
 }
+
 
 static void handle_offer_answer_response(SalOp* op, belle_sip_response_t* response) {
 	if (op->base.local_media){
