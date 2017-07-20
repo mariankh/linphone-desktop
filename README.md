@@ -23,33 +23,43 @@ Here are the general instructions to build linphone for desktop. The specific in
 ## Specific instructions for the Raspberry PI platform
 1. Install Build tools using:
 
-apt-get install cmake
-apt-get install intltool
-apt-get install shtool 
+        apt-get install cmake
+        apt-get install intltool
+        apt-get install shtool 
 
 2. Prepare the build in a terminal by running the following command in the current directory:
+
         ./prepare.py
+
 If errors persist regarding ./prepare.py with compilers set their path
-./prepare.py -DCMAKE_C_COMPILER=/usr/bin/gcc-4.9 -DCMAKE_CXX_COMPILER=/usr/bin/g++-4.9
+
+        ./prepare.py -DCMAKE_C_COMPILER=/usr/bin/gcc-4.9 -DCMAKE_CXX_COMPILER=/usr/bin/g++-4.9
 
 
 
 3. Build the project in a terminal with:
+
         make
+
         make install
 
 
 ## Specific instructions for the Windows platform
 
 1. Open a Windows command line (cmd.exe) in the current directory and run:
+
         python prepare.py
+
 2. Open the generated Visual Studio solution (WORK/cmake/Project.sln) and build it.
 
 ## Specific instructions for the Mac OS X platform
 
 1. Open iTerm.app in the current directory and run:
+
         ./prepare.py
+
 2. Build the project with:
+
         make
 
 # Customizing your build
