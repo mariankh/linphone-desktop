@@ -6,7 +6,7 @@ Linphone is a free VoIP and video softphone based on the SIP protocol.
 
 Here are the general instructions to build linphone for desktop. The specific instructions for each build platform is described just below.
 
-1. Install some build tools: CMake, Python.
+1. Install some build tools: CMake, Python, intltool, shtool
 2. Prepare the build by running the prepare.py script.
 3. Build the project using the appropriate build tool (make, ninja, Xcode, Visual Studio).
 
@@ -16,6 +16,26 @@ Here are the general instructions to build linphone for desktop. The specific in
         ./prepare.py
 2. Build the project in a terminal with:
         make
+
+
+## Specific instructions for the Raspberry PI platform
+1. Install Build tools using:
+
+apt-get install cmake
+apt-get install intltool
+apt-get install shtool 
+
+2. Prepare the build in a terminal by running the following command in the current directory:
+        ./prepare.py
+If errors persist regarding ./prepare.py with compilers set their path
+./prepare.py -DCMAKE_C_COMPILER=/usr/bin/gcc-4.9 -DCMAKE_CXX_COMPILER=/usr/bin/g++-4.9
+
+
+
+3. Build the project in a terminal with:
+        make
+        make install
+
 
 ## Specific instructions for the Windows platform
 
@@ -73,3 +93,41 @@ However if the compilation fails, you may need to rebuild everything from scratc
         ./prepare.py -C && ./prepare.py [options]
 
 Then you re-build as usual.
+
+# Enabling the NG112
+
+Replace the file sal_op_call.c  in submodules/linphone/coreapi/bellesip_sal with the sal_op_call.c file available in linphonemodificationfiles folder
+Re-build the project with:
+        make
+
+Copy the of the files from the  linphonemodificationfiles folder to the the /OUTPUT/desktop/bin folder and run
+
+        bash startcall.sh --dial=500 
+
+ To make a call to number 500.
+
+# Details regarding the files provided
+
+
+sal_op_call.c
+The modified linphone file. To enable the NG112 functionality you need to replace this file with the one provided.
+
+invitefile.txt
+This is the template for the SIP invite
+
+startcall.sh
+Starts the call and takes as argument the number to be called. (e.g startcall.sh --dial=500
+
+msd.gser
+This includes the msd in a readable format
+
+ffasn1dump
+This is used to encode and decode the msd
+
+
+
+
+
+
+
+
