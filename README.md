@@ -2,8 +2,7 @@ OpenIVS is a prototype implementation of the NG112 compatible IVS.
 A modified linphone is used for initiating the NG112 eCall and providing voice communication between the vehicle and OpenPSAP.​
 Instructions are provided to how to setup the linphone on various platforms and then change the appropriate file to enable the NG112.
 
-
-![Dialer screenshot](http://iot-lab.cut.ac.cy/wp-content/uploads/sites/59/2017/04/20170620_104250-300x169.jpg)
+![Dialer screenshot](http://web.cut.ac.cy/iotlab/wp-content/uploads/sites/59/2017/04/20170620_104250.jpg)
 
 # Getting started
 
