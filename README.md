@@ -124,19 +124,19 @@ Copy the of the files from the  linphonemodificationfiles folder to the the /OUT
 # Details regarding the files provided
 
 
-sal_op_call.c
+sal_op_call.c -
 The modified linphone file. To enable the NG112 functionality you need to replace this file with the one provided.
 
-invitefile.txt
+invitefile.txt -
 This is the template for the SIP invite
 
-startcall.sh
+startcall.sh -
 Starts the call and takes as argument the number to be called. (e.g startcall.sh --dial=500
 
-msd.gser
+msd.gser -
 This includes the msd in a readable format
 
-ffasn1dump
+ffasn1dump -
 This is used to encode and decode the msd
 
 
