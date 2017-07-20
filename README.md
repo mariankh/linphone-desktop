@@ -98,15 +98,18 @@ Then you re-build as usual.
 
 # Enabling the NG112
 
-Replace the file sal_op_call.c  in submodules/linphone/coreapi/bellesip_sal with the sal_op_call.c file available in linphonemodificationfiles folder
+Replace the file sal_op_call.c  in submodules/linphone/coreapi/bellesip_sal with the sal_op_call.c file available in linphonemodificationfiles folder.
+
+
 Re-build the project with:
+
         make
 
-Copy the of the files from the  linphonemodificationfiles folder to the the /OUTPUT/desktop/bin folder and run
+Copy the of the files from the  linphonemodificationfiles folder to the the /OUTPUT/desktop/bin folder and run the following to make a call to number 500.
 
         bash startcall.sh --dial=500 
 
- To make a call to number 500.
+
 
 # Details regarding the files provided
 
