@@ -1,6 +1,12 @@
 [submodule "submodules/belle-sip"]
 	path = submodules/belle-sip
 	url = git://git.linphone.org/belle-sip
+[submodule "submodules/mediastreamer2"]
+	path = submodules/linphone/mediastreamer2
+	url = git://git.linphone.org/mediastreamer2
+[submodule "submodules/oRTP"]
+	path = submodules/linphone/oRTP
+	url = git://git.linphone.org/oRTP
 [submodule "submodules/cmake-builder"]
 	path = submodules/cmake-builder
 	url = git://git.linphone.org/linphone-cmake-builder
