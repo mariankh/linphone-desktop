@@ -8,9 +8,15 @@ Instructions are provided to how to setup the linphone on various platforms and 
 
 Here are the general instructions to build linphone for desktop. The specific instructions for each build platform is described just below.
 
-1. Install some build tools: CMake, Python, intltool, shtool
-2. Prepare the build by running the prepare.py script.
-3. Build the project using the appropriate build tool (make, ninja, Xcode, Visual Studio).
+1. Clone repository and update submodules
+2. Install some build tools: CMake, Python, intltool, shtool
+3. Prepare the build by running the prepare.py script.
+4. Build the project using the appropriate build tool (make, ninja, Xcode, Visual Studio).
+
+## Clone repository and update submodules
+
+        git clone https://bitbucket.org/iotlab-cut/openivs.git
+        git submodule sync && git submodule update --init --recursive
 
 ## Specific instructions for the Linux platform
 
