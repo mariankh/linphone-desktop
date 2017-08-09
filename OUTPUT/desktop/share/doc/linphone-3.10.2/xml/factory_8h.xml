@@ -1,0 +1,390 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="factory_8h" kind="file">
+    <compoundname>factory.h</compoundname>
+    <includes refid="core_8h" local="yes">linphone/core.h</includes>
+    <includedby refid="core_8h" local="yes">core.h</includedby>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__initializing_1ga3ce8cc4b9af4382f08540edc368f7310" prot="public" static="no">
+        <type>struct _LinphoneFactory</type>
+        <definition>typedef struct _LinphoneFactory LinphoneFactory</definition>
+        <argsstring></argsstring>
+        <name>LinphoneFactory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="group__initializing_1ga3ce8cc4b9af4382f08540edc368f7310" kindref="member">LinphoneFactory</ref> is a singleton object devoted to the creation of all the object of Liblinphone that cannot created by <ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> or <ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> itself. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/factory.h" line="355" column="1" bodyfile="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/factory.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__initializing_1gad5c6ec08691a00b9c3225b774fe1dc68" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__initializing_1ga3ce8cc4b9af4382f08540edc368f7310" kindref="member">LinphoneFactory</ref> *</type>
+        <definition>LinphoneFactory* linphone_factory_get</definition>
+        <argsstring>(void)</argsstring>
+        <name>linphone_factory_get</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create the <ref refid="group__initializing_1ga3ce8cc4b9af4382f08540edc368f7310" kindref="member">LinphoneFactory</ref> if that has not been done and return a pointer on it. <simplesect kind="return"><para>A pointer on the <ref refid="group__initializing_1ga3ce8cc4b9af4382f08540edc368f7310" kindref="member">LinphoneFactory</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/factory.h" line="45" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__initializing_1ga26563195924f5edad82918cb8e93691b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_factory_clean</definition>
+        <argsstring>(void)</argsstring>
+        <name>linphone_factory_clean</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Clean the factory. This function is generally useless as the factory is unique per process, however calling this function at the end avoid getting reports from belle-sip leak detector about memory leaked in <ref refid="group__initializing_1gad5c6ec08691a00b9c3225b774fe1dc68" kindref="member">linphone_factory_get()</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/factory.h" line="51" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__initializing_1ga0f71be9d7c8fac862e2f929ed0419e80" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+        <definition>LinphoneCore* linphone_factory_create_core</definition>
+        <argsstring>(const LinphoneFactory *factory, LinphoneCoreCbs *cbs, const char *config_path, const char *factory_config_path)</argsstring>
+        <name>linphone_factory_create_core</name>
+        <param>
+          <type>const <ref refid="group__initializing_1ga3ce8cc4b9af4382f08540edc368f7310" kindref="member">LinphoneFactory</ref> *</type>
+          <declname>factory</declname>
+        </param>
+        <param>
+          <type><ref refid="group__initializing_1gaa4a52a9cdc319baccd2232dda6681f8f" kindref="member">LinphoneCoreCbs</ref> *</type>
+          <declname>cbs</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>config_path</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>factory_config_path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Instanciate a <ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> object.</para><para>The LinphoneCore object is the primary handle for doing all phone actions. It should be unique within your application. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>factory</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="group__initializing_1ga3ce8cc4b9af4382f08540edc368f7310" kindref="member">LinphoneFactory</ref> singleton. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a <ref refid="group__initializing_1gaa4a52a9cdc319baccd2232dda6681f8f" kindref="member">LinphoneCoreCbs</ref> object holding your application callbacks. A reference will be taken on it until the destruciton of the core or the unregistration with linphone_core_remove_cbs(). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>config_path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a path to a config file. If it does not exists it will be created. The config file is used to store all settings, call logs, friends, proxies... so that all these settings become persistent over the life of the LinphoneCore object. It is allowed to set a NULL config file. In that case LinphoneCore will not store any settings. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>factory_config_path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a path to a read-only config file that can be used to to store hard-coded preference such as proxy settings or internal preferences. The settings in this factory file always override the one in the normal config file. It is OPTIONAL, use NULL if unneeded. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="group__initializing_1gaefe6c208dfba33a135d348b53da6a202" kindref="member">linphone_core_new_with_config</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/factory.h" line="72" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__initializing_1gacf77ea8002867d2dd93f197eda80f22b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+        <definition>LinphoneCore* linphone_factory_create_core_with_config</definition>
+        <argsstring>(const LinphoneFactory *factory, LinphoneCoreCbs *cbs, LinphoneConfig *config)</argsstring>
+        <name>linphone_factory_create_core_with_config</name>
+        <param>
+          <type>const <ref refid="group__initializing_1ga3ce8cc4b9af4382f08540edc368f7310" kindref="member">LinphoneFactory</ref> *</type>
+          <declname>factory</declname>
+        </param>
+        <param>
+          <type><ref refid="group__initializing_1gaa4a52a9cdc319baccd2232dda6681f8f" kindref="member">LinphoneCoreCbs</ref> *</type>
+          <declname>cbs</declname>
+        </param>
+        <param>
+          <type><ref refid="group__misc_1gaf621181934fa2be96ebb2b498fc59cff" kindref="member">LinphoneConfig</ref> *</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Instantiates a LinphoneCore object with a given LpConfig.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>factory</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="group__initializing_1ga3ce8cc4b9af4382f08540edc368f7310" kindref="member">LinphoneFactory</ref> singleton. The LinphoneCore object is the primary handle for doing all phone actions. It should be unique within your application. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a <ref refid="group__initializing_1gaa4a52a9cdc319baccd2232dda6681f8f" kindref="member">LinphoneCoreCbs</ref> object holding your application callbacks. A reference will be taken on it until the destruciton of the core or the unregistration with linphone_core_remove_cbs(). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>config</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to an LpConfig object holding the configuration of the LinphoneCore to be instantiated. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="group__initializing_1ga02aa44dd39b731e6e1125b8a4798f2a4" kindref="member">linphone_core_new</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/factory.h" line="87" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__initializing_1ga216de83e5bfcf8487d4c22dfc7fcbeb1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__initializing_1gaa4a52a9cdc319baccd2232dda6681f8f" kindref="member">LinphoneCoreCbs</ref> *</type>
+        <definition>LinphoneCoreCbs* linphone_factory_create_core_cbs</definition>
+        <argsstring>(const LinphoneFactory *factory)</argsstring>
+        <name>linphone_factory_create_core_cbs</name>
+        <param>
+          <type>const <ref refid="group__initializing_1ga3ce8cc4b9af4382f08540edc368f7310" kindref="member">LinphoneFactory</ref> *</type>
+          <declname>factory</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Instanciate a <ref refid="group__initializing_1gaa4a52a9cdc319baccd2232dda6681f8f" kindref="member">LinphoneCoreCbs</ref> object. <simplesect kind="return"><para>a new <ref refid="group__initializing_1gaa4a52a9cdc319baccd2232dda6681f8f" kindref="member">LinphoneCoreCbs</ref>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/factory.h" line="93" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__initializing_1ga15d1de56e0ec023c766b90f4b283c86f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref> *</type>
+        <definition>LinphoneAddress* linphone_factory_create_address</definition>
+        <argsstring>(const LinphoneFactory *factory, const char *addr)</argsstring>
+        <name>linphone_factory_create_address</name>
+        <param>
+          <type>const <ref refid="group__initializing_1ga3ce8cc4b9af4382f08540edc368f7310" kindref="member">LinphoneFactory</ref> *</type>
+          <declname>factory</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>addr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse a string holding a SIP URI and create the according <ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref> object. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>factory</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="group__initializing_1ga3ce8cc4b9af4382f08540edc368f7310" kindref="member">LinphoneFactory</ref> singleton. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>addr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A string holding the SIP URI to parse. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A new <ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/factory.h" line="101" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__initializing_1ga65bba925b4d7040d70cec71f20d4e174" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref> *</type>
+        <definition>LinphoneAuthInfo* linphone_factory_create_auth_info</definition>
+        <argsstring>(const LinphoneFactory *factory, const char *username, const char *userid, const char *passwd, const char *ha1, const char *realm, const char *domain)</argsstring>
+        <name>linphone_factory_create_auth_info</name>
+        <param>
+          <type>const <ref refid="group__initializing_1ga3ce8cc4b9af4382f08540edc368f7310" kindref="member">LinphoneFactory</ref> *</type>
+          <declname>factory</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>username</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>userid</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>passwd</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>ha1</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>realm</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>domain</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates a <ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref> object. The object can be created empty, that is with all arguments set to NULL. Username, userid, password, realm and domain can be set later using specific methods. At the end, username and passwd (or ha1) are required. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>factory</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="group__initializing_1ga3ce8cc4b9af4382f08540edc368f7310" kindref="member">LinphoneFactory</ref> singleton. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>username</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The username that needs to be authenticated </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>userid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The userid used for authenticating (use NULL if you don&apos;t know what it is) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>passwd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The password in clear text </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ha1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ha1-encrypted password if password is not given in clear text. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>realm</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The authentication domain (which can be larger than the sip domain. Unfortunately many SIP servers don&apos;t use this parameter. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>domain</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The SIP domain for which this authentication information is valid, if it has to be restricted for a single SIP domain. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A <ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref> object. linphone_auth_info_destroy() must be used to destroy it when no longer needed. The LinphoneCore makes a copy of LinphoneAuthInfo passed through <ref refid="group__authentication_1ga62ac5bb34f0342f7edc733c42473b7aa" kindref="member">linphone_core_add_auth_info()</ref>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/factory.h" line="118" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__initializing_1gadc2a4f8d711702768ddd86f267e6e66d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__carddav__vcard_1ga9331db7d45400f64b3eff8fed0c39219" kindref="member">LinphoneVcard</ref> *</type>
+        <definition>LinphoneVcard* linphone_factory_create_vcard</definition>
+        <argsstring>(LinphoneFactory *factory)</argsstring>
+        <name>linphone_factory_create_vcard</name>
+        <param>
+          <type><ref refid="group__initializing_1ga3ce8cc4b9af4382f08540edc368f7310" kindref="member">LinphoneFactory</ref> *</type>
+          <declname>factory</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create an empty <ref refid="group__carddav__vcard_1ga9331db7d45400f64b3eff8fed0c39219" kindref="member">LinphoneVcard</ref>. <simplesect kind="return"><para>a new <ref refid="group__carddav__vcard_1ga9331db7d45400f64b3eff8fed0c39219" kindref="member">LinphoneVcard</ref>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/factory.h" line="125" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">linphone</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">Copyright<sp/>(C)<sp/>2016<sp/>Belledonne<sp/>Communications<sp/>&lt;info@belledonne-communications.com&gt;</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"></highlight></codeline>
+<codeline lineno="5"><highlight class="comment">This<sp/>program<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>2</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">of<sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment">This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"></highlight></codeline>
+<codeline lineno="15"><highlight class="comment">You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">along<sp/>with<sp/>this<sp/>program;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>Street,<sp/>Fifth<sp/>Floor,<sp/>Boston,<sp/>MA<sp/><sp/>02110-1301,<sp/>USA.</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LINPHONE_FACTORY_H</highlight></codeline>
+<codeline lineno="21"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>LINPHONE_FACTORY_H</highlight></codeline>
+<codeline lineno="22"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;linphone/core.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>_cplusplus</highlight></codeline>
+<codeline lineno="26"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="28"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="38"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">_LinphoneFactory<sp/><ref refid="group__initializing_1ga3ce8cc4b9af4382f08540edc368f7310" kindref="member">LinphoneFactory</ref>;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__initializing_1ga3ce8cc4b9af4382f08540edc368f7310" kindref="member">LinphoneFactory</ref><sp/>*<ref refid="group__initializing_1gad5c6ec08691a00b9c3225b774fe1dc68" kindref="member">linphone_factory_get</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__initializing_1ga26563195924f5edad82918cb8e93691b" kindref="member">linphone_factory_clean</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref><sp/>*<ref refid="group__initializing_1ga0f71be9d7c8fac862e2f929ed0419e80" kindref="member">linphone_factory_create_core</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__initializing_1ga3ce8cc4b9af4382f08540edc368f7310" kindref="member">LinphoneFactory</ref><sp/>*factory,<sp/><ref refid="group__initializing_1gaa4a52a9cdc319baccd2232dda6681f8f" kindref="member">LinphoneCoreCbs</ref><sp/>*cbs,</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*config_path,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*factory_config_path);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref><sp/>*<ref refid="group__initializing_1gacf77ea8002867d2dd93f197eda80f22b" kindref="member">linphone_factory_create_core_with_config</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__initializing_1ga3ce8cc4b9af4382f08540edc368f7310" kindref="member">LinphoneFactory</ref><sp/>*factory,<sp/><ref refid="group__initializing_1gaa4a52a9cdc319baccd2232dda6681f8f" kindref="member">LinphoneCoreCbs</ref><sp/>*cbs,<sp/><ref refid="group__misc_1gaf621181934fa2be96ebb2b498fc59cff" kindref="member">LinphoneConfig</ref><sp/>*config);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__initializing_1gaa4a52a9cdc319baccd2232dda6681f8f" kindref="member">LinphoneCoreCbs</ref><sp/>*<ref refid="group__initializing_1ga216de83e5bfcf8487d4c22dfc7fcbeb1" kindref="member">linphone_factory_create_core_cbs</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__initializing_1ga3ce8cc4b9af4382f08540edc368f7310" kindref="member">LinphoneFactory</ref><sp/>*factory);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref><sp/>*<ref refid="group__initializing_1ga15d1de56e0ec023c766b90f4b283c86f" kindref="member">linphone_factory_create_address</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__initializing_1ga3ce8cc4b9af4382f08540edc368f7310" kindref="member">LinphoneFactory</ref><sp/>*factory,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*addr);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref><sp/>*<ref refid="group__initializing_1ga65bba925b4d7040d70cec71f20d4e174" kindref="member">linphone_factory_create_auth_info</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__initializing_1ga3ce8cc4b9af4382f08540edc368f7310" kindref="member">LinphoneFactory</ref><sp/>*factory,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*username,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*userid,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*passwd,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*ha1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*realm,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*domain);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__carddav__vcard_1ga9331db7d45400f64b3eff8fed0c39219" kindref="member">LinphoneVcard</ref><sp/>*<ref refid="group__initializing_1gadc2a4f8d711702768ddd86f267e6e66d" kindref="member">linphone_factory_create_vcard</ref>(<ref refid="group__initializing_1ga3ce8cc4b9af4382f08540edc368f7310" kindref="member">LinphoneFactory</ref><sp/>*factory);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="preprocessor">#ifdef<sp/>_cplusplus</highlight></codeline>
+<codeline lineno="132"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="134"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>LINPHONE_FACTORY_H</highlight></codeline>
+    </programlisting>
+    <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/factory.h"/>
+  </compounddef>
+</doxygen>

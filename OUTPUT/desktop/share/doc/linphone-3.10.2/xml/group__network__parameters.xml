@@ -1,0 +1,2384 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="group__network__parameters" kind="group">
+    <compoundname>network_parameters</compoundname>
+    <title>Controlling network parameters (ports, mtu...)</title>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__network__parameters_1ga02067df386ffcc654c4cb040c8e02653" prot="public" static="no">
+        <name>_LinphoneAuthMethod</name>
+        <enumvalue id="group__network__parameters_1gga02067df386ffcc654c4cb040c8e02653a5e6cb868a9ac81e8381436c4d0b7accf" prot="public">
+          <name>LinphoneAuthHttpDigest</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__network__parameters_1gga02067df386ffcc654c4cb040c8e02653a1b74a09810efad82e45b3e067c15e8e3" prot="public">
+          <name>LinphoneAuthTls</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enum describing the authentication methods </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="165" column="1" bodyfile="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" bodystart="165" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__network__parameters_1gadad0a1c27596017d9d9b3c30ef47f5be" prot="public" static="no">
+        <name>_LinphoneFirewallPolicy</name>
+        <enumvalue id="group__network__parameters_1ggadad0a1c27596017d9d9b3c30ef47f5bea8ecc1e10491dd4a2bcb3d07e88086bae" prot="public">
+          <name>LinphonePolicyNoFirewall</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Do not use any mechanism to pass through firewalls </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__network__parameters_1ggadad0a1c27596017d9d9b3c30ef47f5bea823554c78cb93f674464e332af988fe1" prot="public">
+          <name>LinphonePolicyUseNatAddress</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Use the specified public adress </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__network__parameters_1ggadad0a1c27596017d9d9b3c30ef47f5bea38001ab78a3d1071e153e49c741b2d9d" prot="public">
+          <name>LinphonePolicyUseStun</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Use a STUN server to get the public address </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__network__parameters_1ggadad0a1c27596017d9d9b3c30ef47f5beaeadfb66b915acd91af98e4d5cd47b17b" prot="public">
+          <name>LinphonePolicyUseIce</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Use the ICE protocol </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__network__parameters_1ggadad0a1c27596017d9d9b3c30ef47f5beab254b7940dee8816026d50fb29ecaae8" prot="public">
+          <name>LinphonePolicyUseUpnp</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Use the uPnP protocol </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Policy to use to pass through firewalls.</para><para><xrefsect id="deprecated_1_deprecated000027"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Use <ref refid="group__network__parameters_1gabcd02b5383f812275c66875588b76180" kindref="member">LinphoneNatPolicy</ref> instead. </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="1301" column="1" bodyfile="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" bodystart="1301" bodyend="1307"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__network__parameters_1ga0d6c43b3dbf5c88ecd30d111c2789447" prot="public" static="no">
+        <type>enum <ref refid="group__network__parameters_1ga02067df386ffcc654c4cb040c8e02653" kindref="member">_LinphoneAuthMethod</ref></type>
+        <definition>typedef enum _LinphoneAuthMethod LinphoneAuthMethod</definition>
+        <argsstring></argsstring>
+        <name>LinphoneAuthMethod</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Typedef for authentication methods enum. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="156" column="1" bodyfile="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__network__parameters_1ga833aa818e8216f35ef12f86767806129" prot="public" static="no">
+        <type>enum <ref refid="group__network__parameters_1gadad0a1c27596017d9d9b3c30ef47f5be" kindref="member">_LinphoneFirewallPolicy</ref></type>
+        <definition>typedef enum _LinphoneFirewallPolicy  LinphoneFirewallPolicy</definition>
+        <argsstring></argsstring>
+        <name>LinphoneFirewallPolicy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Policy to use to pass through firewalls.</para><para><xrefsect id="deprecated_1_deprecated000027"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Use <ref refid="group__network__parameters_1gabcd02b5383f812275c66875588b76180" kindref="member">LinphoneNatPolicy</ref> instead. </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="1307" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__network__parameters_1gabcd02b5383f812275c66875588b76180" prot="public" static="no">
+        <type>struct _LinphoneNatPolicy</type>
+        <definition>typedef struct _LinphoneNatPolicy LinphoneNatPolicy</definition>
+        <argsstring></argsstring>
+        <name>LinphoneNatPolicy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Policy to use to pass through NATs/firewalls. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/nat_policy.h" line="381" column="1" bodyfile="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/nat_policy.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__network__parameters_1ga91804b8cf92f310c0d4cc8a4259ba917" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool_t</type>
+        <definition>bool_t linphone_core_ipv6_enabled</definition>
+        <argsstring>(LinphoneCore *lc)</argsstring>
+        <name>linphone_core_ipv6_enabled</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Tells whether IPv6 is enabled or not. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCore object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A boolean value telling whether IPv6 is enabled or not</para></simplesect>
+<simplesect kind="see"><para><ref refid="group__network__parameters_1gab6f8e740064dad20c530770ea51982d4" kindref="member">linphone_core_enable_ipv6()</ref> for more details on how IPv6 is supported in liblinphone. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="2018" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1gab6f8e740064dad20c530770ea51982d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_enable_ipv6</definition>
+        <argsstring>(LinphoneCore *lc, bool_t val)</argsstring>
+        <name>linphone_core_enable_ipv6</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type>bool_t</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Turns IPv6 support on or off. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCore object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A boolean value telling whether to enable IPv6 support </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="2026" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1ga6edfbe884d0767c1ee82ce57da659c7b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int linphone_core_get_audio_port</definition>
+        <argsstring>(const LinphoneCore *lc)</argsstring>
+        <name>linphone_core_get_audio_port</name>
+        <param>
+          <type>const <ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the UDP port used for audio streaming. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCore object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The UDP port used for audio streaming </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="2593" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1ga1c90a61621a177ef26319ffbee2e3b6b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_get_audio_port_range</definition>
+        <argsstring>(const LinphoneCore *lc, int *min_port, int *max_port)</argsstring>
+        <name>linphone_core_get_audio_port_range</name>
+        <param>
+          <type>const <ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>min_port</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>max_port</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the audio port range from which is randomly chosen the UDP port used for audio streaming. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCore object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">min_port</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The lower bound of the audio port range being used </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">max_port</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The upper bound of the audio port range being used </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="2602" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1ga3ec39e1205197d41e9862008f24f521c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int linphone_core_get_video_port</definition>
+        <argsstring>(const LinphoneCore *lc)</argsstring>
+        <name>linphone_core_get_video_port</name>
+        <param>
+          <type>const <ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the UDP port used for video streaming. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCore object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The UDP port used for video streaming </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="2610" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1ga6d802f4c671e6a4c3b39798246c23aa1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_get_video_port_range</definition>
+        <argsstring>(const LinphoneCore *lc, int *min_port, int *max_port)</argsstring>
+        <name>linphone_core_get_video_port_range</name>
+        <param>
+          <type>const <ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>min_port</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>max_port</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the video port range from which is randomly chosen the UDP port used for video streaming. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCore object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">min_port</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The lower bound of the video port range being used </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">max_port</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The upper bound of the video port range being used </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="2619" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1ga673611646f2d2d45fcfa222f6e616b3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int linphone_core_get_text_port</definition>
+        <argsstring>(const LinphoneCore *lc)</argsstring>
+        <name>linphone_core_get_text_port</name>
+        <param>
+          <type>const <ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the UDP port used for text streaming. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCore object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The UDP port used for text streaming </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="2627" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1ga4bec9283f4f7020fdc3525b19c4fb5ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_get_text_port_range</definition>
+        <argsstring>(const LinphoneCore *lc, int *min_port, int *max_port)</argsstring>
+        <name>linphone_core_get_text_port_range</name>
+        <param>
+          <type>const <ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>min_port</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>max_port</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the video port range from which is randomly chosen the UDP port used for text streaming. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCore object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">min_port</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The lower bound of the text port range being used </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">max_port</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The upper bound of the text port range being used </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="2636" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1ga886e1f383c93ef3c031622bf612cdcd4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_set_audio_port</definition>
+        <argsstring>(LinphoneCore *lc, int port)</argsstring>
+        <name>linphone_core_set_audio_port</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>port</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the UDP port used for audio streaming. A value of -1 will request the system to allocate the local port randomly. This is recommended in order to avoid firewall warnings. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCore object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">port</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The UDP port to use for audio streaming </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="2659" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1ga7c3341cec359dfffb671f68653fd151e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_set_video_port</definition>
+        <argsstring>(LinphoneCore *lc, int port)</argsstring>
+        <name>linphone_core_set_video_port</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>port</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the UDP port used for video streaming. A value of -1 will request the system to allocate the local port randomly. This is recommended in order to avoid firewall warnings. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCore object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">port</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The UDP port to use for video streaming </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="2678" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1gac3c68ac27c4e07b0c3f5430d5b658e84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_set_text_port</definition>
+        <argsstring>(LinphoneCore *lc, int port)</argsstring>
+        <name>linphone_core_set_text_port</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>port</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the UDP port used for text streaming. A value if -1 will request the system to allocate the local port randomly. This is recommended in order to avoid firewall warnings. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCore object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">port</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The UDP port to use for text streaming </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="2697" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1gac6891ac20bdf7f8556cd6a107c19db65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_set_sip_port</definition>
+        <argsstring>(LinphoneCore *lc, int port)</argsstring>
+        <name>linphone_core_set_sip_port</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>port</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the UDP port to be used by SIP. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCore object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">port</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The UDP port to be used by SIP</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="deprecated_1_deprecated000043"><xreftitle>Deprecated</xreftitle><xrefdescription><para>use <ref refid="group__network__parameters_1gaf01bc7a2f09c86312f263bc261cbf3ac" kindref="member">linphone_core_set_sip_transports()</ref> instead. </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="2756" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1ga8d1bfaa5da13e6c1ef60f30498e8dddd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int linphone_core_get_sip_port</definition>
+        <argsstring>(LinphoneCore *lc)</argsstring>
+        <name>linphone_core_get_sip_port</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the UDP port used by SIP. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCore object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The UDP port used by SIP</para></simplesect>
+<xrefsect id="deprecated_1_deprecated000044"><xreftitle>Deprecated</xreftitle><xrefdescription><para>use <ref refid="group__network__parameters_1gadd1afb5db469e068c7c1827933cf5036" kindref="member">linphone_core_get_sip_transports()</ref> instead. </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="2765" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1gaf01bc7a2f09c86312f263bc261cbf3ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int linphone_core_set_sip_transports</definition>
+        <argsstring>(LinphoneCore *lc, const LCSipTransports *transports)</argsstring>
+        <name>linphone_core_set_sip_transports</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct__LinphoneSipTransports" kindref="compound">LCSipTransports</ref> *</type>
+          <declname>transports</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the ports to be used for each of transport (UDP or TCP) A zero value port for a given transport means the transport is not used. A value of LC_SIP_TRANSPORT_RANDOM (-1) means the port is to be choosen randomly by the system. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCore object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">transports</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A LCSipTransports structure giving the ports to use </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="2776" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1gadd1afb5db469e068c7c1827933cf5036" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int linphone_core_get_sip_transports</definition>
+        <argsstring>(LinphoneCore *lc, LinphoneSipTransports *transports)</argsstring>
+        <name>linphone_core_get_sip_transports</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type><ref refid="group__initializing_1ga08a20f97886430194e1742cd602e81a6" kindref="member">LinphoneSipTransports</ref> *</type>
+          <declname>transports</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retrieves the port configuration used for each transport (udp, tcp, tls). A zero value port for a given transport means the transport is not used. A value of LC_SIP_TRANSPORT_RANDOM (-1) means the port is to be chosen randomly by the system. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCore object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">transports</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A <ref refid="group__initializing_1ga08a20f97886430194e1742cd602e81a6" kindref="member">LinphoneSipTransports</ref> structure that will receive the configured ports </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="2787" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1ga935fdb7a2c836749ddf5f3e2eb05c137" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_get_sip_transports_used</definition>
+        <argsstring>(LinphoneCore *lc, LinphoneSipTransports *tr)</argsstring>
+        <name>linphone_core_get_sip_transports_used</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type><ref refid="group__initializing_1ga08a20f97886430194e1742cd602e81a6" kindref="member">LinphoneSipTransports</ref> *</type>
+          <declname>tr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retrieves the real port number assigned for each sip transport (udp, tcp, tls). A zero value means that the transport is not activated. If LC_SIP_TRANSPORT_RANDOM was passed to <ref refid="group__network__parameters_1gaf01bc7a2f09c86312f263bc261cbf3ac" kindref="member">linphone_core_set_sip_transports()</ref>, the random port choosed by the system is returned. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCore object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">tr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A <ref refid="group__initializing_1ga08a20f97886430194e1742cd602e81a6" kindref="member">LinphoneSipTransports</ref> structure that will receive the ports being used </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="2797" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1ga8cef9cabe4bb39b0ec92c92430c628d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_set_stun_server</definition>
+        <argsstring>(LinphoneCore *lc, const char *server)</argsstring>
+        <name>linphone_core_set_stun_server</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>server</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the STUN server address to use when the firewall policy is set to STUN. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">server</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The STUN server address to use. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="2878" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1ga2def221f110da2a63bb0bdf957664829" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_core_get_stun_server</definition>
+        <argsstring>(const LinphoneCore *lc)</argsstring>
+        <name>linphone_core_get_stun_server</name>
+        <param>
+          <type>const <ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the STUN server address being used. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The STUN server address being used. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="2886" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1ga6a782ab44345b65137bdc0086a5d1f32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool_t</type>
+        <definition>bool_t linphone_core_upnp_available</definition>
+        <argsstring>(void)</argsstring>
+        <name>linphone_core_upnp_available</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the availability of uPnP.</para><para><simplesect kind="return"><para>true if uPnP is available otherwise return false. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="2894" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1gae377ba325e3223ab486c9c985f9e9dd0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__initializing_1ga2c19554a0988f7600aec5c3a7588d61a" kindref="member">LinphoneUpnpState</ref></type>
+        <definition>LinphoneUpnpState linphone_core_get_upnp_state</definition>
+        <argsstring>(const LinphoneCore *lc)</argsstring>
+        <name>linphone_core_get_upnp_state</name>
+        <param>
+          <type>const <ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the internal state of uPnP.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>an LinphoneUpnpState. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="2903" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1ga9ae3c4c5ab0133edf1a40474339db3eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_core_get_upnp_external_ipaddress</definition>
+        <argsstring>(const LinphoneCore *lc)</argsstring>
+        <name>linphone_core_get_upnp_external_ipaddress</name>
+        <param>
+          <type>const <ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the external ip address of router. In some cases the uPnP can have an external ip address but not a usable uPnP (state different of Ok).</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a null terminated string containing the external ip address. If the the external ip address is not available return null. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="2915" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1gadadb01ea2af8410e85fe2dde04be30a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_set_nat_address</definition>
+        <argsstring>(LinphoneCore *lc, const char *addr)</argsstring>
+        <name>linphone_core_set_nat_address</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>addr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the public IP address of NAT when using the firewall policy is set to use NAT. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">addr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The public IP address of NAT to use. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="2923" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1ga2b9903c9e28728b1a2dd389a761ecdb9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_core_get_nat_address</definition>
+        <argsstring>(const LinphoneCore *lc)</argsstring>
+        <name>linphone_core_get_nat_address</name>
+        <param>
+          <type>const <ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the public IP address of NAT being used. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The public IP address of NAT being used. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="2931" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1gaa0bfe585a937665e81b97e3adb5785bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MS2_DEPRECATED void</type>
+        <definition>MS2_DEPRECATED void linphone_core_set_firewall_policy</definition>
+        <argsstring>(LinphoneCore *lc, LinphoneFirewallPolicy pol)</argsstring>
+        <name>linphone_core_set_firewall_policy</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type><ref refid="group__network__parameters_1ga833aa818e8216f35ef12f86767806129" kindref="member">LinphoneFirewallPolicy</ref></type>
+          <declname>pol</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the policy to use to pass through firewalls. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">pol</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="group__network__parameters_1ga833aa818e8216f35ef12f86767806129" kindref="member">LinphoneFirewallPolicy</ref> to use.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="deprecated_1_deprecated000045"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Use <ref refid="group__network__parameters_1gad4a583bc56e9fec5b6fe647f9147d200" kindref="member">linphone_core_set_nat_policy()</ref> instead. </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="2940" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1ga238ab9db1c245a15dd09a7c54d5d9101" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MS2_DEPRECATED <ref refid="group__network__parameters_1ga833aa818e8216f35ef12f86767806129" kindref="member">LinphoneFirewallPolicy</ref></type>
+        <definition>MS2_DEPRECATED LinphoneFirewallPolicy linphone_core_get_firewall_policy</definition>
+        <argsstring>(const LinphoneCore *lc)</argsstring>
+        <name>linphone_core_get_firewall_policy</name>
+        <param>
+          <type>const <ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the policy that is used to pass through firewalls. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The <ref refid="group__network__parameters_1ga833aa818e8216f35ef12f86767806129" kindref="member">LinphoneFirewallPolicy</ref> that is being used.</para></simplesect>
+<xrefsect id="deprecated_1_deprecated000046"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Use <ref refid="group__network__parameters_1ga96d97e153a69a61ac21db4e6b3a21327" kindref="member">linphone_core_get_nat_policy()</ref> instead. </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="2949" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1gad4a583bc56e9fec5b6fe647f9147d200" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_set_nat_policy</definition>
+        <argsstring>(LinphoneCore *lc, LinphoneNatPolicy *policy)</argsstring>
+        <name>linphone_core_set_nat_policy</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type><ref refid="group__network__parameters_1gabcd02b5383f812275c66875588b76180" kindref="member">LinphoneNatPolicy</ref> *</type>
+          <declname>policy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the policy to use to pass through NATs/firewalls. It may be overridden by a NAT policy for a specific proxy config. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">policy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneNatPolicy object</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="group__proxies_1ga56ef55bd8c1b82945de38d7c63b18283" kindref="member">linphone_proxy_config_set_nat_policy()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="2959" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1ga96d97e153a69a61ac21db4e6b3a21327" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__network__parameters_1gabcd02b5383f812275c66875588b76180" kindref="member">LinphoneNatPolicy</ref> *</type>
+        <definition>LinphoneNatPolicy* linphone_core_get_nat_policy</definition>
+        <argsstring>(const LinphoneCore *lc)</argsstring>
+        <name>linphone_core_get_nat_policy</name>
+        <param>
+          <type>const <ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get The policy that is used to pass through NATs/firewalls. It may be overridden by a NAT policy for a specific proxy config. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>LinphoneNatPolicy object in use.</para></simplesect>
+<simplesect kind="see"><para><ref refid="group__proxies_1gaaa0a0d5dcd440f4fb1e556c7f489e5b3" kindref="member">linphone_proxy_config_get_nat_policy()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="2969" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1ga50986600d8f528e083a2c8e6269734e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_set_network_reachable</definition>
+        <argsstring>(LinphoneCore *lc, bool_t value)</argsstring>
+        <name>linphone_core_set_network_reachable</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type>bool_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This method is called by the application to notify the linphone core library when network is reachable. Calling this method with true trigger linphone to initiate a registration process for all proxies. Calling this method disables the automatic network detection mode. It means you must call this method after each network state changes. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="3958" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1gadd2b16bfd430b156067312b90a54a2f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool_t</type>
+        <definition>bool_t linphone_core_is_network_reachable</definition>
+        <argsstring>(LinphoneCore *lc)</argsstring>
+        <name>linphone_core_is_network_reachable</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>return network state either as positioned by the application or by linphone itself. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="3964" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1ga751bab9045c1930c59822d54375befd5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_set_sip_network_reachable</definition>
+        <argsstring>(LinphoneCore *lc, bool_t value)</argsstring>
+        <name>linphone_core_set_sip_network_reachable</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type>bool_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This method is called by the application to notify the linphone core library when the SIP network is reachable. This is for advanced usage, when SIP and RTP layers are required to use different interfaces. Most applications just need <ref refid="group__network__parameters_1ga50986600d8f528e083a2c8e6269734e3" kindref="member">linphone_core_set_network_reachable()</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="3972" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1gaa6d8b1e2bcfc21815dc918eb2adaf723" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_set_media_network_reachable</definition>
+        <argsstring>(LinphoneCore *lc, bool_t value)</argsstring>
+        <name>linphone_core_set_media_network_reachable</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type>bool_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This method is called by the application to notify the linphone core library when the media (RTP) network is reachable. This is for advanced usage, when SIP and RTP layers are required to use different interfaces. Most applications just need <ref refid="group__network__parameters_1ga50986600d8f528e083a2c8e6269734e3" kindref="member">linphone_core_set_network_reachable()</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="3980" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1ga29ecb77c4dbd33b4827e39e9aed846ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_enable_keep_alive</definition>
+        <argsstring>(LinphoneCore *lc, bool_t enable)</argsstring>
+        <name>linphone_core_enable_keep_alive</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type>bool_t</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enables signaling keep alive, small udp packet sent periodically to keep udp NAT association. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCore object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">enable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A boolean value telling whether signaling keep alive is to be enabled </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="3988" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1gac02dfe51519ae8a5550f0b1b4233c460" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool_t</type>
+        <definition>bool_t linphone_core_keep_alive_enabled</definition>
+        <argsstring>(LinphoneCore *lc)</argsstring>
+        <name>linphone_core_keep_alive_enabled</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Is signaling keep alive enabled. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCore object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A boolean value telling whether signaling keep alive is enabled </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="3996" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1ga2fc776d1bee22da2d15a91f02925d913" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_set_sip_dscp</definition>
+        <argsstring>(LinphoneCore *lc, int dscp)</argsstring>
+        <name>linphone_core_set_sip_dscp</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dscp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the DSCP field for SIP signaling channel. The DSCP defines the quality of service in IP packets. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCore object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">dscp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The DSCP value to set </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="4387" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1ga88edb42a58b294758dabca74d5e9590b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int linphone_core_get_sip_dscp</definition>
+        <argsstring>(const LinphoneCore *lc)</argsstring>
+        <name>linphone_core_get_sip_dscp</name>
+        <param>
+          <type>const <ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the DSCP field for SIP signaling channel. The DSCP defines the quality of service in IP packets. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCore object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The current DSCP value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="4396" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1ga7a9935736b1002aaa4b0df9881ecb1c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_set_audio_dscp</definition>
+        <argsstring>(LinphoneCore *lc, int dscp)</argsstring>
+        <name>linphone_core_set_audio_dscp</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dscp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the DSCP field for outgoing audio streams. The DSCP defines the quality of service in IP packets. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCore object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">dscp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The DSCP value to set </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="4405" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1ga7daf9a795169bbff137eb7a5d28c2331" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int linphone_core_get_audio_dscp</definition>
+        <argsstring>(const LinphoneCore *lc)</argsstring>
+        <name>linphone_core_get_audio_dscp</name>
+        <param>
+          <type>const <ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the DSCP field for outgoing audio streams. The DSCP defines the quality of service in IP packets. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCore object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The current DSCP value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="4414" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1gaf15ecd18b9d65b071ab7dc200fc6669c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_set_video_dscp</definition>
+        <argsstring>(LinphoneCore *lc, int dscp)</argsstring>
+        <name>linphone_core_set_video_dscp</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dscp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the DSCP field for outgoing video streams. The DSCP defines the quality of service in IP packets. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCore object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">dscp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The DSCP value to set </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="4423" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1ga5c54680dff98e57b779ac15153202011" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int linphone_core_get_video_dscp</definition>
+        <argsstring>(const LinphoneCore *lc)</argsstring>
+        <name>linphone_core_get_video_dscp</name>
+        <param>
+          <type>const <ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the DSCP field for outgoing video streams. The DSCP defines the quality of service in IP packets. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCore object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The current DSCP value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="4432" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1ga04abb1a18b2012221b5b20b08c9ebded" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_enable_sdp_200_ack</definition>
+        <argsstring>(LinphoneCore *lc, bool_t enable)</argsstring>
+        <name>linphone_core_enable_sdp_200_ack</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type>bool_t</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Control when media offer is sent in SIP INVITE. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the linphone core </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>enable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true if INVITE has to be sent whitout SDP. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="4507" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1ga986be672332d0ff3faba157519ff6177" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool_t</type>
+        <definition>bool_t linphone_core_sdp_200_ack_enabled</definition>
+        <argsstring>(const LinphoneCore *lc)</argsstring>
+        <name>linphone_core_sdp_200_ack_enabled</name>
+        <param>
+          <type>const <ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Media offer control param for SIP INVITE. <simplesect kind="return"><para>true if INVITE has to be sent whitout SDP. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="4513" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1gaedb752477af192abb4489336c22558c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_set_http_proxy_host</definition>
+        <argsstring>(LinphoneCore *lc, const char *host)</argsstring>
+        <name>linphone_core_set_http_proxy_host</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>host</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set http proxy address to be used for signaling during next channel connection. Use <ref refid="group__network__parameters_1ga50986600d8f528e083a2c8e6269734e3" kindref="member">linphone_core_set_network_reachable</ref> FASLE/TRUE to force channel restart. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCore object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">host</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Hostname of IP adress of the http proxy (can be NULL to disable). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="4794" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1ga10ef2ee5f4b6ae5e37cebd61599b94d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_set_http_proxy_port</definition>
+        <argsstring>(LinphoneCore *lc, int port)</argsstring>
+        <name>linphone_core_set_http_proxy_port</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>port</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set http proxy port to be used for signaling. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCore object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">port</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of the http proxy. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="4802" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1ga0e7cdb6b6ed01d46dfe2c124e73a1421" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_core_get_http_proxy_host</definition>
+        <argsstring>(const LinphoneCore *lc)</argsstring>
+        <name>linphone_core_get_http_proxy_host</name>
+        <param>
+          <type>const <ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get http proxy address to be used for signaling. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCore object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>hostname of IP adress of the http proxy (can be NULL to disable). </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="4810" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1gae8d7bc2d211ed8aa21209f4f3d52c393" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int linphone_core_get_http_proxy_port</definition>
+        <argsstring>(const LinphoneCore *lc)</argsstring>
+        <name>linphone_core_get_http_proxy_port</name>
+        <param>
+          <type>const <ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get http proxy port to be used for signaling. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCore object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>port of the http proxy. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="4818" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1ga5dcea8557975358f25dc3606bed0b530" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_set_tls_cert</definition>
+        <argsstring>(LinphoneCore *lc, const char *tls_cert)</argsstring>
+        <name>linphone_core_set_tls_cert</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>tls_cert</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets a TLS certificate used for TLS authentication The certificate won&apos;t be stored, you have to set it after each LinphoneCore startup <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCore object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tls_cert</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the TLS certificate </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="4844" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1gaeac410594bfd219addda096dc79f40be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_set_tls_key</definition>
+        <argsstring>(LinphoneCore *lc, const char *tls_key)</argsstring>
+        <name>linphone_core_set_tls_key</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>tls_key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets a TLS key used for TLS authentication The key won&apos;t be stored, you have to set it after each LinphoneCore startup <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCore object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tls_key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the TLS key </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="4853" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1ga2cb7f5de7590561b0341e828406312cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_set_tls_cert_path</definition>
+        <argsstring>(LinphoneCore *lc, const char *tls_cert_path)</argsstring>
+        <name>linphone_core_set_tls_cert_path</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>tls_cert_path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets a TLS certificate path used for TLS authentication The path will be stored in the rc file and automatically restored on startup <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCore object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tls_cert_path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>path to the TLS certificate </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="4862" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1ga25232442a386cd86aeecacad27d9b556" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_set_tls_key_path</definition>
+        <argsstring>(LinphoneCore *lc, const char *tls_key_path)</argsstring>
+        <name>linphone_core_set_tls_key_path</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>tls_key_path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets a TLS key path used for TLS authentication The path will be stored in the rc file and automatically restored on startup <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCore object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tls_key_path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>path to the TLS key </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="4871" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1gae13b72e51a7ad97ba870fb2fcf4cdf16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_core_get_tls_cert</definition>
+        <argsstring>(const LinphoneCore *lc)</argsstring>
+        <name>linphone_core_get_tls_cert</name>
+        <param>
+          <type>const <ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the TLS certificate <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCore object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the TLS certificate or NULL if not set yet </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="4879" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1ga758cf9051ecfa4884d522b1335f16099" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_core_get_tls_key</definition>
+        <argsstring>(const LinphoneCore *lc)</argsstring>
+        <name>linphone_core_get_tls_key</name>
+        <param>
+          <type>const <ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the TLS key <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCore object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the TLS key or NULL if not set yet </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="4887" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1gae035ad34a08e416789cbc2363c4997aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_core_get_tls_cert_path</definition>
+        <argsstring>(const LinphoneCore *lc)</argsstring>
+        <name>linphone_core_get_tls_cert_path</name>
+        <param>
+          <type>const <ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the path to the TLS certificate file <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCore object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the TLS certificate path or NULL if not set yet </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="4895" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1ga8a9358c8cd6d8d2943593775b2648fbb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_core_get_tls_key_path</definition>
+        <argsstring>(const LinphoneCore *lc)</argsstring>
+        <name>linphone_core_get_tls_key_path</name>
+        <param>
+          <type>const <ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the path to the TLS key file <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCore object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the TLS key path or NULL if not set yet </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="4903" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1ga4f877f808caf75adac463427a1a6c312" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__network__parameters_1gabcd02b5383f812275c66875588b76180" kindref="member">LinphoneNatPolicy</ref> *</type>
+        <definition>LinphoneNatPolicy* linphone_nat_policy_ref</definition>
+        <argsstring>(LinphoneNatPolicy *policy)</argsstring>
+        <name>linphone_nat_policy_ref</name>
+        <param>
+          <type><ref refid="group__network__parameters_1gabcd02b5383f812275c66875588b76180" kindref="member">LinphoneNatPolicy</ref> *</type>
+          <declname>policy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Acquire a reference to the LinphoneNatPolicy object. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">policy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneNatPolicy object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The same LinphoneNatPolicy object. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/nat_policy.h" line="45" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1gabf7362fd3e64afeffbed5cd53dfcff2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_nat_policy_unref</definition>
+        <argsstring>(LinphoneNatPolicy *policy)</argsstring>
+        <name>linphone_nat_policy_unref</name>
+        <param>
+          <type><ref refid="group__network__parameters_1gabcd02b5383f812275c66875588b76180" kindref="member">LinphoneNatPolicy</ref> *</type>
+          <declname>policy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Release reference to the LinphoneNatPolicy object. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">policy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneNatPolicy object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/nat_policy.h" line="51" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1ga355d75439936c0593eb60291842e33e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* linphone_nat_policy_get_user_data</definition>
+        <argsstring>(const LinphoneNatPolicy *policy)</argsstring>
+        <name>linphone_nat_policy_get_user_data</name>
+        <param>
+          <type>const <ref refid="group__network__parameters_1gabcd02b5383f812275c66875588b76180" kindref="member">LinphoneNatPolicy</ref> *</type>
+          <declname>policy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retrieve the user pointer associated with the LinphoneNatPolicy object. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">policy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneNatPolicy object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The user pointer associated with the LinphoneNatPolicy object. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/nat_policy.h" line="58" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1ga4940b60d3305c7d53ec735f4cafeabdc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_nat_policy_set_user_data</definition>
+        <argsstring>(LinphoneNatPolicy *policy, void *ud)</argsstring>
+        <name>linphone_nat_policy_set_user_data</name>
+        <param>
+          <type><ref refid="group__network__parameters_1gabcd02b5383f812275c66875588b76180" kindref="member">LinphoneNatPolicy</ref> *</type>
+          <declname>policy</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>ud</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Assign a user pointer to the LinphoneNatPolicy object. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">policy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneNatPolicy object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ud</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The user pointer to associate with the LinphoneNatPolicy object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/nat_policy.h" line="65" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1gac40f1b98718d0a72cf90b02b452fadfd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_nat_policy_clear</definition>
+        <argsstring>(LinphoneNatPolicy *policy)</argsstring>
+        <name>linphone_nat_policy_clear</name>
+        <param>
+          <type><ref refid="group__network__parameters_1gabcd02b5383f812275c66875588b76180" kindref="member">LinphoneNatPolicy</ref> *</type>
+          <declname>policy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Clear a NAT policy (deactivate all protocols and unset the STUN server). <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">policy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneNatPolicy object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/nat_policy.h" line="71" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1ga2a2c779218d2555f837a63923e84b65d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool_t</type>
+        <definition>bool_t linphone_nat_policy_stun_enabled</definition>
+        <argsstring>(const LinphoneNatPolicy *policy)</argsstring>
+        <name>linphone_nat_policy_stun_enabled</name>
+        <param>
+          <type>const <ref refid="group__network__parameters_1gabcd02b5383f812275c66875588b76180" kindref="member">LinphoneNatPolicy</ref> *</type>
+          <declname>policy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Tell whether STUN is enabled. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">policy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneNatPolicy object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Boolean value telling whether STUN is enabled. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/nat_policy.h" line="78" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1gadf753e7d4431aff4a15e49697f754680" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_nat_policy_enable_stun</definition>
+        <argsstring>(LinphoneNatPolicy *policy, bool_t enable)</argsstring>
+        <name>linphone_nat_policy_enable_stun</name>
+        <param>
+          <type><ref refid="group__network__parameters_1gabcd02b5383f812275c66875588b76180" kindref="member">LinphoneNatPolicy</ref> *</type>
+          <declname>policy</declname>
+        </param>
+        <param>
+          <type>bool_t</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enable STUN. If TURN is also enabled, TURN will be used instead of STUN. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">policy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneNatPolicy object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">enable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Boolean value telling whether to enable STUN. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/nat_policy.h" line="86" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1gae185febb33b7a05f3776d7e92846d68e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool_t</type>
+        <definition>bool_t linphone_nat_policy_turn_enabled</definition>
+        <argsstring>(const LinphoneNatPolicy *policy)</argsstring>
+        <name>linphone_nat_policy_turn_enabled</name>
+        <param>
+          <type>const <ref refid="group__network__parameters_1gabcd02b5383f812275c66875588b76180" kindref="member">LinphoneNatPolicy</ref> *</type>
+          <declname>policy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Tell whether TURN is enabled. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">policy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneNatPolicy object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Boolean value telling whether TURN is enabled. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/nat_policy.h" line="93" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1ga67b781e1a4604c846da9a3ebdb797717" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_nat_policy_enable_turn</definition>
+        <argsstring>(LinphoneNatPolicy *policy, bool_t enable)</argsstring>
+        <name>linphone_nat_policy_enable_turn</name>
+        <param>
+          <type><ref refid="group__network__parameters_1gabcd02b5383f812275c66875588b76180" kindref="member">LinphoneNatPolicy</ref> *</type>
+          <declname>policy</declname>
+        </param>
+        <param>
+          <type>bool_t</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enable TURN. If STUN is also enabled, it is ignored and TURN is used. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">policy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneNatPolicy object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">enable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Boolean value telling whether to enable TURN. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/nat_policy.h" line="101" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1ga783dc3f822cd8823ddb05094e819bb4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool_t</type>
+        <definition>bool_t linphone_nat_policy_ice_enabled</definition>
+        <argsstring>(const LinphoneNatPolicy *policy)</argsstring>
+        <name>linphone_nat_policy_ice_enabled</name>
+        <param>
+          <type>const <ref refid="group__network__parameters_1gabcd02b5383f812275c66875588b76180" kindref="member">LinphoneNatPolicy</ref> *</type>
+          <declname>policy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Tell whether ICE is enabled. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">policy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneNatPolicy object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Boolean value telling whether ICE is enabled. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/nat_policy.h" line="108" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1gab0fb9909a3dc1560b02775214628b7bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_nat_policy_enable_ice</definition>
+        <argsstring>(LinphoneNatPolicy *policy, bool_t enable)</argsstring>
+        <name>linphone_nat_policy_enable_ice</name>
+        <param>
+          <type><ref refid="group__network__parameters_1gabcd02b5383f812275c66875588b76180" kindref="member">LinphoneNatPolicy</ref> *</type>
+          <declname>policy</declname>
+        </param>
+        <param>
+          <type>bool_t</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enable ICE. ICE can be enabled without STUN/TURN, in which case only the local candidates will be used. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">policy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneNatPolicy object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">enable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Boolean value telling whether to enable ICE. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/nat_policy.h" line="116" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1ga3cb99a680f4171c7f12c27991e771000" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool_t</type>
+        <definition>bool_t linphone_nat_policy_upnp_enabled</definition>
+        <argsstring>(const LinphoneNatPolicy *policy)</argsstring>
+        <name>linphone_nat_policy_upnp_enabled</name>
+        <param>
+          <type>const <ref refid="group__network__parameters_1gabcd02b5383f812275c66875588b76180" kindref="member">LinphoneNatPolicy</ref> *</type>
+          <declname>policy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Tell whether uPnP is enabled. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">policy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneNatPolicy object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Boolean value telling whether uPnP is enabled. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/nat_policy.h" line="123" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1gae9ca6c24dba0bfb06a8644178001c1ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_nat_policy_enable_upnp</definition>
+        <argsstring>(LinphoneNatPolicy *policy, bool_t enable)</argsstring>
+        <name>linphone_nat_policy_enable_upnp</name>
+        <param>
+          <type><ref refid="group__network__parameters_1gabcd02b5383f812275c66875588b76180" kindref="member">LinphoneNatPolicy</ref> *</type>
+          <declname>policy</declname>
+        </param>
+        <param>
+          <type>bool_t</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enable uPnP. This has the effect to disable every other policies (ICE, STUN and TURN). <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">policy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneNatPolicy object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">enable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Boolean value telling whether to enable uPnP. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/nat_policy.h" line="131" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1gacdd6a4abeecd65031ea28b7045e058d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_nat_policy_get_stun_server</definition>
+        <argsstring>(const LinphoneNatPolicy *policy)</argsstring>
+        <name>linphone_nat_policy_get_stun_server</name>
+        <param>
+          <type>const <ref refid="group__network__parameters_1gabcd02b5383f812275c66875588b76180" kindref="member">LinphoneNatPolicy</ref> *</type>
+          <declname>policy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the STUN/TURN server to use with this NAT policy. Used when STUN or TURN are enabled. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">policy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneNatPolicy object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The STUN server used by this NAT policy. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/nat_policy.h" line="139" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1gac57585caf3becd44fdb45e9e8db3daa6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_nat_policy_set_stun_server</definition>
+        <argsstring>(LinphoneNatPolicy *policy, const char *stun_server)</argsstring>
+        <name>linphone_nat_policy_set_stun_server</name>
+        <param>
+          <type><ref refid="group__network__parameters_1gabcd02b5383f812275c66875588b76180" kindref="member">LinphoneNatPolicy</ref> *</type>
+          <declname>policy</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>stun_server</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the STUN/TURN server to use with this NAT policy. Used when STUN or TURN are enabled. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">policy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneNatPolicy object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">stun_server</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The STUN server to use with this NAT policy. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/nat_policy.h" line="147" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1ga572a445380e80fe61908283a55e84816" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_nat_policy_get_stun_server_username</definition>
+        <argsstring>(const LinphoneNatPolicy *policy)</argsstring>
+        <name>linphone_nat_policy_get_stun_server_username</name>
+        <param>
+          <type>const <ref refid="group__network__parameters_1gabcd02b5383f812275c66875588b76180" kindref="member">LinphoneNatPolicy</ref> *</type>
+          <declname>policy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the username used to authenticate with the STUN/TURN server. The authentication will search for a LinphoneAuthInfo with this username. If it is not set the username of the currently used LinphoneProxyConfig is used to search for a LinphoneAuthInfo. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">policy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneNatPolicy object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The username used to authenticate with the STUN/TURN server. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/nat_policy.h" line="156" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1gab85d067f6684818953acc0b547c8508d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_nat_policy_set_stun_server_username</definition>
+        <argsstring>(LinphoneNatPolicy *policy, const char *username)</argsstring>
+        <name>linphone_nat_policy_set_stun_server_username</name>
+        <param>
+          <type><ref refid="group__network__parameters_1gabcd02b5383f812275c66875588b76180" kindref="member">LinphoneNatPolicy</ref> *</type>
+          <declname>policy</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>username</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the username used to authenticate with the STUN/TURN server. The authentication will search for a LinphoneAuthInfo with this username. If it is not set the username of the currently used LinphoneProxyConfig is used to search for a LinphoneAuthInfo. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">policy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneNatPolicy object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">username</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The username used to authenticate with the STUN/TURN server. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/nat_policy.h" line="165" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1ga7a6a1fb8862b2220c6bd61a188806da9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_nat_policy_resolve_stun_server</definition>
+        <argsstring>(LinphoneNatPolicy *policy)</argsstring>
+        <name>linphone_nat_policy_resolve_stun_server</name>
+        <param>
+          <type><ref refid="group__network__parameters_1gabcd02b5383f812275c66875588b76180" kindref="member">LinphoneNatPolicy</ref> *</type>
+          <declname>policy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Start a STUN server DNS resolution. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">policy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneNatPolicy object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/nat_policy.h" line="171" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1gadebd36c433c11a2bc4bf8a49d2b97f5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const struct addrinfo *</type>
+        <definition>const struct addrinfo* linphone_nat_policy_get_stun_server_addrinfo</definition>
+        <argsstring>(LinphoneNatPolicy *policy)</argsstring>
+        <name>linphone_nat_policy_get_stun_server_addrinfo</name>
+        <param>
+          <type><ref refid="group__network__parameters_1gabcd02b5383f812275c66875588b76180" kindref="member">LinphoneNatPolicy</ref> *</type>
+          <declname>policy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the addrinfo representation of the STUN server address. WARNING: This function may block for up to 1 second. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">policy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneNatPolicy object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>addrinfo representation of the STUN server address. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/nat_policy.h" line="179" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1gaaf3976231014903b9c5143d1c6b36f93" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__network__parameters_1gabcd02b5383f812275c66875588b76180" kindref="member">LinphoneNatPolicy</ref> *</type>
+        <definition>LinphoneNatPolicy* linphone_core_create_nat_policy</definition>
+        <argsstring>(LinphoneCore *lc)</argsstring>
+        <name>linphone_core_create_nat_policy</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a new LinphoneNatPolicy object with every policies being disabled. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCore object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A new LinphoneNatPolicy object. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/nat_policy.h" line="186" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1ga248912d1d5532dcf2b7cf01f11bd104f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__network__parameters_1gabcd02b5383f812275c66875588b76180" kindref="member">LinphoneNatPolicy</ref> *</type>
+        <definition>LinphoneNatPolicy* linphone_core_create_nat_policy_from_config</definition>
+        <argsstring>(LinphoneCore *lc, const char *ref)</argsstring>
+        <name>linphone_core_create_nat_policy_from_config</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>ref</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a new LinphoneNatPolicy by reading the config of a LinphoneCore according to the passed ref. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCore object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ref</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The reference of a NAT policy in the config of the LinphoneCore </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A new LinphoneNatPolicy object. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/nat_policy.h" line="194" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

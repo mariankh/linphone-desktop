@@ -1,0 +1,535 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="struct__LinphoneCoreVTable" kind="struct" prot="public">
+    <compoundname>_LinphoneCoreVTable</compoundname>
+    <includes local="no">core.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1a706e1ad8826fb8b9e431f654358ecb1f" prot="public" static="no" mutable="no">
+        <type><ref refid="group__initializing_1gad3277d4d17cd2e8e37d0167f0d81f7b3" kindref="member">LinphoneCoreGlobalStateChangedCb</ref></type>
+        <definition>LinphoneCoreGlobalStateChangedCb _LinphoneCoreVTable::global_state_changed</definition>
+        <argsstring></argsstring>
+        <name>global_state_changed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Notifies global state changes </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="997" column="1" bodyfile="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" bodystart="997" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1a2483143cd4b2e2b8ede6f3c916740938" prot="public" static="no" mutable="no">
+        <type><ref refid="group__initializing_1gad9b2976cbbec1a2ab0360008fcf2ecd1" kindref="member">LinphoneCoreRegistrationStateChangedCb</ref></type>
+        <definition>LinphoneCoreRegistrationStateChangedCb _LinphoneCoreVTable::registration_state_changed</definition>
+        <argsstring></argsstring>
+        <name>registration_state_changed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Notifies registration state changes </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="998" column="1" bodyfile="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" bodystart="998" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1a771c633cfce7bae2cc0160fbd377bf28" prot="public" static="no" mutable="no">
+        <type><ref refid="group__initializing_1gaa680c67133ac6e4e2f08363d5d83c471" kindref="member">LinphoneCoreCallStateChangedCb</ref></type>
+        <definition>LinphoneCoreCallStateChangedCb _LinphoneCoreVTable::call_state_changed</definition>
+        <argsstring></argsstring>
+        <name>call_state_changed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Notifies call state changes </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="999" column="1" bodyfile="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" bodystart="999" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1aaeba9b7914a3274d4061097575b45717" prot="public" static="no" mutable="no">
+        <type><ref refid="group__initializing_1ga75b1bcd1ecc9262730bca77e1ed81e92" kindref="member">LinphoneCoreNotifyPresenceReceivedCb</ref></type>
+        <definition>LinphoneCoreNotifyPresenceReceivedCb _LinphoneCoreVTable::notify_presence_received</definition>
+        <argsstring></argsstring>
+        <name>notify_presence_received</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Notify received presence events </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="1000" column="1" bodyfile="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" bodystart="1000" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1a591701ec52886eadffcd718772ffb3a5" prot="public" static="no" mutable="no">
+        <type><ref refid="group__initializing_1ga92aae6f2ee9254824db139c95a3608b8" kindref="member">LinphoneCoreNotifyPresenceReceivedForUriOrTelCb</ref></type>
+        <definition>LinphoneCoreNotifyPresenceReceivedForUriOrTelCb _LinphoneCoreVTable::notify_presence_received_for_uri_or_tel</definition>
+        <argsstring></argsstring>
+        <name>notify_presence_received_for_uri_or_tel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Notify received presence events </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="1001" column="1" bodyfile="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" bodystart="1001" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1a94c1c96ebb851f6a686377347a3dc39a" prot="public" static="no" mutable="no">
+        <type><ref refid="group__initializing_1ga1e1df51de6d1042ad39a72d5970851be" kindref="member">LinphoneCoreNewSubscriptionRequestedCb</ref></type>
+        <definition>LinphoneCoreNewSubscriptionRequestedCb _LinphoneCoreVTable::new_subscription_requested</definition>
+        <argsstring></argsstring>
+        <name>new_subscription_requested</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Notify about pending presence subscription request </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="1002" column="1" bodyfile="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" bodystart="1002" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1a4accf023348cc96fd0ee9faa33ba99e0" prot="public" static="no" mutable="no">
+        <type>MS2_DEPRECATED <ref refid="group__initializing_1ga68f11a87b3633ca9d28cff6e34658fd1" kindref="member">LinphoneCoreAuthInfoRequestedCb</ref></type>
+        <definition>MS2_DEPRECATED LinphoneCoreAuthInfoRequestedCb _LinphoneCoreVTable::auth_info_requested</definition>
+        <argsstring></argsstring>
+        <name>auth_info_requested</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000059"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Use authentication_requested instead. Ask the application some authentication information </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="1003" column="1" bodyfile="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" bodystart="1003" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1ae7385f21c9786a5c5f51449d9409d3d2" prot="public" static="no" mutable="no">
+        <type><ref refid="group__initializing_1gae0ca646ce3ba6c35822b5ee843462fe2" kindref="member">LinphoneCoreAuthenticationRequestedCb</ref></type>
+        <definition>LinphoneCoreAuthenticationRequestedCb _LinphoneCoreVTable::authentication_requested</definition>
+        <argsstring></argsstring>
+        <name>authentication_requested</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Ask the application some authentication information </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="1004" column="1" bodyfile="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" bodystart="1004" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1ae16c00a663001f7aecd5cfbe8fa91fd5" prot="public" static="no" mutable="no">
+        <type><ref refid="group__initializing_1ga5bbef62e015696d52f0ac456d3d744f6" kindref="member">LinphoneCoreCallLogUpdatedCb</ref></type>
+        <definition>LinphoneCoreCallLogUpdatedCb _LinphoneCoreVTable::call_log_updated</definition>
+        <argsstring></argsstring>
+        <name>call_log_updated</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Notifies that call log list has been updated </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="1005" column="1" bodyfile="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" bodystart="1005" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1ab95d28d6d50c459dc46cb43133d7ceb8" prot="public" static="no" mutable="no">
+        <type><ref refid="group__initializing_1ga4e9690585a5e6d2b4685c4bd19bbd5a3" kindref="member">LinphoneCoreMessageReceivedCb</ref></type>
+        <definition>LinphoneCoreMessageReceivedCb _LinphoneCoreVTable::message_received</definition>
+        <argsstring></argsstring>
+        <name>message_received</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>a message is received, can be text or external body </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="1006" column="1" bodyfile="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" bodystart="1006" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1afb34622357b9a7138db200040878dba2" prot="public" static="no" mutable="no">
+        <type><ref refid="group__initializing_1ga18aea1c8329ef3faeaa33b7c00675442" kindref="member">LinphoneCoreIsComposingReceivedCb</ref></type>
+        <definition>LinphoneCoreIsComposingReceivedCb _LinphoneCoreVTable::is_composing_received</definition>
+        <argsstring></argsstring>
+        <name>is_composing_received</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>An is-composing notification has been received </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="1007" column="1" bodyfile="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" bodystart="1007" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1a45d2aeaebc18bd237bee895b92f15c68" prot="public" static="no" mutable="no">
+        <type><ref refid="group__initializing_1gab38f96217ce96183cf61034f447a5db3" kindref="member">LinphoneCoreDtmfReceivedCb</ref></type>
+        <definition>LinphoneCoreDtmfReceivedCb _LinphoneCoreVTable::dtmf_received</definition>
+        <argsstring></argsstring>
+        <name>dtmf_received</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A dtmf has been received received </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="1008" column="1" bodyfile="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" bodystart="1008" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1a506c7d14f539829d96d80c7ce359017b" prot="public" static="no" mutable="no">
+        <type><ref refid="group__initializing_1ga3809ce88557b31dc17b5a25f909051f3" kindref="member">LinphoneCoreReferReceivedCb</ref></type>
+        <definition>LinphoneCoreReferReceivedCb _LinphoneCoreVTable::refer_received</definition>
+        <argsstring></argsstring>
+        <name>refer_received</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>An out of call refer was received </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="1009" column="1" bodyfile="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" bodystart="1009" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1a31e10f0b8297cf99f3c337352d54c4ad" prot="public" static="no" mutable="no">
+        <type><ref refid="group__initializing_1ga2ab66df7bf00e8862278c4cba555f7f2" kindref="member">LinphoneCoreCallEncryptionChangedCb</ref></type>
+        <definition>LinphoneCoreCallEncryptionChangedCb _LinphoneCoreVTable::call_encryption_changed</definition>
+        <argsstring></argsstring>
+        <name>call_encryption_changed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Notifies on change in the encryption of call streams </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="1010" column="1" bodyfile="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" bodystart="1010" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1a9e7176e49c4f45306962c0eea97e8060" prot="public" static="no" mutable="no">
+        <type><ref refid="group__initializing_1ga1ed746cd1cd37dbb31522d994c14b8c0" kindref="member">LinphoneCoreTransferStateChangedCb</ref></type>
+        <definition>LinphoneCoreTransferStateChangedCb _LinphoneCoreVTable::transfer_state_changed</definition>
+        <argsstring></argsstring>
+        <name>transfer_state_changed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Notifies when a transfer is in progress </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="1011" column="1" bodyfile="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" bodystart="1011" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1a635ddd79f5752f7a27402152871a66cc" prot="public" static="no" mutable="no">
+        <type><ref refid="group__initializing_1ga5b2775a59c1ceae9b0e952fcf2cb54e8" kindref="member">LinphoneCoreBuddyInfoUpdatedCb</ref></type>
+        <definition>LinphoneCoreBuddyInfoUpdatedCb _LinphoneCoreVTable::buddy_info_updated</definition>
+        <argsstring></argsstring>
+        <name>buddy_info_updated</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>a LinphoneFriend&apos;s BuddyInfo has changed </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="1012" column="1" bodyfile="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" bodystart="1012" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1a331cc2d86632554b85346f163a188b1c" prot="public" static="no" mutable="no">
+        <type><ref refid="group__initializing_1gae50aa77005e69df0137977b45bc9e832" kindref="member">LinphoneCoreCallStatsUpdatedCb</ref></type>
+        <definition>LinphoneCoreCallStatsUpdatedCb _LinphoneCoreVTable::call_stats_updated</definition>
+        <argsstring></argsstring>
+        <name>call_stats_updated</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Notifies on refreshing of call&apos;s statistics. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="1013" column="1" bodyfile="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" bodystart="1013" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1aadaca6d67eee62be103d2add96aba0ba" prot="public" static="no" mutable="no">
+        <type><ref refid="group__initializing_1ga26ae2ee20f564612343d3b27ac7f4b8d" kindref="member">LinphoneCoreInfoReceivedCb</ref></type>
+        <definition>LinphoneCoreInfoReceivedCb _LinphoneCoreVTable::info_received</definition>
+        <argsstring></argsstring>
+        <name>info_received</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Notifies an incoming informational message received. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="1014" column="1" bodyfile="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" bodystart="1014" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1ad74e9de0bfb7eb63fd4aea705304940d" prot="public" static="no" mutable="no">
+        <type><ref refid="group__event__api_1ga3e06431a6e36a1dcb7c0c8dbf2afc176" kindref="member">LinphoneCoreSubscriptionStateChangedCb</ref></type>
+        <definition>LinphoneCoreSubscriptionStateChangedCb _LinphoneCoreVTable::subscription_state_changed</definition>
+        <argsstring></argsstring>
+        <name>subscription_state_changed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Notifies subscription state change </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="1015" column="1" bodyfile="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" bodystart="1015" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1a4e50dd528160791435706add7e9dc403" prot="public" static="no" mutable="no">
+        <type><ref refid="group__event__api_1ga781d3878a7f5f8dd007134df999af779" kindref="member">LinphoneCoreNotifyReceivedCb</ref></type>
+        <definition>LinphoneCoreNotifyReceivedCb _LinphoneCoreVTable::notify_received</definition>
+        <argsstring></argsstring>
+        <name>notify_received</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Notifies a an event notification, see <ref refid="group__event__api_1ga7f26a525c7acc4a51a32e36c795e1930" kindref="member">linphone_core_subscribe()</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="1016" column="1" bodyfile="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" bodystart="1016" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1a0c97e13eeffa865030b2c01a4a1925a7" prot="public" static="no" mutable="no">
+        <type><ref refid="group__event__api_1ga5d46e912a055805bf3beb2558b0ab329" kindref="member">LinphoneCorePublishStateChangedCb</ref></type>
+        <definition>LinphoneCorePublishStateChangedCb _LinphoneCoreVTable::publish_state_changed</definition>
+        <argsstring></argsstring>
+        <name>publish_state_changed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="1017" column="1" bodyfile="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" bodystart="1017" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1a4bd70f9d456eadfac49f95a4733e67c1" prot="public" static="no" mutable="no">
+        <type><ref refid="group__initializing_1gaf5e3cf61f49516c43baf52a1a82a756c" kindref="member">LinphoneCoreConfiguringStatusCb</ref></type>
+        <definition>LinphoneCoreConfiguringStatusCb _LinphoneCoreVTable::configuring_status</definition>
+        <argsstring></argsstring>
+        <name>configuring_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Notifies publish state change (only from <ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> api) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="1018" column="1" bodyfile="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" bodystart="1018" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1ad7b1bc4829050d679df3ffb019ec3a6a" prot="public" static="no" mutable="no">
+        <type>MS2_DEPRECATED <ref refid="group__initializing_1ga1b63e95d4064b3d60be16f36a87a14a1" kindref="member">DisplayStatusCb</ref></type>
+        <definition>MS2_DEPRECATED DisplayStatusCb _LinphoneCoreVTable::display_status</definition>
+        <argsstring></argsstring>
+        <name>display_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Notifies configuring status changes <xrefsect id="deprecated_1_deprecated000060"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Callback that notifies various events with human readable text. </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="1019" column="1" bodyfile="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" bodystart="1019" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1a25b5a48d42bcd608797068657d9ad000" prot="public" static="no" mutable="no">
+        <type>MS2_DEPRECATED <ref refid="group__initializing_1ga36fd5827cd2db5639fba2814b0c33def" kindref="member">DisplayMessageCb</ref></type>
+        <definition>MS2_DEPRECATED DisplayMessageCb _LinphoneCoreVTable::display_message</definition>
+        <argsstring></argsstring>
+        <name>display_message</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000061"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Callback to display a message to the user </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="1020" column="1" bodyfile="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" bodystart="1020" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1abb24881301a7887713642f94501149bb" prot="public" static="no" mutable="no">
+        <type>MS2_DEPRECATED <ref refid="group__initializing_1ga36fd5827cd2db5639fba2814b0c33def" kindref="member">DisplayMessageCb</ref></type>
+        <definition>MS2_DEPRECATED DisplayMessageCb _LinphoneCoreVTable::display_warning</definition>
+        <argsstring></argsstring>
+        <name>display_warning</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000062"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Callback to display a warning to the user </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="1021" column="1" bodyfile="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" bodystart="1021" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1a6907dbe56ec897a99ccd0d114ccab579" prot="public" static="no" mutable="no">
+        <type>MS2_DEPRECATED <ref refid="group__initializing_1gaa7a6c1d47bdc13c97133a2cecc57b508" kindref="member">DisplayUrlCb</ref></type>
+        <definition>MS2_DEPRECATED DisplayUrlCb _LinphoneCoreVTable::display_url</definition>
+        <argsstring></argsstring>
+        <name>display_url</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000063"><xreftitle>Deprecated</xreftitle><xrefdescription></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="1022" column="1" bodyfile="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" bodystart="1022" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1a3e0f5df79f1b96b3a417d4c171ac7f27" prot="public" static="no" mutable="no">
+        <type>MS2_DEPRECATED <ref refid="group__initializing_1ga78c9bec0c79c851f1680f54777da1caa" kindref="member">ShowInterfaceCb</ref></type>
+        <definition>MS2_DEPRECATED ShowInterfaceCb _LinphoneCoreVTable::show</definition>
+        <argsstring></argsstring>
+        <name>show</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>vNotifies the application that it should show up </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="1023" column="1" bodyfile="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" bodystart="1023" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1a5b101f313df29f3ddedcfdba885b4757" prot="public" static="no" mutable="no">
+        <type>MS2_DEPRECATED <ref refid="group__initializing_1gaa07b98d360c24e72be3d0cea1515be38" kindref="member">LinphoneCoreTextMessageReceivedCb</ref></type>
+        <definition>MS2_DEPRECATED LinphoneCoreTextMessageReceivedCb _LinphoneCoreVTable::text_received</definition>
+        <argsstring></argsstring>
+        <name>text_received</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000064"><xreftitle>Deprecated</xreftitle><xrefdescription><para>, use <ref refid="struct__LinphoneCoreVTable_1ab95d28d6d50c459dc46cb43133d7ceb8" kindref="member">message_received</ref> instead <linebreak/>
+ A text message has been received </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="1024" column="1" bodyfile="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" bodystart="1024" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1aa0a2528da1c12b9ba6a7dae22cbe64e9" prot="public" static="no" mutable="no">
+        <type>MS2_DEPRECATED <ref refid="group__initializing_1ga4a5e46c82c1328b92f32dcf8b538980f" kindref="member">LinphoneCoreFileTransferRecvCb</ref></type>
+        <definition>MS2_DEPRECATED LinphoneCoreFileTransferRecvCb _LinphoneCoreVTable::file_transfer_recv</definition>
+        <argsstring></argsstring>
+        <name>file_transfer_recv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000065"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Callback to store file received attached to a <ref refid="group__chatroom_1gada79c4417919389b5247e254279f7833" kindref="member">LinphoneChatMessage</ref> </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="1025" column="1" bodyfile="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" bodystart="1025" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1ab1feeaa1140c156442dae0e4653bf167" prot="public" static="no" mutable="no">
+        <type>MS2_DEPRECATED <ref refid="group__initializing_1ga93702d1596d1819709102783b749e63a" kindref="member">LinphoneCoreFileTransferSendCb</ref></type>
+        <definition>MS2_DEPRECATED LinphoneCoreFileTransferSendCb _LinphoneCoreVTable::file_transfer_send</definition>
+        <argsstring></argsstring>
+        <name>file_transfer_send</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000066"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Callback to collect file chunk to be sent for a <ref refid="group__chatroom_1gada79c4417919389b5247e254279f7833" kindref="member">LinphoneChatMessage</ref> </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="1026" column="1" bodyfile="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" bodystart="1026" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1a2b8d6909518b2ab8dadf9c3208ae179e" prot="public" static="no" mutable="no">
+        <type>MS2_DEPRECATED <ref refid="group__initializing_1ga500a3ec6528b61bd2fd62c9d57b24b87" kindref="member">LinphoneCoreFileTransferProgressIndicationCb</ref></type>
+        <definition>MS2_DEPRECATED LinphoneCoreFileTransferProgressIndicationCb _LinphoneCoreVTable::file_transfer_progress_indication</definition>
+        <argsstring></argsstring>
+        <name>file_transfer_progress_indication</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000067"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Callback to indicate file transfer progress </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="1027" column="1" bodyfile="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" bodystart="1027" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1a0a74a3a47b6085c20bc18066d48170a0" prot="public" static="no" mutable="no">
+        <type><ref refid="group__initializing_1gae6a84b63e8831e764389defd2b1c901c" kindref="member">LinphoneCoreNetworkReachableCb</ref></type>
+        <definition>LinphoneCoreNetworkReachableCb _LinphoneCoreVTable::network_reachable</definition>
+        <argsstring></argsstring>
+        <name>network_reachable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Callback to report IP network status (I.E up/down ) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="1028" column="1" bodyfile="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" bodystart="1028" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1a5c4d34c2587402dea1ed08a8cc2f1662" prot="public" static="no" mutable="no">
+        <type><ref refid="group__initializing_1ga681beb66c1505268cf5be9cdfed65a46" kindref="member">LinphoneCoreLogCollectionUploadStateChangedCb</ref></type>
+        <definition>LinphoneCoreLogCollectionUploadStateChangedCb _LinphoneCoreVTable::log_collection_upload_state_changed</definition>
+        <argsstring></argsstring>
+        <name>log_collection_upload_state_changed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Callback to upload collected logs </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="1029" column="1" bodyfile="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" bodystart="1029" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1a23e6dd80976b540b656f0f2789e069e3" prot="public" static="no" mutable="no">
+        <type><ref refid="group__initializing_1ga8ce0f8028882192141f84eeb64b38d67" kindref="member">LinphoneCoreLogCollectionUploadProgressIndicationCb</ref></type>
+        <definition>LinphoneCoreLogCollectionUploadProgressIndicationCb _LinphoneCoreVTable::log_collection_upload_progress_indication</definition>
+        <argsstring></argsstring>
+        <name>log_collection_upload_progress_indication</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Callback to indicate log collection upload progress </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="1030" column="1" bodyfile="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" bodystart="1030" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1a9f9023a392427a0ec6da80cf4a428a68" prot="public" static="no" mutable="no">
+        <type><ref refid="group__initializing_1ga2b655b61f0dff265e881941b7ce7fb06" kindref="member">LinphoneCoreFriendListCreatedCb</ref></type>
+        <definition>LinphoneCoreFriendListCreatedCb _LinphoneCoreVTable::friend_list_created</definition>
+        <argsstring></argsstring>
+        <name>friend_list_created</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="1031" column="1" bodyfile="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" bodystart="1031" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1a960dfc6f1393db4ebe3b0d113aeccc8a" prot="public" static="no" mutable="no">
+        <type><ref refid="group__initializing_1gaa0df86d6da73105e9b44ebda11a30dcf" kindref="member">LinphoneCoreFriendListRemovedCb</ref></type>
+        <definition>LinphoneCoreFriendListRemovedCb _LinphoneCoreVTable::friend_list_removed</definition>
+        <argsstring></argsstring>
+        <name>friend_list_removed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="1032" column="1" bodyfile="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" bodystart="1032" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1ae86fb9c345a2a304f8ccb7a9730cb6a7" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* _LinphoneCoreVTable::user_data</definition>
+        <argsstring></argsstring>
+        <name>user_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>User data associated with the above callbacks </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="1033" column="1" bodyfile="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" bodystart="1033" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This structure holds all callbacks that the application should implement. None is mandatory. </para>    </detaileddescription>
+    <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" line="996" column="1" bodyfile="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/core.h" bodystart="996" bodyend="1034"/>
+    <listofallmembers>
+      <member refid="struct__LinphoneCoreVTable_1a4accf023348cc96fd0ee9faa33ba99e0" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>auth_info_requested</name></member>
+      <member refid="struct__LinphoneCoreVTable_1ae7385f21c9786a5c5f51449d9409d3d2" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>authentication_requested</name></member>
+      <member refid="struct__LinphoneCoreVTable_1a635ddd79f5752f7a27402152871a66cc" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>buddy_info_updated</name></member>
+      <member refid="struct__LinphoneCoreVTable_1a31e10f0b8297cf99f3c337352d54c4ad" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>call_encryption_changed</name></member>
+      <member refid="struct__LinphoneCoreVTable_1ae16c00a663001f7aecd5cfbe8fa91fd5" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>call_log_updated</name></member>
+      <member refid="struct__LinphoneCoreVTable_1a771c633cfce7bae2cc0160fbd377bf28" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>call_state_changed</name></member>
+      <member refid="struct__LinphoneCoreVTable_1a331cc2d86632554b85346f163a188b1c" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>call_stats_updated</name></member>
+      <member refid="struct__LinphoneCoreVTable_1a4bd70f9d456eadfac49f95a4733e67c1" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>configuring_status</name></member>
+      <member refid="struct__LinphoneCoreVTable_1a25b5a48d42bcd608797068657d9ad000" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>display_message</name></member>
+      <member refid="struct__LinphoneCoreVTable_1ad7b1bc4829050d679df3ffb019ec3a6a" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>display_status</name></member>
+      <member refid="struct__LinphoneCoreVTable_1a6907dbe56ec897a99ccd0d114ccab579" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>display_url</name></member>
+      <member refid="struct__LinphoneCoreVTable_1abb24881301a7887713642f94501149bb" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>display_warning</name></member>
+      <member refid="struct__LinphoneCoreVTable_1a45d2aeaebc18bd237bee895b92f15c68" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>dtmf_received</name></member>
+      <member refid="struct__LinphoneCoreVTable_1a2b8d6909518b2ab8dadf9c3208ae179e" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>file_transfer_progress_indication</name></member>
+      <member refid="struct__LinphoneCoreVTable_1aa0a2528da1c12b9ba6a7dae22cbe64e9" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>file_transfer_recv</name></member>
+      <member refid="struct__LinphoneCoreVTable_1ab1feeaa1140c156442dae0e4653bf167" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>file_transfer_send</name></member>
+      <member refid="struct__LinphoneCoreVTable_1a9f9023a392427a0ec6da80cf4a428a68" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>friend_list_created</name></member>
+      <member refid="struct__LinphoneCoreVTable_1a960dfc6f1393db4ebe3b0d113aeccc8a" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>friend_list_removed</name></member>
+      <member refid="struct__LinphoneCoreVTable_1a706e1ad8826fb8b9e431f654358ecb1f" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>global_state_changed</name></member>
+      <member refid="struct__LinphoneCoreVTable_1aadaca6d67eee62be103d2add96aba0ba" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>info_received</name></member>
+      <member refid="struct__LinphoneCoreVTable_1afb34622357b9a7138db200040878dba2" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>is_composing_received</name></member>
+      <member refid="struct__LinphoneCoreVTable_1a23e6dd80976b540b656f0f2789e069e3" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>log_collection_upload_progress_indication</name></member>
+      <member refid="struct__LinphoneCoreVTable_1a5c4d34c2587402dea1ed08a8cc2f1662" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>log_collection_upload_state_changed</name></member>
+      <member refid="struct__LinphoneCoreVTable_1ab95d28d6d50c459dc46cb43133d7ceb8" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>message_received</name></member>
+      <member refid="struct__LinphoneCoreVTable_1a0a74a3a47b6085c20bc18066d48170a0" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>network_reachable</name></member>
+      <member refid="struct__LinphoneCoreVTable_1a94c1c96ebb851f6a686377347a3dc39a" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>new_subscription_requested</name></member>
+      <member refid="struct__LinphoneCoreVTable_1aaeba9b7914a3274d4061097575b45717" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>notify_presence_received</name></member>
+      <member refid="struct__LinphoneCoreVTable_1a591701ec52886eadffcd718772ffb3a5" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>notify_presence_received_for_uri_or_tel</name></member>
+      <member refid="struct__LinphoneCoreVTable_1a4e50dd528160791435706add7e9dc403" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>notify_received</name></member>
+      <member refid="struct__LinphoneCoreVTable_1a0c97e13eeffa865030b2c01a4a1925a7" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>publish_state_changed</name></member>
+      <member refid="struct__LinphoneCoreVTable_1a506c7d14f539829d96d80c7ce359017b" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>refer_received</name></member>
+      <member refid="struct__LinphoneCoreVTable_1a2483143cd4b2e2b8ede6f3c916740938" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>registration_state_changed</name></member>
+      <member refid="struct__LinphoneCoreVTable_1a3e0f5df79f1b96b3a417d4c171ac7f27" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>show</name></member>
+      <member refid="struct__LinphoneCoreVTable_1ad74e9de0bfb7eb63fd4aea705304940d" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>subscription_state_changed</name></member>
+      <member refid="struct__LinphoneCoreVTable_1a5b101f313df29f3ddedcfdba885b4757" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>text_received</name></member>
+      <member refid="struct__LinphoneCoreVTable_1a9e7176e49c4f45306962c0eea97e8060" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>transfer_state_changed</name></member>
+      <member refid="struct__LinphoneCoreVTable_1ae86fb9c345a2a304f8ccb7a9730cb6a7" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>user_data</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

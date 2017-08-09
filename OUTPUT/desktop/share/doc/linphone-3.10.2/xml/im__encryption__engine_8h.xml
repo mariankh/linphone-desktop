@@ -1,0 +1,1038 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="im__encryption__engine_8h" kind="file">
+    <compoundname>im_encryption_engine.h</compoundname>
+    <includes local="no">mediastreamer2/mscommon.h</includes>
+    <includedby refid="core_8h" local="yes">core.h</includedby>
+    <incdepgraph>
+      <node id="64">
+        <label>im_encryption_engine.h</label>
+        <link refid="im_encryption_engine.h"/>
+        <childnode refid="65" relation="include">
+        </childnode>
+      </node>
+      <node id="65">
+        <label>mediastreamer2/mscommon.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__misc_1ga842e231d1af69ef533afbe1a78e5699b" prot="public" static="no">
+        <type>struct _LinphoneImEncryptionEngine</type>
+        <definition>typedef struct _LinphoneImEncryptionEngine LinphoneImEncryptionEngine</definition>
+        <argsstring></argsstring>
+        <name>LinphoneImEncryptionEngine</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>IM encryption engine. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/im_encryption_engine.h" line="429" column="1" bodyfile="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/im_encryption_engine.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__misc_1gaf1c4fa5742ba1fe3e6c5e734f62131fe" prot="public" static="no">
+        <type>int(*</type>
+        <definition>typedef int(* LinphoneImEncryptionEngineCbsIncomingMessageCb)(LinphoneImEncryptionEngine *engine, LinphoneChatRoom *room, LinphoneChatMessage *msg)</definition>
+        <argsstring>)(LinphoneImEncryptionEngine *engine, LinphoneChatRoom *room, LinphoneChatMessage *msg)</argsstring>
+        <name>LinphoneImEncryptionEngineCbsIncomingMessageCb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Callback to decrypt incoming LinphoneChatMessage <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>engine</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ImEncryptionEngine object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>room</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneChatRoom object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneChatMessage object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>-1 if nothing to be done, 0 on success or an integer &gt; 0 for error </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/im_encryption_engine.h" line="46" column="1" bodyfile="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/im_encryption_engine.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__misc_1ga5228732af66fc0025dd6cd93b34b96c0" prot="public" static="no">
+        <type>int(*</type>
+        <definition>typedef int(* LinphoneImEncryptionEngineCbsOutgoingMessageCb)(LinphoneImEncryptionEngine *engine, LinphoneChatRoom *room, LinphoneChatMessage *msg)</definition>
+        <argsstring>)(LinphoneImEncryptionEngine *engine, LinphoneChatRoom *room, LinphoneChatMessage *msg)</argsstring>
+        <name>LinphoneImEncryptionEngineCbsOutgoingMessageCb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Callback to encrypt outgoing LinphoneChatMessage <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>engine</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneImEncryptionEngine object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>room</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneChatRoom object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneChatMessage object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>-1 if nothing to be done, 0 on success or an integer &gt; 0 for error </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/im_encryption_engine.h" line="55" column="1" bodyfile="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/im_encryption_engine.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__misc_1gadcd2fe0237a678bab9bcadbf5d6bc2b3" prot="public" static="no">
+        <type>bool_t(*</type>
+        <definition>typedef bool_t(* LinphoneImEncryptionEngineCbsIsEncryptionEnabledForFileTransferCb)(LinphoneImEncryptionEngine *engine, LinphoneChatRoom *room)</definition>
+        <argsstring>)(LinphoneImEncryptionEngine *engine, LinphoneChatRoom *room)</argsstring>
+        <name>LinphoneImEncryptionEngineCbsIsEncryptionEnabledForFileTransferCb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Callback to know whether or not the engine will encrypt files before uploading them <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>engine</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneImEncryptionEngine object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>room</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneChatRoom object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>TRUE if files will be encrypted, FALSE otherwise </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/im_encryption_engine.h" line="63" column="1" bodyfile="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/im_encryption_engine.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__misc_1gaca1f18c023e3d00614eed242060facc7" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* LinphoneImEncryptionEngineCbsGenerateFileTransferKeyCb)(LinphoneImEncryptionEngine *engine, LinphoneChatRoom *room, LinphoneChatMessage *msg)</definition>
+        <argsstring>)(LinphoneImEncryptionEngine *engine, LinphoneChatRoom *room, LinphoneChatMessage *msg)</argsstring>
+        <name>LinphoneImEncryptionEngineCbsGenerateFileTransferKeyCb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Callback to generate the key used to encrypt the files before uploading them Key can be stored in the LinphoneContent object inside the LinphoneChatMessage using linphone_content_set_key <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>engine</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneImEncryptionEngine object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>room</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneChatRoom object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneChatMessage object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/im_encryption_engine.h" line="72" column="1" bodyfile="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/im_encryption_engine.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__misc_1ga0416fe977881d4b7ab12c3b26b98b59b" prot="public" static="no">
+        <type>int(*</type>
+        <definition>typedef int(* LinphoneImEncryptionEngineCbsDownloadingFileCb)(LinphoneImEncryptionEngine *engine, LinphoneChatMessage *msg, const char *buffer, size_t size, char *decrypted_buffer)</definition>
+        <argsstring>)(LinphoneImEncryptionEngine *engine, LinphoneChatMessage *msg, const char *buffer, size_t size, char *decrypted_buffer)</argsstring>
+        <name>LinphoneImEncryptionEngineCbsDownloadingFileCb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Callback to decrypt downloading file <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>engine</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneImEncryptionEngine object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneChatMessage object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Encrypted data buffer </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of the encrypted data buffer </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>decrypted_buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buffer in which to write the decrypted data </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>-1 if nothing to be done, 0 on success or an integer &gt; 0 for error </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/im_encryption_engine.h" line="83" column="1" bodyfile="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/im_encryption_engine.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__misc_1gaa6e8b7da1c84b27fd41c8aa449945b10" prot="public" static="no">
+        <type>int(*</type>
+        <definition>typedef int(* LinphoneImEncryptionEngineCbsUploadingFileCb)(LinphoneImEncryptionEngine *engine, LinphoneChatMessage *msg, size_t offset, const char *buffer, size_t *size, char *encrypted_buffer)</definition>
+        <argsstring>)(LinphoneImEncryptionEngine *engine, LinphoneChatMessage *msg, size_t offset, const char *buffer, size_t *size, char *encrypted_buffer)</argsstring>
+        <name>LinphoneImEncryptionEngineCbsUploadingFileCb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Callback to encrypt uploading file <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>engine</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneImEncryptionEngine object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneChatMessage object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The current offset of the upload </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Encrypted data buffer </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of the plain data buffer and the size of the encrypted data buffer once encryption is done </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>encrypted_buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buffer in which to write the encrypted data </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>-1 if nothing to be done, 0 on success or an integer &gt; 0 for error </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/im_encryption_engine.h" line="95" column="1" bodyfile="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/im_encryption_engine.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__misc_1ga93e3cacddafef0c1b05e48b9802e2c73" prot="public" static="no">
+        <type>struct _LinphoneImEncryptionEngineCbs</type>
+        <definition>typedef struct _LinphoneImEncryptionEngineCbs LinphoneImEncryptionEngineCbs</definition>
+        <argsstring></argsstring>
+        <name>LinphoneImEncryptionEngineCbs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>An object to handle the callbacks for the handling a LinphoneImEncryptionEngine object. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/im_encryption_engine.h" line="95" column="1" bodyfile="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/im_encryption_engine.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__misc_1gad40c0f267fedf0ebd4d04f192d667c85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1ga93e3cacddafef0c1b05e48b9802e2c73" kindref="member">LinphoneImEncryptionEngineCbs</ref> *</type>
+        <definition>LinphoneImEncryptionEngineCbs* linphone_im_encryption_engine_cbs_ref</definition>
+        <argsstring>(LinphoneImEncryptionEngineCbs *cbs)</argsstring>
+        <name>linphone_im_encryption_engine_cbs_ref</name>
+        <param>
+          <type><ref refid="group__misc_1ga93e3cacddafef0c1b05e48b9802e2c73" kindref="member">LinphoneImEncryptionEngineCbs</ref> *</type>
+          <declname>cbs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Acquire a reference to the LinphoneImEncryptionEngineCbs. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneImEncryptionEngineCbs object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The same LinphoneImEncryptionEngineCbs object. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/im_encryption_engine.h" line="107" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga0f6af75eb9d99e038f53166e7e2a9be6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_im_encryption_engine_cbs_unref</definition>
+        <argsstring>(LinphoneImEncryptionEngineCbs *cbs)</argsstring>
+        <name>linphone_im_encryption_engine_cbs_unref</name>
+        <param>
+          <type><ref refid="group__misc_1ga93e3cacddafef0c1b05e48b9802e2c73" kindref="member">LinphoneImEncryptionEngineCbs</ref> *</type>
+          <declname>cbs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Release reference to the LinphoneImEncryptionEngineCbs. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneImEncryptionEngineCbs object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/im_encryption_engine.h" line="113" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga5f8de7a9e42f1d95fd429970b571348c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* linphone_im_encryption_engine_cbs_get_user_data</definition>
+        <argsstring>(const LinphoneImEncryptionEngineCbs *cbs)</argsstring>
+        <name>linphone_im_encryption_engine_cbs_get_user_data</name>
+        <param>
+          <type>const <ref refid="group__misc_1ga93e3cacddafef0c1b05e48b9802e2c73" kindref="member">LinphoneImEncryptionEngineCbs</ref> *</type>
+          <declname>cbs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the user data in the LinphoneImEncryptionEngineCbs object <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the LinphoneImEncryptionEngineCbs </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the user data </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/im_encryption_engine.h" line="120" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga294302a628f061102154793cca203fc5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_im_encryption_engine_cbs_set_user_data</definition>
+        <argsstring>(LinphoneImEncryptionEngineCbs *cbs, void *data)</argsstring>
+        <name>linphone_im_encryption_engine_cbs_set_user_data</name>
+        <param>
+          <type><ref refid="group__misc_1ga93e3cacddafef0c1b05e48b9802e2c73" kindref="member">LinphoneImEncryptionEngineCbs</ref> *</type>
+          <declname>cbs</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the user data in the LinphoneImEncryptionEngineCbs object <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the LinphoneImEncryptionEngineCbs object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the user data </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/im_encryption_engine.h" line="127" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga59fe0b6de70400a90ac0842638a953f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1ga842e231d1af69ef533afbe1a78e5699b" kindref="member">LinphoneImEncryptionEngine</ref> *</type>
+        <definition>LinphoneImEncryptionEngine* linphone_im_encryption_engine_ref</definition>
+        <argsstring>(LinphoneImEncryptionEngine *imee)</argsstring>
+        <name>linphone_im_encryption_engine_ref</name>
+        <param>
+          <type><ref refid="group__misc_1ga842e231d1af69ef533afbe1a78e5699b" kindref="member">LinphoneImEncryptionEngine</ref> *</type>
+          <declname>imee</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Acquire a reference to the LinphoneImEncryptionEngine. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">imee</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneImEncryptionEngine object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The same LinphoneImEncryptionEngine object. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/im_encryption_engine.h" line="134" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga92ad6052638dfb58dcafe9eb8d59c263" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_im_encryption_engine_unref</definition>
+        <argsstring>(LinphoneImEncryptionEngine *imee)</argsstring>
+        <name>linphone_im_encryption_engine_unref</name>
+        <param>
+          <type><ref refid="group__misc_1ga842e231d1af69ef533afbe1a78e5699b" kindref="member">LinphoneImEncryptionEngine</ref> *</type>
+          <declname>imee</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Release reference to the LinphoneImEncryptionEngine. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">imee</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneImEncryptionEngine object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/im_encryption_engine.h" line="140" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga72d63dce8e2b26aafeabf844652b9584" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* linphone_im_encryption_engine_get_user_data</definition>
+        <argsstring>(const LinphoneImEncryptionEngine *imee)</argsstring>
+        <name>linphone_im_encryption_engine_get_user_data</name>
+        <param>
+          <type>const <ref refid="group__misc_1ga842e231d1af69ef533afbe1a78e5699b" kindref="member">LinphoneImEncryptionEngine</ref> *</type>
+          <declname>imee</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the user data in the LinphoneImEncryptionEngine object <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">imee</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the LinphoneImEncryptionEngine </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the user data </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/im_encryption_engine.h" line="147" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga71e655f99202160dfc303a10fc343db3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_im_encryption_engine_set_user_data</definition>
+        <argsstring>(LinphoneImEncryptionEngine *imee, void *data)</argsstring>
+        <name>linphone_im_encryption_engine_set_user_data</name>
+        <param>
+          <type><ref refid="group__misc_1ga842e231d1af69ef533afbe1a78e5699b" kindref="member">LinphoneImEncryptionEngine</ref> *</type>
+          <declname>imee</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the user data in the LinphoneImEncryptionEngine object <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">imee</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the LinphoneImEncryptionEngine object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the user data </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/im_encryption_engine.h" line="154" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1gaf66dd74af7504ebf1297106967cccf01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+        <definition>LinphoneCore* linphone_im_encryption_engine_get_core</definition>
+        <argsstring>(LinphoneImEncryptionEngine *imee)</argsstring>
+        <name>linphone_im_encryption_engine_get_core</name>
+        <param>
+          <type><ref refid="group__misc_1ga842e231d1af69ef533afbe1a78e5699b" kindref="member">LinphoneImEncryptionEngine</ref> *</type>
+          <declname>imee</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the LinphoneCore object that created the IM encryption engine <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">imee</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneImEncryptionEngine object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The LinphoneCore object that created the IM encryption engine </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/im_encryption_engine.h" line="161" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga3504ba500c1c81c561bc66ba4e351160" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1ga93e3cacddafef0c1b05e48b9802e2c73" kindref="member">LinphoneImEncryptionEngineCbs</ref> *</type>
+        <definition>LinphoneImEncryptionEngineCbs* linphone_im_encryption_engine_get_callbacks</definition>
+        <argsstring>(const LinphoneImEncryptionEngine *imee)</argsstring>
+        <name>linphone_im_encryption_engine_get_callbacks</name>
+        <param>
+          <type>const <ref refid="group__misc_1ga842e231d1af69ef533afbe1a78e5699b" kindref="member">LinphoneImEncryptionEngine</ref> *</type>
+          <declname>imee</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the LinphoneImEncryptionEngineCbs object that holds the callbacks <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">imee</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the LinphoneImEncryptionEngine object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the LinphoneImEncryptionEngineCbs object </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/im_encryption_engine.h" line="168" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1gaffb6029813b278ad5de55bb1db220816" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1gaf1c4fa5742ba1fe3e6c5e734f62131fe" kindref="member">LinphoneImEncryptionEngineCbsIncomingMessageCb</ref></type>
+        <definition>LinphoneImEncryptionEngineCbsIncomingMessageCb linphone_im_encryption_engine_cbs_get_process_incoming_message</definition>
+        <argsstring>(LinphoneImEncryptionEngineCbs *cbs)</argsstring>
+        <name>linphone_im_encryption_engine_cbs_get_process_incoming_message</name>
+        <param>
+          <type><ref refid="group__misc_1ga93e3cacddafef0c1b05e48b9802e2c73" kindref="member">LinphoneImEncryptionEngineCbs</ref> *</type>
+          <declname>cbs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the callback that will decrypt the chat messages upon reception <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the LinphoneImEncryptionEngineCbs object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the callback </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/im_encryption_engine.h" line="175" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1gad4b97a697a0a2aa1e27b627a834093a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_im_encryption_engine_cbs_set_process_incoming_message</definition>
+        <argsstring>(LinphoneImEncryptionEngineCbs *cbs, LinphoneImEncryptionEngineCbsIncomingMessageCb cb)</argsstring>
+        <name>linphone_im_encryption_engine_cbs_set_process_incoming_message</name>
+        <param>
+          <type><ref refid="group__misc_1ga93e3cacddafef0c1b05e48b9802e2c73" kindref="member">LinphoneImEncryptionEngineCbs</ref> *</type>
+          <declname>cbs</declname>
+        </param>
+        <param>
+          <type><ref refid="group__misc_1gaf1c4fa5742ba1fe3e6c5e734f62131fe" kindref="member">LinphoneImEncryptionEngineCbsIncomingMessageCb</ref></type>
+          <declname>cb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the callback that will decrypt the chat messages upon reception <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the LinphoneImEncryptionEngineCbs object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the callback to call </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/im_encryption_engine.h" line="182" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1gac13201f3003201671efd61d9defe79c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1ga5228732af66fc0025dd6cd93b34b96c0" kindref="member">LinphoneImEncryptionEngineCbsOutgoingMessageCb</ref></type>
+        <definition>LinphoneImEncryptionEngineCbsOutgoingMessageCb linphone_im_encryption_engine_cbs_get_process_outgoing_message</definition>
+        <argsstring>(LinphoneImEncryptionEngineCbs *cbs)</argsstring>
+        <name>linphone_im_encryption_engine_cbs_get_process_outgoing_message</name>
+        <param>
+          <type><ref refid="group__misc_1ga93e3cacddafef0c1b05e48b9802e2c73" kindref="member">LinphoneImEncryptionEngineCbs</ref> *</type>
+          <declname>cbs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the callback that will encrypt the chat messages before sending them <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the LinphoneImEncryptionEngineCbs object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the callback </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/im_encryption_engine.h" line="189" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga1e6987adff164d6f9645ef36301ceb3b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_im_encryption_engine_cbs_set_process_outgoing_message</definition>
+        <argsstring>(LinphoneImEncryptionEngineCbs *cbs, LinphoneImEncryptionEngineCbsOutgoingMessageCb cb)</argsstring>
+        <name>linphone_im_encryption_engine_cbs_set_process_outgoing_message</name>
+        <param>
+          <type><ref refid="group__misc_1ga93e3cacddafef0c1b05e48b9802e2c73" kindref="member">LinphoneImEncryptionEngineCbs</ref> *</type>
+          <declname>cbs</declname>
+        </param>
+        <param>
+          <type><ref refid="group__misc_1ga5228732af66fc0025dd6cd93b34b96c0" kindref="member">LinphoneImEncryptionEngineCbsOutgoingMessageCb</ref></type>
+          <declname>cb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the callback that will encrypt the chat messages before sending them <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the LinphoneImEncryptionEngineCbs object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the callback to call </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/im_encryption_engine.h" line="196" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga683c12963b489abbc752088a17bbd2f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1ga0416fe977881d4b7ab12c3b26b98b59b" kindref="member">LinphoneImEncryptionEngineCbsDownloadingFileCb</ref></type>
+        <definition>LinphoneImEncryptionEngineCbsDownloadingFileCb linphone_im_encryption_engine_cbs_get_process_downloading_file</definition>
+        <argsstring>(LinphoneImEncryptionEngineCbs *cbs)</argsstring>
+        <name>linphone_im_encryption_engine_cbs_get_process_downloading_file</name>
+        <param>
+          <type><ref refid="group__misc_1ga93e3cacddafef0c1b05e48b9802e2c73" kindref="member">LinphoneImEncryptionEngineCbs</ref> *</type>
+          <declname>cbs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the callback that will decrypt the files while downloading them <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the LinphoneImEncryptionEngineCbs object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the callback </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/im_encryption_engine.h" line="203" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga0b283caefd123292213eb3572740dbc3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_im_encryption_engine_cbs_set_process_downloading_file</definition>
+        <argsstring>(LinphoneImEncryptionEngineCbs *cbs, LinphoneImEncryptionEngineCbsDownloadingFileCb cb)</argsstring>
+        <name>linphone_im_encryption_engine_cbs_set_process_downloading_file</name>
+        <param>
+          <type><ref refid="group__misc_1ga93e3cacddafef0c1b05e48b9802e2c73" kindref="member">LinphoneImEncryptionEngineCbs</ref> *</type>
+          <declname>cbs</declname>
+        </param>
+        <param>
+          <type><ref refid="group__misc_1ga0416fe977881d4b7ab12c3b26b98b59b" kindref="member">LinphoneImEncryptionEngineCbsDownloadingFileCb</ref></type>
+          <declname>cb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the callback that will decrypt the files while downloading them <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the LinphoneImEncryptionEngineCbs object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the callback to call </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/im_encryption_engine.h" line="210" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1gab771dd5c29691a4c713d149f8abf56a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1gaa6e8b7da1c84b27fd41c8aa449945b10" kindref="member">LinphoneImEncryptionEngineCbsUploadingFileCb</ref></type>
+        <definition>LinphoneImEncryptionEngineCbsUploadingFileCb linphone_im_encryption_engine_cbs_get_process_uploading_file</definition>
+        <argsstring>(LinphoneImEncryptionEngineCbs *cbs)</argsstring>
+        <name>linphone_im_encryption_engine_cbs_get_process_uploading_file</name>
+        <param>
+          <type><ref refid="group__misc_1ga93e3cacddafef0c1b05e48b9802e2c73" kindref="member">LinphoneImEncryptionEngineCbs</ref> *</type>
+          <declname>cbs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the callback that will will encrypt the files while uploading them <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the LinphoneImEncryptionEngineCbs object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the callback </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/im_encryption_engine.h" line="217" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1gaaaf423a527662437ed8604a6f63eb28e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_im_encryption_engine_cbs_set_process_uploading_file</definition>
+        <argsstring>(LinphoneImEncryptionEngineCbs *cbs, LinphoneImEncryptionEngineCbsUploadingFileCb cb)</argsstring>
+        <name>linphone_im_encryption_engine_cbs_set_process_uploading_file</name>
+        <param>
+          <type><ref refid="group__misc_1ga93e3cacddafef0c1b05e48b9802e2c73" kindref="member">LinphoneImEncryptionEngineCbs</ref> *</type>
+          <declname>cbs</declname>
+        </param>
+        <param>
+          <type><ref refid="group__misc_1gaa6e8b7da1c84b27fd41c8aa449945b10" kindref="member">LinphoneImEncryptionEngineCbsUploadingFileCb</ref></type>
+          <declname>cb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the callback that will encrypt the files while uploading them <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the LinphoneImEncryptionEngineCbs object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the callback to call </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/im_encryption_engine.h" line="224" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga9a0117fc116c02d3847b2fccccc53f2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1gadcd2fe0237a678bab9bcadbf5d6bc2b3" kindref="member">LinphoneImEncryptionEngineCbsIsEncryptionEnabledForFileTransferCb</ref></type>
+        <definition>LinphoneImEncryptionEngineCbsIsEncryptionEnabledForFileTransferCb linphone_im_encryption_engine_cbs_get_is_encryption_enabled_for_file_transfer</definition>
+        <argsstring>(LinphoneImEncryptionEngineCbs *cbs)</argsstring>
+        <name>linphone_im_encryption_engine_cbs_get_is_encryption_enabled_for_file_transfer</name>
+        <param>
+          <type><ref refid="group__misc_1ga93e3cacddafef0c1b05e48b9802e2c73" kindref="member">LinphoneImEncryptionEngineCbs</ref> *</type>
+          <declname>cbs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the callback telling wheter or not to encrypt the files <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the LinphoneImEncryptionEngineCbs object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the callback </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/im_encryption_engine.h" line="231" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga67f004257747da9afe7fef92e6f5e88e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_im_encryption_engine_cbs_set_is_encryption_enabled_for_file_transfer</definition>
+        <argsstring>(LinphoneImEncryptionEngineCbs *cbs, LinphoneImEncryptionEngineCbsIsEncryptionEnabledForFileTransferCb cb)</argsstring>
+        <name>linphone_im_encryption_engine_cbs_set_is_encryption_enabled_for_file_transfer</name>
+        <param>
+          <type><ref refid="group__misc_1ga93e3cacddafef0c1b05e48b9802e2c73" kindref="member">LinphoneImEncryptionEngineCbs</ref> *</type>
+          <declname>cbs</declname>
+        </param>
+        <param>
+          <type><ref refid="group__misc_1gadcd2fe0237a678bab9bcadbf5d6bc2b3" kindref="member">LinphoneImEncryptionEngineCbsIsEncryptionEnabledForFileTransferCb</ref></type>
+          <declname>cb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the callback telling wheter or not to encrypt the files <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the LinphoneImEncryptionEngineCbs object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the callback to call </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/im_encryption_engine.h" line="238" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1gab38e2c931b2fd688c2003c5b0a3d0deb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1gaca1f18c023e3d00614eed242060facc7" kindref="member">LinphoneImEncryptionEngineCbsGenerateFileTransferKeyCb</ref></type>
+        <definition>LinphoneImEncryptionEngineCbsGenerateFileTransferKeyCb linphone_im_encryption_engine_cbs_get_generate_file_transfer_key</definition>
+        <argsstring>(LinphoneImEncryptionEngineCbs *cbs)</argsstring>
+        <name>linphone_im_encryption_engine_cbs_get_generate_file_transfer_key</name>
+        <param>
+          <type><ref refid="group__misc_1ga93e3cacddafef0c1b05e48b9802e2c73" kindref="member">LinphoneImEncryptionEngineCbs</ref> *</type>
+          <declname>cbs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the callback that will generate the key to encrypt the file before uploading it <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the LinphoneImEncryptionEngineCbs object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the callback </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/im_encryption_engine.h" line="245" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga6e33dacbdbe1a7edcd5f636a1bc29586" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_im_encryption_engine_cbs_set_generate_file_transfer_key</definition>
+        <argsstring>(LinphoneImEncryptionEngineCbs *cbs, LinphoneImEncryptionEngineCbsGenerateFileTransferKeyCb cb)</argsstring>
+        <name>linphone_im_encryption_engine_cbs_set_generate_file_transfer_key</name>
+        <param>
+          <type><ref refid="group__misc_1ga93e3cacddafef0c1b05e48b9802e2c73" kindref="member">LinphoneImEncryptionEngineCbs</ref> *</type>
+          <declname>cbs</declname>
+        </param>
+        <param>
+          <type><ref refid="group__misc_1gaca1f18c023e3d00614eed242060facc7" kindref="member">LinphoneImEncryptionEngineCbsGenerateFileTransferKeyCb</ref></type>
+          <declname>cb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the callback that will generate the key to encrypt the file before uploading it <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the LinphoneImEncryptionEngineCbs object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the callback to call </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/im_encryption_engine.h" line="252" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">im_encryption_engine.h</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">Copyright<sp/>(C)<sp/>2016<sp/><sp/>Belledonne<sp/>Communications<sp/>SARL</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"></highlight></codeline>
+<codeline lineno="5"><highlight class="comment">This<sp/>program<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>2</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">of<sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment">This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"></highlight></codeline>
+<codeline lineno="15"><highlight class="comment">You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">along<sp/>with<sp/>this<sp/>program;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>Street,<sp/>Fifth<sp/>Floor,<sp/>Boston,<sp/>MA<sp/><sp/>02110-1301,<sp/>USA.</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LINPHONE_IM_ENCRYPTION_ENGINE_H</highlight></codeline>
+<codeline lineno="21"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>LINPHONE_IM_ENCRYPTION_ENGINE_H</highlight></codeline>
+<codeline lineno="22"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;mediastreamer2/mscommon.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LINPHONE_PUBLIC</highlight></codeline>
+<codeline lineno="26"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>LINPHONE_PUBLIC<sp/>MS2_PUBLIC</highlight></codeline>
+<codeline lineno="27"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="28"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="37"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">_LinphoneImEncryptionEngine<sp/><ref refid="group__misc_1ga842e231d1af69ef533afbe1a78e5699b" kindref="member">LinphoneImEncryptionEngine</ref>;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>int<sp/>(*<ref refid="group__misc_1gaf1c4fa5742ba1fe3e6c5e734f62131fe" kindref="member">LinphoneImEncryptionEngineCbsIncomingMessageCb</ref>)(<ref refid="group__misc_1ga842e231d1af69ef533afbe1a78e5699b" kindref="member">LinphoneImEncryptionEngine</ref><sp/>*engine,<sp/><ref refid="group__chatroom_1ga37902f3fc715b7f6451c241d0efd0299" kindref="member">LinphoneChatRoom</ref><sp/>*room,<sp/><ref refid="group__chatroom_1gada79c4417919389b5247e254279f7833" kindref="member">LinphoneChatMessage</ref><sp/>*msg);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>int<sp/>(*<ref refid="group__misc_1ga5228732af66fc0025dd6cd93b34b96c0" kindref="member">LinphoneImEncryptionEngineCbsOutgoingMessageCb</ref>)(<ref refid="group__misc_1ga842e231d1af69ef533afbe1a78e5699b" kindref="member">LinphoneImEncryptionEngine</ref><sp/>*engine,<sp/><ref refid="group__chatroom_1ga37902f3fc715b7f6451c241d0efd0299" kindref="member">LinphoneChatRoom</ref><sp/>*room,<sp/><ref refid="group__chatroom_1gada79c4417919389b5247e254279f7833" kindref="member">LinphoneChatMessage</ref><sp/>*msg);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>bool_t<sp/>(*<ref refid="group__misc_1gadcd2fe0237a678bab9bcadbf5d6bc2b3" kindref="member">LinphoneImEncryptionEngineCbsIsEncryptionEnabledForFileTransferCb</ref>)(<ref refid="group__misc_1ga842e231d1af69ef533afbe1a78e5699b" kindref="member">LinphoneImEncryptionEngine</ref><sp/>*engine,<sp/><ref refid="group__chatroom_1ga37902f3fc715b7f6451c241d0efd0299" kindref="member">LinphoneChatRoom</ref><sp/>*room);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*<ref refid="group__misc_1gaca1f18c023e3d00614eed242060facc7" kindref="member">LinphoneImEncryptionEngineCbsGenerateFileTransferKeyCb</ref>)(<ref refid="group__misc_1ga842e231d1af69ef533afbe1a78e5699b" kindref="member">LinphoneImEncryptionEngine</ref><sp/>*engine,<sp/><ref refid="group__chatroom_1ga37902f3fc715b7f6451c241d0efd0299" kindref="member">LinphoneChatRoom</ref><sp/>*room,<sp/><ref refid="group__chatroom_1gada79c4417919389b5247e254279f7833" kindref="member">LinphoneChatMessage</ref><sp/>*msg);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>int<sp/>(*<ref refid="group__misc_1ga0416fe977881d4b7ab12c3b26b98b59b" kindref="member">LinphoneImEncryptionEngineCbsDownloadingFileCb</ref>)(<ref refid="group__misc_1ga842e231d1af69ef533afbe1a78e5699b" kindref="member">LinphoneImEncryptionEngine</ref><sp/>*engine,<sp/><ref refid="group__chatroom_1gada79c4417919389b5247e254279f7833" kindref="member">LinphoneChatMessage</ref><sp/>*msg,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*buffer,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*decrypted_buffer);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>int<sp/>(*<ref refid="group__misc_1gaa6e8b7da1c84b27fd41c8aa449945b10" kindref="member">LinphoneImEncryptionEngineCbsUploadingFileCb</ref>)(<ref refid="group__misc_1ga842e231d1af69ef533afbe1a78e5699b" kindref="member">LinphoneImEncryptionEngine</ref><sp/>*engine,<sp/><ref refid="group__chatroom_1gada79c4417919389b5247e254279f7833" kindref="member">LinphoneChatMessage</ref><sp/>*msg,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>offset,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*buffer,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>*size,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*encrypted_buffer);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">_LinphoneImEncryptionEngineCbs<sp/><ref refid="group__misc_1ga93e3cacddafef0c1b05e48b9802e2c73" kindref="member">LinphoneImEncryptionEngineCbs</ref>;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><ref refid="group__misc_1ga93e3cacddafef0c1b05e48b9802e2c73" kindref="member">LinphoneImEncryptionEngineCbs</ref><sp/>*<sp/><ref refid="group__misc_1gad40c0f267fedf0ebd4d04f192d667c85" kindref="member">linphone_im_encryption_engine_cbs_ref</ref>(<ref refid="group__misc_1ga93e3cacddafef0c1b05e48b9802e2c73" kindref="member">LinphoneImEncryptionEngineCbs</ref><sp/>*cbs);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__misc_1ga0f6af75eb9d99e038f53166e7e2a9be6" kindref="member">linphone_im_encryption_engine_cbs_unref</ref>(<ref refid="group__misc_1ga93e3cacddafef0c1b05e48b9802e2c73" kindref="member">LinphoneImEncryptionEngineCbs</ref><sp/>*cbs);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="group__misc_1ga5f8de7a9e42f1d95fd429970b571348c" kindref="member">linphone_im_encryption_engine_cbs_get_user_data</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__misc_1ga93e3cacddafef0c1b05e48b9802e2c73" kindref="member">LinphoneImEncryptionEngineCbs</ref><sp/>*cbs);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__misc_1ga294302a628f061102154793cca203fc5" kindref="member">linphone_im_encryption_engine_cbs_set_user_data</ref>(<ref refid="group__misc_1ga93e3cacddafef0c1b05e48b9802e2c73" kindref="member">LinphoneImEncryptionEngineCbs</ref><sp/>*cbs,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*data);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1ga842e231d1af69ef533afbe1a78e5699b" kindref="member">LinphoneImEncryptionEngine</ref><sp/>*<sp/><ref refid="group__misc_1ga59fe0b6de70400a90ac0842638a953f6" kindref="member">linphone_im_encryption_engine_ref</ref>(<ref refid="group__misc_1ga842e231d1af69ef533afbe1a78e5699b" kindref="member">LinphoneImEncryptionEngine</ref><sp/>*imee);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__misc_1ga92ad6052638dfb58dcafe9eb8d59c263" kindref="member">linphone_im_encryption_engine_unref</ref>(<ref refid="group__misc_1ga842e231d1af69ef533afbe1a78e5699b" kindref="member">LinphoneImEncryptionEngine</ref><sp/>*imee);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="group__misc_1ga72d63dce8e2b26aafeabf844652b9584" kindref="member">linphone_im_encryption_engine_get_user_data</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__misc_1ga842e231d1af69ef533afbe1a78e5699b" kindref="member">LinphoneImEncryptionEngine</ref><sp/>*imee);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__misc_1ga71e655f99202160dfc303a10fc343db3" kindref="member">linphone_im_encryption_engine_set_user_data</ref>(<ref refid="group__misc_1ga842e231d1af69ef533afbe1a78e5699b" kindref="member">LinphoneImEncryptionEngine</ref><sp/>*imee,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*data);</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref><sp/>*<sp/><ref refid="group__misc_1gaf66dd74af7504ebf1297106967cccf01" kindref="member">linphone_im_encryption_engine_get_core</ref>(<ref refid="group__misc_1ga842e231d1af69ef533afbe1a78e5699b" kindref="member">LinphoneImEncryptionEngine</ref><sp/>*imee);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1ga93e3cacddafef0c1b05e48b9802e2c73" kindref="member">LinphoneImEncryptionEngineCbs</ref>*<sp/><ref refid="group__misc_1ga3504ba500c1c81c561bc66ba4e351160" kindref="member">linphone_im_encryption_engine_get_callbacks</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__misc_1ga842e231d1af69ef533afbe1a78e5699b" kindref="member">LinphoneImEncryptionEngine</ref><sp/>*imee);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1gaf1c4fa5742ba1fe3e6c5e734f62131fe" kindref="member">LinphoneImEncryptionEngineCbsIncomingMessageCb</ref><sp/><ref refid="group__misc_1gaffb6029813b278ad5de55bb1db220816" kindref="member">linphone_im_encryption_engine_cbs_get_process_incoming_message</ref>(<ref refid="group__misc_1ga93e3cacddafef0c1b05e48b9802e2c73" kindref="member">LinphoneImEncryptionEngineCbs</ref><sp/>*cbs);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__misc_1gad4b97a697a0a2aa1e27b627a834093a2" kindref="member">linphone_im_encryption_engine_cbs_set_process_incoming_message</ref>(<ref refid="group__misc_1ga93e3cacddafef0c1b05e48b9802e2c73" kindref="member">LinphoneImEncryptionEngineCbs</ref><sp/>*cbs,<sp/><ref refid="group__misc_1gaf1c4fa5742ba1fe3e6c5e734f62131fe" kindref="member">LinphoneImEncryptionEngineCbsIncomingMessageCb</ref><sp/>cb);</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1ga5228732af66fc0025dd6cd93b34b96c0" kindref="member">LinphoneImEncryptionEngineCbsOutgoingMessageCb</ref><sp/><ref refid="group__misc_1gac13201f3003201671efd61d9defe79c3" kindref="member">linphone_im_encryption_engine_cbs_get_process_outgoing_message</ref>(<ref refid="group__misc_1ga93e3cacddafef0c1b05e48b9802e2c73" kindref="member">LinphoneImEncryptionEngineCbs</ref><sp/>*cbs);</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__misc_1ga1e6987adff164d6f9645ef36301ceb3b" kindref="member">linphone_im_encryption_engine_cbs_set_process_outgoing_message</ref>(<ref refid="group__misc_1ga93e3cacddafef0c1b05e48b9802e2c73" kindref="member">LinphoneImEncryptionEngineCbs</ref><sp/>*cbs,<sp/><ref refid="group__misc_1ga5228732af66fc0025dd6cd93b34b96c0" kindref="member">LinphoneImEncryptionEngineCbsOutgoingMessageCb</ref><sp/>cb);</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1ga0416fe977881d4b7ab12c3b26b98b59b" kindref="member">LinphoneImEncryptionEngineCbsDownloadingFileCb</ref><sp/><ref refid="group__misc_1ga683c12963b489abbc752088a17bbd2f4" kindref="member">linphone_im_encryption_engine_cbs_get_process_downloading_file</ref>(<ref refid="group__misc_1ga93e3cacddafef0c1b05e48b9802e2c73" kindref="member">LinphoneImEncryptionEngineCbs</ref><sp/>*cbs);</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__misc_1ga0b283caefd123292213eb3572740dbc3" kindref="member">linphone_im_encryption_engine_cbs_set_process_downloading_file</ref>(<ref refid="group__misc_1ga93e3cacddafef0c1b05e48b9802e2c73" kindref="member">LinphoneImEncryptionEngineCbs</ref><sp/>*cbs,<sp/><ref refid="group__misc_1ga0416fe977881d4b7ab12c3b26b98b59b" kindref="member">LinphoneImEncryptionEngineCbsDownloadingFileCb</ref><sp/>cb);</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1gaa6e8b7da1c84b27fd41c8aa449945b10" kindref="member">LinphoneImEncryptionEngineCbsUploadingFileCb</ref><sp/><ref refid="group__misc_1gab771dd5c29691a4c713d149f8abf56a0" kindref="member">linphone_im_encryption_engine_cbs_get_process_uploading_file</ref>(<ref refid="group__misc_1ga93e3cacddafef0c1b05e48b9802e2c73" kindref="member">LinphoneImEncryptionEngineCbs</ref><sp/>*cbs);</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__misc_1gaaaf423a527662437ed8604a6f63eb28e" kindref="member">linphone_im_encryption_engine_cbs_set_process_uploading_file</ref>(<ref refid="group__misc_1ga93e3cacddafef0c1b05e48b9802e2c73" kindref="member">LinphoneImEncryptionEngineCbs</ref><sp/>*cbs,<sp/><ref refid="group__misc_1gaa6e8b7da1c84b27fd41c8aa449945b10" kindref="member">LinphoneImEncryptionEngineCbsUploadingFileCb</ref><sp/>cb);</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1gadcd2fe0237a678bab9bcadbf5d6bc2b3" kindref="member">LinphoneImEncryptionEngineCbsIsEncryptionEnabledForFileTransferCb</ref><sp/><ref refid="group__misc_1ga9a0117fc116c02d3847b2fccccc53f2d" kindref="member">linphone_im_encryption_engine_cbs_get_is_encryption_enabled_for_file_transfer</ref>(<ref refid="group__misc_1ga93e3cacddafef0c1b05e48b9802e2c73" kindref="member">LinphoneImEncryptionEngineCbs</ref><sp/>*cbs);</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__misc_1ga67f004257747da9afe7fef92e6f5e88e" kindref="member">linphone_im_encryption_engine_cbs_set_is_encryption_enabled_for_file_transfer</ref>(<ref refid="group__misc_1ga93e3cacddafef0c1b05e48b9802e2c73" kindref="member">LinphoneImEncryptionEngineCbs</ref><sp/>*cbs,<sp/><ref refid="group__misc_1gadcd2fe0237a678bab9bcadbf5d6bc2b3" kindref="member">LinphoneImEncryptionEngineCbsIsEncryptionEnabledForFileTransferCb</ref><sp/>cb);</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1gaca1f18c023e3d00614eed242060facc7" kindref="member">LinphoneImEncryptionEngineCbsGenerateFileTransferKeyCb</ref><sp/><ref refid="group__misc_1gab38e2c931b2fd688c2003c5b0a3d0deb" kindref="member">linphone_im_encryption_engine_cbs_get_generate_file_transfer_key</ref>(<ref refid="group__misc_1ga93e3cacddafef0c1b05e48b9802e2c73" kindref="member">LinphoneImEncryptionEngineCbs</ref><sp/>*cbs);</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__misc_1ga6e33dacbdbe1a7edcd5f636a1bc29586" kindref="member">linphone_im_encryption_engine_cbs_set_generate_file_transfer_key</ref>(<ref refid="group__misc_1ga93e3cacddafef0c1b05e48b9802e2c73" kindref="member">LinphoneImEncryptionEngineCbs</ref><sp/>*cbs,<sp/><ref refid="group__misc_1gaca1f18c023e3d00614eed242060facc7" kindref="member">LinphoneImEncryptionEngineCbsGenerateFileTransferKeyCb</ref><sp/>cb);</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>LINPHONE_IM_ENCRYPTION_ENGINE_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/im_encryption_engine.h"/>
+  </compounddef>
+</doxygen>

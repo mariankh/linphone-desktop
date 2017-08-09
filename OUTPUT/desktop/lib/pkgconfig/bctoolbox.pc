@@ -1,0 +1,10 @@
+# This is a comment
+prefix=/home/mariankh/git/linphone-desktop-maria/OUTPUT/desktop
+exec_prefix=/home/mariankh/git/linphone-desktop-maria/OUTPUT/desktop
+
+Name:  bctoolbox
+Description: A common set of tools used by Belledonne Communications' softwares
+Version: 0.5.0
+Libs: -L/home/mariankh/git/linphone-desktop-maria/OUTPUT/desktop/lib -lbctoolbox
+Libs.private:  -L
+Cflags: -I/home/mariankh/git/linphone-desktop-maria/OUTPUT/desktop/include

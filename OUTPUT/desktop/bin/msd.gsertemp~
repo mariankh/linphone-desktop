@@ -1,0 +1,28 @@
+{
+  id $id,
+  msd {
+    msdStructure {
+      messageIdentifier 0,
+      control {
+        automaticActivation TRUE,
+        testCall FALSE,
+        positionCanBeTrusted TRUE,
+        vehicleType motorcyclesClassL7e
+      },
+      vehicleIdentificationNumber {
+        isowmi "000",
+        isovds "000000",
+        isovisModelyear "A",
+        isovisSeqPlant "0000000"
+      },
+      vehiclePropulsionStorageType {
+      },
+      timestamp $timestamp,
+      vehicleLocation {
+        positionLatitude 192637080,
+        positionLongitude 49482360,
+      },
+      vehicleDirection 0
+    }
+  }
+}

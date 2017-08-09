@@ -1,0 +1,11 @@
+prefix=/home/mariankh/git/linphone-desktop-maria/OUTPUT/desktop
+exec_prefix=${prefix}
+includedir=${prefix}/include
+libdir=${exec_prefix}/lib
+
+Name: libv4lconvert
+Description: v4l format conversion library
+Version: 1.0.0
+Libs: -L${libdir} -lv4lconvert
+Libs.private: -lrt -lm 
+Cflags: -I${includedir}

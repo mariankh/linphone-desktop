@@ -1,0 +1,18 @@
+from string import Template
+import time
+
+
+#open the file
+filein = open( 'msd.gsertemp' )
+#read it
+timestamp=str(int(time.time()))
+print (timestamp)
+d={'timestamp':timestamp, 'id':2 }
+src = Template( filein.read() )
+#do the substitution
+result = src.substitute(d)
+
+file = open("msd.gser","w") 
+ 
+file.write(result) 
+

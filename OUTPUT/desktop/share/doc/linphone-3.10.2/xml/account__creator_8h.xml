@@ -1,0 +1,2342 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="account__creator_8h" kind="file">
+    <compoundname>account_creator.h</compoundname>
+    <includes refid="linphonecore_8h" local="yes">linphonecore.h</includes>
+    <includedby refid="core_8h" local="yes">core.h</includedby>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__misc_1ga376d528e7e23474a49c50c5aff06b32a" prot="public" static="no">
+        <name>_LinphoneAccountCreatorStatus</name>
+        <enumvalue id="group__misc_1gga376d528e7e23474a49c50c5aff06b32aac69bba45a4932a1ccba59e0e25ade017" prot="public">
+          <name>LinphoneAccountCreatorOK</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__misc_1gga376d528e7e23474a49c50c5aff06b32aa8cbcb79d95e49dc511b8c6be279bb4a9" prot="public">
+          <name>LinphoneAccountCreatorReqFailed</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__misc_1gga376d528e7e23474a49c50c5aff06b32aaf6aaf3b810290a87eebc6178a1debfd3" prot="public">
+          <name>LinphoneAccountCreatorAccountCreated</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__misc_1gga376d528e7e23474a49c50c5aff06b32aa441bc9b7991c39b5f2ab91c318c8c60b" prot="public">
+          <name>LinphoneAccountCreatorAccountNotCreated</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__misc_1gga376d528e7e23474a49c50c5aff06b32aa574ca9a5154673536d09bbb5a4d52354" prot="public">
+          <name>LinphoneAccountCreatorAccountExist</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__misc_1gga376d528e7e23474a49c50c5aff06b32aa179ce2a297f924c1600c82de02424acd" prot="public">
+          <name>LinphoneAccountCreatorAccountExistWithAlias</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__misc_1gga376d528e7e23474a49c50c5aff06b32aaf3200bec21d9fd6bd3434fe533542270" prot="public">
+          <name>LinphoneAccountCreatorAccountNotExist</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__misc_1gga376d528e7e23474a49c50c5aff06b32aa35ec67db4f3b6d5e8fc844165bd977e2" prot="public">
+          <name>LinphoneAccountCreatorAccountActivated</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__misc_1gga376d528e7e23474a49c50c5aff06b32aac1adecdb558825e148019e507b00a9fd" prot="public">
+          <name>LinphoneAccountCreatorAccountAlreadyActivated</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__misc_1gga376d528e7e23474a49c50c5aff06b32aa19554fe11cbf25a4fabd4a41256c51e7" prot="public">
+          <name>LinphoneAccountCreatorAccountNotActivated</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__misc_1gga376d528e7e23474a49c50c5aff06b32aaf39155cbd49869b6f98ebcece9db3dcd" prot="public">
+          <name>LinphoneAccountCreatorAccountLinked</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__misc_1gga376d528e7e23474a49c50c5aff06b32aa27e07e352001011fc39e92b935803cff" prot="public">
+          <name>LinphoneAccountCreatorAccountNotLinked</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__misc_1gga376d528e7e23474a49c50c5aff06b32aab390462de85af01c328ada53e076a748" prot="public">
+          <name>LinphoneAccountCreatorEmailInvalid</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__misc_1gga376d528e7e23474a49c50c5aff06b32aa3d97f0dd9108335b5bd6cc80a3aa1fa2" prot="public">
+          <name>LinphoneAccountCreatorUsernameInvalid</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__misc_1gga376d528e7e23474a49c50c5aff06b32aac31c349bf69873fd8aadb3aacabee92a" prot="public">
+          <name>LinphoneAccountCreatorUsernameTooShort</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__misc_1gga376d528e7e23474a49c50c5aff06b32aadf6768eb49db4925129865e33b8a3faa" prot="public">
+          <name>LinphoneAccountCreatorUsernameTooLong</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__misc_1gga376d528e7e23474a49c50c5aff06b32aa45f8d717a1a741c6cea37cb4d3ffcb00" prot="public">
+          <name>LinphoneAccountCreatorUsernameInvalidSize</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__misc_1gga376d528e7e23474a49c50c5aff06b32aacf14f608511cfc957f8e1b37ece046db" prot="public">
+          <name>LinphoneAccountCreatorPhoneNumberInvalid</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__misc_1gga376d528e7e23474a49c50c5aff06b32aa25ede58e20f77d19a85f93e412f3fb24" prot="public">
+          <name>LinphoneAccountCreatorPhoneNumberTooShort</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__misc_1gga376d528e7e23474a49c50c5aff06b32aa389791ec89e2287320e9e2e7f6064b72" prot="public">
+          <name>LinphoneAccountCreatorPhoneNumberTooLong</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__misc_1gga376d528e7e23474a49c50c5aff06b32aa325408a5b66d7fc51510da9a5d5ce736" prot="public">
+          <name>LinphoneAccountCreatorPhoneNumberUsedAccount</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__misc_1gga376d528e7e23474a49c50c5aff06b32aaf5653acb0297d862d6ea1d7e5728de03" prot="public">
+          <name>LinphoneAccountCreatorPhoneNumberUsedAlias</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__misc_1gga376d528e7e23474a49c50c5aff06b32aa6a2d191b5e116982b7152a3144445ba6" prot="public">
+          <name>LinphoneAccountCreatorPhoneNumberNotUsed</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__misc_1gga376d528e7e23474a49c50c5aff06b32aa61d0731f5c3e07a9fdca8fde5bd6a7a4" prot="public">
+          <name>LinphoneAccountCreatorPasswordTooShort</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__misc_1gga376d528e7e23474a49c50c5aff06b32aa72438fd46cf5aa1f9e7b57c920ed21a2" prot="public">
+          <name>LinphoneAccountCreatorPasswordTooLong</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__misc_1gga376d528e7e23474a49c50c5aff06b32aa869c427c914a65b5123975e16eacbc01" prot="public">
+          <name>LinphoneAccountCreatorDomainInvalid</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__misc_1gga376d528e7e23474a49c50c5aff06b32aa26e17abb77543cb92de8b780ec7d28c3" prot="public">
+          <name>LinphoneAccountCreatorRouteInvalid</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__misc_1gga376d528e7e23474a49c50c5aff06b32aa865e19523601871296e484a1f04df89e" prot="public">
+          <name>LinphoneAccountCreatorDisplayNameInvalid</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__misc_1gga376d528e7e23474a49c50c5aff06b32aaf8643309d574516b697dd2bcd3fbc057" prot="public">
+          <name>LinphoneAccountCreatorTransportNotSupported</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__misc_1gga376d528e7e23474a49c50c5aff06b32aa7700675f94a056191bec31a8092a0d19" prot="public">
+          <name>LinphoneAccountCreatorCountryCodeInvalid</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__misc_1gga376d528e7e23474a49c50c5aff06b32aa53a930ca18dacc2ec01cff6d4a21e285" prot="public">
+          <name>LinphoneAccountCreatorErrorServer</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enum describing the status of a LinphoneAccountCreator operation. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/account_creator.h" line="37" column="1" bodyfile="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/account_creator.h" bodystart="37" bodyend="79"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__misc_1ga48d937b2f5157737a3ca24f20e6459bc" prot="public" static="no">
+        <type>enum <ref refid="group__misc_1ga376d528e7e23474a49c50c5aff06b32a" kindref="member">_LinphoneAccountCreatorStatus</ref></type>
+        <definition>typedef enum _LinphoneAccountCreatorStatus  LinphoneAccountCreatorStatus</definition>
+        <argsstring></argsstring>
+        <name>LinphoneAccountCreatorStatus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enum describing the status of a LinphoneAccountCreator operation. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/account_creator.h" line="79" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__misc_1gafd6720b4e4e8d51f02511196498238ef" prot="public" static="no">
+        <type>struct _LinphoneAccountCreator</type>
+        <definition>typedef struct _LinphoneAccountCreator LinphoneAccountCreator</definition>
+        <argsstring></argsstring>
+        <name>LinphoneAccountCreator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The LinphoneAccountCreator object used to create an account on a server via XML-RPC. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/account_creator.h" line="1" column="1" bodyfile="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/account_creator.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__misc_1ga10cba453f1c0c559b8f1282e2c3ab24c" prot="public" static="no">
+        <type>struct _LinphoneAccountCreatorCbs</type>
+        <definition>typedef struct _LinphoneAccountCreatorCbs LinphoneAccountCreatorCbs</definition>
+        <argsstring></argsstring>
+        <name>LinphoneAccountCreatorCbs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>An object to handle the callbacks for handling the LinphoneAccountCreator operations. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/account_creator.h" line="1" column="1" bodyfile="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/account_creator.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__misc_1gad942849e29a336609b594377fc8a5876" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* LinphoneAccountCreatorCbsStatusCb)(LinphoneAccountCreator *creator, LinphoneAccountCreatorStatus status, const char *resp)</definition>
+        <argsstring>)(LinphoneAccountCreator *creator, LinphoneAccountCreatorStatus status, const char *resp)</argsstring>
+        <name>LinphoneAccountCreatorCbsStatusCb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Callback to notify a status change of the account creator. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreator object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">status</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The status of the LinphoneAccountCreator test existence operation that has just finished </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/account_creator.h" line="96" column="1" bodyfile="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/account_creator.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__misc_1ga01872a5f797fd97a0bd8915ed169637e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref> *</type>
+        <definition>LinphoneAccountCreator* linphone_account_creator_new</definition>
+        <argsstring>(LinphoneCore *core, const char *xmlrpc_url)</argsstring>
+        <name>linphone_account_creator_new</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>core</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>xmlrpc_url</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a LinphoneAccountCreator. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">core</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The LinphoneCore used for the XML-RPC communication </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">xmlrpc_url</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The URL to the XML-RPC server. Must be NON NULL. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The new LinphoneAccountCreator object </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/account_creator.h" line="104" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1gab09f020b4281d8709fc26fd519088416" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref> *</type>
+        <definition>LinphoneAccountCreator* linphone_account_creator_ref</definition>
+        <argsstring>(LinphoneAccountCreator *creator)</argsstring>
+        <name>linphone_account_creator_ref</name>
+        <param>
+          <type><ref refid="group__misc_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Acquire a reference to the LinphoneAccountCreator. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreator object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The same LinphoneAccountCreator object. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/account_creator.h" line="111" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga7830dc91f9632c7ae1d5677188d56eb8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_account_creator_unref</definition>
+        <argsstring>(LinphoneAccountCreator *creator)</argsstring>
+        <name>linphone_account_creator_unref</name>
+        <param>
+          <type><ref refid="group__misc_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Release reference to the LinphoneAccountCreator. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreator object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/account_creator.h" line="117" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga473f21dff2acb5b12cc6f5183f55a7a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* linphone_account_creator_get_user_data</definition>
+        <argsstring>(const LinphoneAccountCreator *creator)</argsstring>
+        <name>linphone_account_creator_get_user_data</name>
+        <param>
+          <type>const <ref refid="group__misc_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retrieve the user pointer associated with the LinphoneAccountCreator. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreator object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The user pointer associated with the LinphoneAccountCreator. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/account_creator.h" line="124" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga7a9a647987112a74d5b2d80ef9f76f9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_account_creator_set_user_data</definition>
+        <argsstring>(LinphoneAccountCreator *creator, void *ud)</argsstring>
+        <name>linphone_account_creator_set_user_data</name>
+        <param>
+          <type><ref refid="group__misc_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>ud</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Assign a user pointer to the LinphoneAccountCreator. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreator object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ud</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The user pointer to associate with the LinphoneAccountCreator. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/account_creator.h" line="131" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga65d1a74de5ee2a9d23c56f6bb4af35c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1ga48d937b2f5157737a3ca24f20e6459bc" kindref="member">LinphoneAccountCreatorStatus</ref></type>
+        <definition>LinphoneAccountCreatorStatus linphone_account_creator_set_username</definition>
+        <argsstring>(LinphoneAccountCreator *creator, const char *username)</argsstring>
+        <name>linphone_account_creator_set_username</name>
+        <param>
+          <type><ref refid="group__misc_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>username</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the username. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreator object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">username</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The username to set </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>LinphoneAccountCreatorOk if everything is OK, or a specific error otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/account_creator.h" line="139" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga23c955c6f20c34ba4568993325e8b31c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_account_creator_get_username</definition>
+        <argsstring>(const LinphoneAccountCreator *creator)</argsstring>
+        <name>linphone_account_creator_get_username</name>
+        <param>
+          <type>const <ref refid="group__misc_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the username. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreator object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The username of the LinphoneAccountCreator </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/account_creator.h" line="146" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga88fb310596bcd3e96a965ae0fbc3b14d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1ga48d937b2f5157737a3ca24f20e6459bc" kindref="member">LinphoneAccountCreatorStatus</ref></type>
+        <definition>LinphoneAccountCreatorStatus linphone_account_creator_update_password</definition>
+        <argsstring>(LinphoneAccountCreator *creator, const char *new_pwd)</argsstring>
+        <name>linphone_account_creator_update_password</name>
+        <param>
+          <type><ref refid="group__misc_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>new_pwd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Update the password. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreator object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">new_pwd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>const char * : new password for the account creator </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>LinphoneAccountCreatorOk if everything is OK, or a specific error otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/account_creator.h" line="154" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga0376b7dbed9946e31329fd089672ca44" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1ga48d937b2f5157737a3ca24f20e6459bc" kindref="member">LinphoneAccountCreatorStatus</ref></type>
+        <definition>LinphoneAccountCreatorStatus linphone_account_creator_set_phone_number</definition>
+        <argsstring>(LinphoneAccountCreator *creator, const char *phone_number, const char *country_code)</argsstring>
+        <name>linphone_account_creator_set_phone_number</name>
+        <param>
+          <type><ref refid="group__misc_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>phone_number</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>country_code</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the phone number normalized. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreator object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">phone_number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The phone number to set </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">country_code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Country code to associate phone number with </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>LinphoneAccountCreatorOk if everything is OK, or a specific error otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/account_creator.h" line="163" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga067d45b4546223c0511ebb483220b5b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_account_creator_get_phone_number</definition>
+        <argsstring>(const LinphoneAccountCreator *creator)</argsstring>
+        <name>linphone_account_creator_get_phone_number</name>
+        <param>
+          <type>const <ref refid="group__misc_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the RFC 3966 normalized phone number. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreator object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The phone number of the LinphoneAccountCreator </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/account_creator.h" line="170" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1gac4f32254116f1df0d4a89805b5b832d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1ga48d937b2f5157737a3ca24f20e6459bc" kindref="member">LinphoneAccountCreatorStatus</ref></type>
+        <definition>LinphoneAccountCreatorStatus linphone_account_creator_set_password</definition>
+        <argsstring>(LinphoneAccountCreator *creator, const char *password)</argsstring>
+        <name>linphone_account_creator_set_password</name>
+        <param>
+          <type><ref refid="group__misc_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>password</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the password. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreator object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">password</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The password to set </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>LinphoneAccountCreatorOk if everything is OK, or a specific error otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/account_creator.h" line="178" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1gab65e965b5d4c11dd06cc657b0d723079" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_account_creator_get_password</definition>
+        <argsstring>(const LinphoneAccountCreator *creator)</argsstring>
+        <name>linphone_account_creator_get_password</name>
+        <param>
+          <type>const <ref refid="group__misc_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the password. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreator object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The password of the LinphoneAccountCreator </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/account_creator.h" line="185" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga2293c0fb37935f665e248f5897947840" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1ga48d937b2f5157737a3ca24f20e6459bc" kindref="member">LinphoneAccountCreatorStatus</ref></type>
+        <definition>LinphoneAccountCreatorStatus linphone_account_creator_set_ha1</definition>
+        <argsstring>(LinphoneAccountCreator *creator, const char *ha1)</argsstring>
+        <name>linphone_account_creator_set_ha1</name>
+        <param>
+          <type><ref refid="group__misc_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>ha1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the ha1. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreator object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ha1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ha1 to set </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>LinphoneAccountCreatorOk if everything is OK, or a specific error otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/account_creator.h" line="193" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga1560266f1766692fd789f203694ca11d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_account_creator_get_ha1</definition>
+        <argsstring>(const LinphoneAccountCreator *creator)</argsstring>
+        <name>linphone_account_creator_get_ha1</name>
+        <param>
+          <type>const <ref refid="group__misc_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the ha1. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreator object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The ha1 of the LinphoneAccountCreator </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/account_creator.h" line="200" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1gaaac4841bd4ab0d4a03792d84f5ebcc4e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1ga48d937b2f5157737a3ca24f20e6459bc" kindref="member">LinphoneAccountCreatorStatus</ref></type>
+        <definition>LinphoneAccountCreatorStatus linphone_account_creator_set_activation_code</definition>
+        <argsstring>(LinphoneAccountCreator *creator, const char *activation_code)</argsstring>
+        <name>linphone_account_creator_set_activation_code</name>
+        <param>
+          <type><ref refid="group__misc_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>activation_code</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the activation code. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreator object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">activation_code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The activation code to set </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/account_creator.h" line="207" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga8cac5668eb3952468e76dbef19220fe0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1ga48d937b2f5157737a3ca24f20e6459bc" kindref="member">LinphoneAccountCreatorStatus</ref></type>
+        <definition>LinphoneAccountCreatorStatus linphone_account_creator_set_language</definition>
+        <argsstring>(LinphoneAccountCreator *creator, const char *lang)</argsstring>
+        <name>linphone_account_creator_set_language</name>
+        <param>
+          <type><ref refid="group__misc_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>lang</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the language to use in email or SMS if supported. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreator object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">lang</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The language to use </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/account_creator.h" line="214" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1gafd2434b60030136e9c6ab1731a7ca236" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1ga48d937b2f5157737a3ca24f20e6459bc" kindref="member">LinphoneAccountCreatorStatus</ref></type>
+        <definition>LinphoneAccountCreatorStatus linphone_account_creator_set_transport</definition>
+        <argsstring>(LinphoneAccountCreator *creator, LinphoneTransportType transport)</argsstring>
+        <name>linphone_account_creator_set_transport</name>
+        <param>
+          <type><ref refid="group__misc_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <param>
+          <type><ref refid="group__linphone__address_1ga3835b7b8ed546312096456602ac0ce1d" kindref="member">LinphoneTransportType</ref></type>
+          <declname>transport</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the transport. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreator object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">transport</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The transport to set </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>LinphoneAccountCreatorOk if everything is OK, or a specific error if given transport is not supported by linphone core. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/account_creator.h" line="222" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga972792a0534f2892ddfb8d0de9ebb4da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__linphone__address_1ga3835b7b8ed546312096456602ac0ce1d" kindref="member">LinphoneTransportType</ref></type>
+        <definition>LinphoneTransportType linphone_account_creator_get_transport</definition>
+        <argsstring>(const LinphoneAccountCreator *creator)</argsstring>
+        <name>linphone_account_creator_get_transport</name>
+        <param>
+          <type>const <ref refid="group__misc_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the transport. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreator object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The transport of the LinphoneAccountCreator </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/account_creator.h" line="229" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga53887ed6c1fd0ead0cf729a523de3463" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1ga48d937b2f5157737a3ca24f20e6459bc" kindref="member">LinphoneAccountCreatorStatus</ref></type>
+        <definition>LinphoneAccountCreatorStatus linphone_account_creator_set_domain</definition>
+        <argsstring>(LinphoneAccountCreator *creator, const char *domain)</argsstring>
+        <name>linphone_account_creator_set_domain</name>
+        <param>
+          <type><ref refid="group__misc_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>domain</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the domain. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreator object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">domain</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The domain to set </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>LinphoneAccountCreatorOk if everything is OK, or a specific error otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/account_creator.h" line="237" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1gad36b9626fee354ee6037536d9d4ca655" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_account_creator_get_domain</definition>
+        <argsstring>(const LinphoneAccountCreator *creator)</argsstring>
+        <name>linphone_account_creator_get_domain</name>
+        <param>
+          <type>const <ref refid="group__misc_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the domain. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreator object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The domain of the LinphoneAccountCreator </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/account_creator.h" line="244" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga7cf7bbb54ab9e34aaeb0c7ad8c3a3273" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1ga48d937b2f5157737a3ca24f20e6459bc" kindref="member">LinphoneAccountCreatorStatus</ref></type>
+        <definition>LinphoneAccountCreatorStatus linphone_account_creator_set_route</definition>
+        <argsstring>(LinphoneAccountCreator *creator, const char *route)</argsstring>
+        <name>linphone_account_creator_set_route</name>
+        <param>
+          <type><ref refid="group__misc_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>route</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the route. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreator object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">route</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The route to set </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>LinphoneAccountCreatorOk if everything is OK, or a specific error otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/account_creator.h" line="252" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1gac71b04994c31209749dbc0c025c7c2a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_account_creator_get_route</definition>
+        <argsstring>(const LinphoneAccountCreator *creator)</argsstring>
+        <name>linphone_account_creator_get_route</name>
+        <param>
+          <type>const <ref refid="group__misc_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the route. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreator object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The route of the LinphoneAccountCreator </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/account_creator.h" line="259" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1gadff0bb66f4aeef51e65cd5f9530c5b86" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1ga48d937b2f5157737a3ca24f20e6459bc" kindref="member">LinphoneAccountCreatorStatus</ref></type>
+        <definition>LinphoneAccountCreatorStatus linphone_account_creator_set_display_name</definition>
+        <argsstring>(LinphoneAccountCreator *creator, const char *display_name)</argsstring>
+        <name>linphone_account_creator_set_display_name</name>
+        <param>
+          <type><ref refid="group__misc_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>display_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the email. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreator object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">display_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The display name to set </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>LinphoneAccountCreatorOk if everything is OK, or a specific error otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/account_creator.h" line="267" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga5ee5c74e73382c9a1863495283d20b34" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_account_creator_get_display_name</definition>
+        <argsstring>(const LinphoneAccountCreator *creator)</argsstring>
+        <name>linphone_account_creator_get_display_name</name>
+        <param>
+          <type>const <ref refid="group__misc_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the email. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreator object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The display name of the LinphoneAccountCreator </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/account_creator.h" line="274" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1gaa525be678af8172f49f5f089cc1210c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1ga48d937b2f5157737a3ca24f20e6459bc" kindref="member">LinphoneAccountCreatorStatus</ref></type>
+        <definition>LinphoneAccountCreatorStatus linphone_account_creator_set_email</definition>
+        <argsstring>(LinphoneAccountCreator *creator, const char *email)</argsstring>
+        <name>linphone_account_creator_set_email</name>
+        <param>
+          <type><ref refid="group__misc_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>email</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the email. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreator object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">email</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The email to set </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>LinphoneAccountCreatorOk if everything is OK, or a specific error otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/account_creator.h" line="282" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1gabc5b83e25414a1c46aec516df1f9332f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_account_creator_get_email</definition>
+        <argsstring>(const LinphoneAccountCreator *creator)</argsstring>
+        <name>linphone_account_creator_get_email</name>
+        <param>
+          <type>const <ref refid="group__misc_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the email. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreator object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The email of the LinphoneAccountCreator </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/account_creator.h" line="289" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga1f91181af688258da8025a4d11de21b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1ga10cba453f1c0c559b8f1282e2c3ab24c" kindref="member">LinphoneAccountCreatorCbs</ref> *</type>
+        <definition>LinphoneAccountCreatorCbs* linphone_account_creator_get_callbacks</definition>
+        <argsstring>(const LinphoneAccountCreator *creator)</argsstring>
+        <name>linphone_account_creator_get_callbacks</name>
+        <param>
+          <type>const <ref refid="group__misc_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the LinphoneAccountCreatorCbs object associated with a LinphoneAccountCreator. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreator object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The LinphoneAccountCreatorCbs object associated with the LinphoneAccountCreator. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/account_creator.h" line="296" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga31d0f08e49579e67490f7416c24789b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1ga48d937b2f5157737a3ca24f20e6459bc" kindref="member">LinphoneAccountCreatorStatus</ref></type>
+        <definition>LinphoneAccountCreatorStatus linphone_account_creator_is_account_used</definition>
+        <argsstring>(LinphoneAccountCreator *creator)</argsstring>
+        <name>linphone_account_creator_is_account_used</name>
+        <param>
+          <type><ref refid="group__misc_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Send an XML-RPC request to test the existence of a Linphone account. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreator object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>LinphoneAccountCreatorOk if the request has been sent, LinphoneAccountCreatorReqFailed otherwise </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/account_creator.h" line="303" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga89929431634a64bbadbfc4eba1934153" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1ga48d937b2f5157737a3ca24f20e6459bc" kindref="member">LinphoneAccountCreatorStatus</ref></type>
+        <definition>LinphoneAccountCreatorStatus linphone_account_creator_create_account</definition>
+        <argsstring>(LinphoneAccountCreator *creator)</argsstring>
+        <name>linphone_account_creator_create_account</name>
+        <param>
+          <type><ref refid="group__misc_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Send an XML-RPC request to create a Linphone account. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreator object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>LinphoneAccountCreatorOk if the request has been sent, LinphoneAccountCreatorReqFailed otherwise </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/account_creator.h" line="310" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga5248f54e110168295b72b5e1d02d08d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1ga48d937b2f5157737a3ca24f20e6459bc" kindref="member">LinphoneAccountCreatorStatus</ref></type>
+        <definition>LinphoneAccountCreatorStatus linphone_account_creator_activate_account</definition>
+        <argsstring>(LinphoneAccountCreator *creator)</argsstring>
+        <name>linphone_account_creator_activate_account</name>
+        <param>
+          <type><ref refid="group__misc_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Send an XML-RPC request to activate a Linphone account. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreator object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>LinphoneAccountCreatorOk if the request has been sent, LinphoneAccountCreatorReqFailed otherwise </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/account_creator.h" line="317" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga9813bddc9285266bef03d672cf695b69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1ga48d937b2f5157737a3ca24f20e6459bc" kindref="member">LinphoneAccountCreatorStatus</ref></type>
+        <definition>LinphoneAccountCreatorStatus linphone_account_creator_is_account_activated</definition>
+        <argsstring>(LinphoneAccountCreator *creator)</argsstring>
+        <name>linphone_account_creator_is_account_activated</name>
+        <param>
+          <type><ref refid="group__misc_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Send an XML-RPC request to test the validation of a Linphone account. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreator object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>LinphoneAccountCreatorOk if the request has been sent, LinphoneAccountCreatorReqFailed otherwise </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/account_creator.h" line="324" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1gac0796926224394803e815537b132dc88" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1ga48d937b2f5157737a3ca24f20e6459bc" kindref="member">LinphoneAccountCreatorStatus</ref></type>
+        <definition>LinphoneAccountCreatorStatus linphone_account_creator_is_phone_number_used</definition>
+        <argsstring>(LinphoneAccountCreator *creator)</argsstring>
+        <name>linphone_account_creator_is_phone_number_used</name>
+        <param>
+          <type><ref refid="group__misc_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Send an XML-RPC request to test the existence a phone number with a Linphone account. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreator object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>LinphoneAccountCreatorOk if the request has been sent, LinphoneAccountCreatorReqFailed otherwise </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/account_creator.h" line="331" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1gafb151875ec1ccb5cb88824fe7c82aaec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1ga48d937b2f5157737a3ca24f20e6459bc" kindref="member">LinphoneAccountCreatorStatus</ref></type>
+        <definition>LinphoneAccountCreatorStatus linphone_account_creator_link_phone_number_with_account</definition>
+        <argsstring>(LinphoneAccountCreator *creator)</argsstring>
+        <name>linphone_account_creator_link_phone_number_with_account</name>
+        <param>
+          <type><ref refid="group__misc_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Send an XML-RPC request to link a phone number with a Linphone account. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreator object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>LinphoneAccountCreatorOK if the request has been sent, LinphoneAccountCreatorReqFailed otherwise </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/account_creator.h" line="338" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga2ecafd8fb409102d1e31b42bb051338d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1ga48d937b2f5157737a3ca24f20e6459bc" kindref="member">LinphoneAccountCreatorStatus</ref></type>
+        <definition>LinphoneAccountCreatorStatus linphone_account_creator_activate_phone_number_link</definition>
+        <argsstring>(LinphoneAccountCreator *creator)</argsstring>
+        <name>linphone_account_creator_activate_phone_number_link</name>
+        <param>
+          <type><ref refid="group__misc_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Send an XML-RPC request to activate the link of a phone number with a Linphone account. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreator object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>LinphoneAccountCreatorOK if the request has been sent, LinphoneAccountCreatorReqFailed otherwise </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/account_creator.h" line="345" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga33274541a8262106c4de1c92a6c742ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1ga48d937b2f5157737a3ca24f20e6459bc" kindref="member">LinphoneAccountCreatorStatus</ref></type>
+        <definition>LinphoneAccountCreatorStatus linphone_account_creator_recover_phone_account</definition>
+        <argsstring>(LinphoneAccountCreator *creator)</argsstring>
+        <name>linphone_account_creator_recover_phone_account</name>
+        <param>
+          <type><ref refid="group__misc_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/account_creator.h" line="347" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1gae3deac3b5806eccde8042a483556fa67" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1ga48d937b2f5157737a3ca24f20e6459bc" kindref="member">LinphoneAccountCreatorStatus</ref></type>
+        <definition>LinphoneAccountCreatorStatus linphone_account_creator_is_account_linked</definition>
+        <argsstring>(LinphoneAccountCreator *creator)</argsstring>
+        <name>linphone_account_creator_is_account_linked</name>
+        <param>
+          <type><ref refid="group__misc_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Send an XML-RPC request to ask if an account is linked with a phone number <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreator object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if this account is linked with a phone number </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/account_creator.h" line="354" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga6b5993a70bd49430b5a502a37ad3accf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> *</type>
+        <definition>LinphoneProxyConfig* linphone_account_creator_configure</definition>
+        <argsstring>(const LinphoneAccountCreator *creator)</argsstring>
+        <name>linphone_account_creator_configure</name>
+        <param>
+          <type>const <ref refid="group__misc_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Configure an account (create a proxy config and authentication info for it). <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreator object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A LinphoneProxyConfig object if successful, NULL otherwise </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/account_creator.h" line="361" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga0a5a8f13dbbb2b75a9fea65f5bb3a184" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1ga10cba453f1c0c559b8f1282e2c3ab24c" kindref="member">LinphoneAccountCreatorCbs</ref> *</type>
+        <definition>LinphoneAccountCreatorCbs* linphone_account_creator_cbs_ref</definition>
+        <argsstring>(LinphoneAccountCreatorCbs *cbs)</argsstring>
+        <name>linphone_account_creator_cbs_ref</name>
+        <param>
+          <type><ref refid="group__misc_1ga10cba453f1c0c559b8f1282e2c3ab24c" kindref="member">LinphoneAccountCreatorCbs</ref> *</type>
+          <declname>cbs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Acquire a reference to a LinphoneAccountCreatorCbs object. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreatorCbs object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The same LinphoneAccountCreatorCbs object. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/account_creator.h" line="368" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1gafb2b0bf7213192780baa30aa6c0f8d9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_account_creator_cbs_unref</definition>
+        <argsstring>(LinphoneAccountCreatorCbs *cbs)</argsstring>
+        <name>linphone_account_creator_cbs_unref</name>
+        <param>
+          <type><ref refid="group__misc_1ga10cba453f1c0c559b8f1282e2c3ab24c" kindref="member">LinphoneAccountCreatorCbs</ref> *</type>
+          <declname>cbs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Release a reference to a LinphoneAccountCreatorCbs object. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreatorCbs object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/account_creator.h" line="374" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga3df023d6958b80d97f7a2811a2ee212d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* linphone_account_creator_cbs_get_user_data</definition>
+        <argsstring>(const LinphoneAccountCreatorCbs *cbs)</argsstring>
+        <name>linphone_account_creator_cbs_get_user_data</name>
+        <param>
+          <type>const <ref refid="group__misc_1ga10cba453f1c0c559b8f1282e2c3ab24c" kindref="member">LinphoneAccountCreatorCbs</ref> *</type>
+          <declname>cbs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retrieve the user pointer associated with a LinphoneAccountCreatorCbs object. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreatorCbs object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The user pointer associated with the LinphoneAccountCreatorCbs object. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/account_creator.h" line="381" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga65494af8f91fe4f82955d00bac36e815" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_account_creator_cbs_set_user_data</definition>
+        <argsstring>(LinphoneAccountCreatorCbs *cbs, void *ud)</argsstring>
+        <name>linphone_account_creator_cbs_set_user_data</name>
+        <param>
+          <type><ref refid="group__misc_1ga10cba453f1c0c559b8f1282e2c3ab24c" kindref="member">LinphoneAccountCreatorCbs</ref> *</type>
+          <declname>cbs</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>ud</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Assign a user pointer to a LinphoneAccountCreatorCbs object. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreatorCbs object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ud</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The user pointer to associate with the LinphoneAccountCreatorCbs object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/account_creator.h" line="388" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga59f19e47fb4634a4228ce1bf01e851c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1gad942849e29a336609b594377fc8a5876" kindref="member">LinphoneAccountCreatorCbsStatusCb</ref></type>
+        <definition>LinphoneAccountCreatorCbsStatusCb linphone_account_creator_cbs_get_update_hash</definition>
+        <argsstring>(const LinphoneAccountCreatorCbs *cbs)</argsstring>
+        <name>linphone_account_creator_cbs_get_update_hash</name>
+        <param>
+          <type>const <ref refid="group__misc_1ga10cba453f1c0c559b8f1282e2c3ab24c" kindref="member">LinphoneAccountCreatorCbs</ref> *</type>
+          <declname>cbs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retrieve the user pointer associated with a LinphoneAccountCreatorCbs object. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreatorCbs object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The user pointer associated with the LinphoneAccountCreatorCbs object. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/account_creator.h" line="395" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga452c20e66e25f565d82651be1c1425aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_account_creator_cbs_set_update_hash</definition>
+        <argsstring>(LinphoneAccountCreatorCbs *cbs, LinphoneAccountCreatorCbsStatusCb cb)</argsstring>
+        <name>linphone_account_creator_cbs_set_update_hash</name>
+        <param>
+          <type><ref refid="group__misc_1ga10cba453f1c0c559b8f1282e2c3ab24c" kindref="member">LinphoneAccountCreatorCbs</ref> *</type>
+          <declname>cbs</declname>
+        </param>
+        <param>
+          <type><ref refid="group__misc_1gad942849e29a336609b594377fc8a5876" kindref="member">LinphoneAccountCreatorCbsStatusCb</ref></type>
+          <declname>cb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Assign a user pointer to a LinphoneAccountCreatorCbs object. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreatorCbs object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The update hash callback to be used. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/account_creator.h" line="402" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga8c4a79ad32aae4dcc784b786a66fbe9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1gad942849e29a336609b594377fc8a5876" kindref="member">LinphoneAccountCreatorCbsStatusCb</ref></type>
+        <definition>LinphoneAccountCreatorCbsStatusCb linphone_account_creator_cbs_get_is_account_linked</definition>
+        <argsstring>(const LinphoneAccountCreatorCbs *cbs)</argsstring>
+        <name>linphone_account_creator_cbs_get_is_account_linked</name>
+        <param>
+          <type>const <ref refid="group__misc_1ga10cba453f1c0c559b8f1282e2c3ab24c" kindref="member">LinphoneAccountCreatorCbs</ref> *</type>
+          <declname>cbs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the current linked tested callback. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreatorCbs object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The current linked tested callback. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/account_creator.h" line="409" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga3973654ca5db14c6767284c353360245" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_account_creator_cbs_set_is_account_linked</definition>
+        <argsstring>(LinphoneAccountCreatorCbs *cbs, LinphoneAccountCreatorCbsStatusCb cb)</argsstring>
+        <name>linphone_account_creator_cbs_set_is_account_linked</name>
+        <param>
+          <type><ref refid="group__misc_1ga10cba453f1c0c559b8f1282e2c3ab24c" kindref="member">LinphoneAccountCreatorCbs</ref> *</type>
+          <declname>cbs</declname>
+        </param>
+        <param>
+          <type><ref refid="group__misc_1gad942849e29a336609b594377fc8a5876" kindref="member">LinphoneAccountCreatorCbsStatusCb</ref></type>
+          <declname>cb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the linked tested callback <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreatorCbs object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The existence tested callback to be used. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/account_creator.h" line="416" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1gad07e4df65b86022c1af1ed21d1fe5fbc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1gad942849e29a336609b594377fc8a5876" kindref="member">LinphoneAccountCreatorCbsStatusCb</ref></type>
+        <definition>LinphoneAccountCreatorCbsStatusCb linphone_account_creator_cbs_get_is_account_used</definition>
+        <argsstring>(const LinphoneAccountCreatorCbs *cbs)</argsstring>
+        <name>linphone_account_creator_cbs_get_is_account_used</name>
+        <param>
+          <type>const <ref refid="group__misc_1ga10cba453f1c0c559b8f1282e2c3ab24c" kindref="member">LinphoneAccountCreatorCbs</ref> *</type>
+          <declname>cbs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the existence tested callback. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreatorCbs object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The current existence tested callback. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/account_creator.h" line="423" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga9024b61f8154c635f4b8452de7bba9c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_account_creator_cbs_set_is_account_used</definition>
+        <argsstring>(LinphoneAccountCreatorCbs *cbs, LinphoneAccountCreatorCbsStatusCb cb)</argsstring>
+        <name>linphone_account_creator_cbs_set_is_account_used</name>
+        <param>
+          <type><ref refid="group__misc_1ga10cba453f1c0c559b8f1282e2c3ab24c" kindref="member">LinphoneAccountCreatorCbs</ref> *</type>
+          <declname>cbs</declname>
+        </param>
+        <param>
+          <type><ref refid="group__misc_1gad942849e29a336609b594377fc8a5876" kindref="member">LinphoneAccountCreatorCbsStatusCb</ref></type>
+          <declname>cb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the existence tested callback. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreatorCbs object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The existence tested callback to be used. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/account_creator.h" line="430" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga8739d83134c5aea0c48c367e8c3d2bea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1gad942849e29a336609b594377fc8a5876" kindref="member">LinphoneAccountCreatorCbsStatusCb</ref></type>
+        <definition>LinphoneAccountCreatorCbsStatusCb linphone_account_creator_cbs_get_create_account</definition>
+        <argsstring>(const LinphoneAccountCreatorCbs *cbs)</argsstring>
+        <name>linphone_account_creator_cbs_get_create_account</name>
+        <param>
+          <type>const <ref refid="group__misc_1ga10cba453f1c0c559b8f1282e2c3ab24c" kindref="member">LinphoneAccountCreatorCbs</ref> *</type>
+          <declname>cbs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the create account callback. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreatorCbs object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The current create account callback. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/account_creator.h" line="437" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga26dbc6d6ecd0b1dc5d94470fb25f4a26" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_account_creator_cbs_set_create_account</definition>
+        <argsstring>(LinphoneAccountCreatorCbs *cbs, LinphoneAccountCreatorCbsStatusCb cb)</argsstring>
+        <name>linphone_account_creator_cbs_set_create_account</name>
+        <param>
+          <type><ref refid="group__misc_1ga10cba453f1c0c559b8f1282e2c3ab24c" kindref="member">LinphoneAccountCreatorCbs</ref> *</type>
+          <declname>cbs</declname>
+        </param>
+        <param>
+          <type><ref refid="group__misc_1gad942849e29a336609b594377fc8a5876" kindref="member">LinphoneAccountCreatorCbsStatusCb</ref></type>
+          <declname>cb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the create account callback. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreatorCbs object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The create account callback to be used. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/account_creator.h" line="444" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga3518e6b092dff01f7328394c1fbfb944" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1gad942849e29a336609b594377fc8a5876" kindref="member">LinphoneAccountCreatorCbsStatusCb</ref></type>
+        <definition>LinphoneAccountCreatorCbsStatusCb linphone_account_creator_cbs_get_activate_account</definition>
+        <argsstring>(const LinphoneAccountCreatorCbs *cbs)</argsstring>
+        <name>linphone_account_creator_cbs_get_activate_account</name>
+        <param>
+          <type>const <ref refid="group__misc_1ga10cba453f1c0c559b8f1282e2c3ab24c" kindref="member">LinphoneAccountCreatorCbs</ref> *</type>
+          <declname>cbs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the activate account callback. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreatorCbs object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The current activate account callback. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/account_creator.h" line="451" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1gaa6ec977f0563771ea6658ddb9b11978c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_account_creator_cbs_set_activate_account</definition>
+        <argsstring>(LinphoneAccountCreatorCbs *cbs, LinphoneAccountCreatorCbsStatusCb cb)</argsstring>
+        <name>linphone_account_creator_cbs_set_activate_account</name>
+        <param>
+          <type><ref refid="group__misc_1ga10cba453f1c0c559b8f1282e2c3ab24c" kindref="member">LinphoneAccountCreatorCbs</ref> *</type>
+          <declname>cbs</declname>
+        </param>
+        <param>
+          <type><ref refid="group__misc_1gad942849e29a336609b594377fc8a5876" kindref="member">LinphoneAccountCreatorCbsStatusCb</ref></type>
+          <declname>cb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the activate account callback. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreatorCbs object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The activate account callback to be used. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/account_creator.h" line="458" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga5895f72105624e4636f6b9f9d3ca6b46" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1gad942849e29a336609b594377fc8a5876" kindref="member">LinphoneAccountCreatorCbsStatusCb</ref></type>
+        <definition>LinphoneAccountCreatorCbsStatusCb linphone_account_creator_cbs_get_link_phone_number_with_account</definition>
+        <argsstring>(const LinphoneAccountCreatorCbs *cbs)</argsstring>
+        <name>linphone_account_creator_cbs_get_link_phone_number_with_account</name>
+        <param>
+          <type>const <ref refid="group__misc_1ga10cba453f1c0c559b8f1282e2c3ab24c" kindref="member">LinphoneAccountCreatorCbs</ref> *</type>
+          <declname>cbs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the link phone number with account callback. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreatorCbs object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The current link phone number with account callback. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/account_creator.h" line="465" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1gac174343be1203b1c381ce9ed363e44b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_account_creator_cbs_set_link_phone_number_with_account</definition>
+        <argsstring>(LinphoneAccountCreatorCbs *cbs, LinphoneAccountCreatorCbsStatusCb cb)</argsstring>
+        <name>linphone_account_creator_cbs_set_link_phone_number_with_account</name>
+        <param>
+          <type><ref refid="group__misc_1ga10cba453f1c0c559b8f1282e2c3ab24c" kindref="member">LinphoneAccountCreatorCbs</ref> *</type>
+          <declname>cbs</declname>
+        </param>
+        <param>
+          <type><ref refid="group__misc_1gad942849e29a336609b594377fc8a5876" kindref="member">LinphoneAccountCreatorCbsStatusCb</ref></type>
+          <declname>cb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the link phone number with account callback. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreatorCbs object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The link phone number with account callback to be used. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/account_creator.h" line="472" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1gac3cd2cd6c567f833a79d32ee20a1886d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1gad942849e29a336609b594377fc8a5876" kindref="member">LinphoneAccountCreatorCbsStatusCb</ref></type>
+        <definition>LinphoneAccountCreatorCbsStatusCb linphone_account_creator_cbs_get_activate_phone_number_link</definition>
+        <argsstring>(const LinphoneAccountCreatorCbs *cbs)</argsstring>
+        <name>linphone_account_creator_cbs_get_activate_phone_number_link</name>
+        <param>
+          <type>const <ref refid="group__misc_1ga10cba453f1c0c559b8f1282e2c3ab24c" kindref="member">LinphoneAccountCreatorCbs</ref> *</type>
+          <declname>cbs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the activate phone number link callback. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreatorCbs object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The current activate phone number link callback. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/account_creator.h" line="479" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1gab953d655a9cc315c378fb2d6ea11c684" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_account_creator_cbs_set_activate_phone_number_link</definition>
+        <argsstring>(LinphoneAccountCreatorCbs *cbs, LinphoneAccountCreatorCbsStatusCb cb)</argsstring>
+        <name>linphone_account_creator_cbs_set_activate_phone_number_link</name>
+        <param>
+          <type><ref refid="group__misc_1ga10cba453f1c0c559b8f1282e2c3ab24c" kindref="member">LinphoneAccountCreatorCbs</ref> *</type>
+          <declname>cbs</declname>
+        </param>
+        <param>
+          <type><ref refid="group__misc_1gad942849e29a336609b594377fc8a5876" kindref="member">LinphoneAccountCreatorCbsStatusCb</ref></type>
+          <declname>cb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the activate phone number link callback. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreatorCbs object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The activate phone number link callback to be used. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/account_creator.h" line="486" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga29ca424ea11e88425fdca98628c23928" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1gad942849e29a336609b594377fc8a5876" kindref="member">LinphoneAccountCreatorCbsStatusCb</ref></type>
+        <definition>LinphoneAccountCreatorCbsStatusCb linphone_account_creator_cbs_get_is_account_activated</definition>
+        <argsstring>(const LinphoneAccountCreatorCbs *cbs)</argsstring>
+        <name>linphone_account_creator_cbs_get_is_account_activated</name>
+        <param>
+          <type>const <ref refid="group__misc_1ga10cba453f1c0c559b8f1282e2c3ab24c" kindref="member">LinphoneAccountCreatorCbs</ref> *</type>
+          <declname>cbs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the validation tested callback. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreatorCbs object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The current validation tested callback. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/account_creator.h" line="493" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga0ea7329acf3a1ed60e3099072ebc5d76" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_account_creator_cbs_set_is_account_activated</definition>
+        <argsstring>(LinphoneAccountCreatorCbs *cbs, LinphoneAccountCreatorCbsStatusCb cb)</argsstring>
+        <name>linphone_account_creator_cbs_set_is_account_activated</name>
+        <param>
+          <type><ref refid="group__misc_1ga10cba453f1c0c559b8f1282e2c3ab24c" kindref="member">LinphoneAccountCreatorCbs</ref> *</type>
+          <declname>cbs</declname>
+        </param>
+        <param>
+          <type><ref refid="group__misc_1gad942849e29a336609b594377fc8a5876" kindref="member">LinphoneAccountCreatorCbsStatusCb</ref></type>
+          <declname>cb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the validation tested callback. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreatorCbs object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The validation tested callback to be used. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/account_creator.h" line="500" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1gac60d65f37e2e0a2168997be49f18fc41" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1gad942849e29a336609b594377fc8a5876" kindref="member">LinphoneAccountCreatorCbsStatusCb</ref></type>
+        <definition>LinphoneAccountCreatorCbsStatusCb linphone_account_creator_cbs_get_is_phone_number_used</definition>
+        <argsstring>(const LinphoneAccountCreatorCbs *cbs)</argsstring>
+        <name>linphone_account_creator_cbs_get_is_phone_number_used</name>
+        <param>
+          <type>const <ref refid="group__misc_1ga10cba453f1c0c559b8f1282e2c3ab24c" kindref="member">LinphoneAccountCreatorCbs</ref> *</type>
+          <declname>cbs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the is phone number used callback. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreatorCbs object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The current is phone number used callback </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/account_creator.h" line="507" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga8238bd9f6e5c79a2b0a3f372682cba07" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_account_creator_cbs_set_is_phone_number_used</definition>
+        <argsstring>(LinphoneAccountCreatorCbs *cbs, LinphoneAccountCreatorCbsStatusCb cb)</argsstring>
+        <name>linphone_account_creator_cbs_set_is_phone_number_used</name>
+        <param>
+          <type><ref refid="group__misc_1ga10cba453f1c0c559b8f1282e2c3ab24c" kindref="member">LinphoneAccountCreatorCbs</ref> *</type>
+          <declname>cbs</declname>
+        </param>
+        <param>
+          <type><ref refid="group__misc_1gad942849e29a336609b594377fc8a5876" kindref="member">LinphoneAccountCreatorCbsStatusCb</ref></type>
+          <declname>cb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the is phone number used callback. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreatorCbs object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is phone number to be used. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/account_creator.h" line="514" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1gacdc6b41a44d06860e89e32d0b67da75c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_account_creator_cbs_set_recover_phone_account</definition>
+        <argsstring>(LinphoneAccountCreatorCbs *cbs, LinphoneAccountCreatorCbsStatusCb cb)</argsstring>
+        <name>linphone_account_creator_cbs_set_recover_phone_account</name>
+        <param>
+          <type><ref refid="group__misc_1ga10cba453f1c0c559b8f1282e2c3ab24c" kindref="member">LinphoneAccountCreatorCbs</ref> *</type>
+          <declname>cbs</declname>
+        </param>
+        <param>
+          <type><ref refid="group__misc_1gad942849e29a336609b594377fc8a5876" kindref="member">LinphoneAccountCreatorCbsStatusCb</ref></type>
+          <declname>cb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/account_creator.h" line="516" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1gab91035bbb403170677589186d1884a44" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1gad942849e29a336609b594377fc8a5876" kindref="member">LinphoneAccountCreatorCbsStatusCb</ref></type>
+        <definition>LinphoneAccountCreatorCbsStatusCb linphone_account_creator_cbs_get_recover_phone_account</definition>
+        <argsstring>(const LinphoneAccountCreatorCbs *cbs)</argsstring>
+        <name>linphone_account_creator_cbs_get_recover_phone_account</name>
+        <param>
+          <type>const <ref refid="group__misc_1ga10cba453f1c0c559b8f1282e2c3ab24c" kindref="member">LinphoneAccountCreatorCbs</ref> *</type>
+          <declname>cbs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/account_creator.h" line="517" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">account_creator.h</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">Copyright<sp/>(C)<sp/>2010-2015<sp/>Belledonne<sp/>Communications<sp/>SARL</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"></highlight></codeline>
+<codeline lineno="5"><highlight class="comment">This<sp/>program<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>2</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">of<sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment">This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"></highlight></codeline>
+<codeline lineno="15"><highlight class="comment">You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">along<sp/>with<sp/>this<sp/>program;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>Street,<sp/>Fifth<sp/>Floor,<sp/>Boston,<sp/>MA<sp/><sp/>02110-1301,<sp/>USA.</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LINPHONE_ACCOUNT_CREATOR_H_</highlight></codeline>
+<codeline lineno="21"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>LINPHONE_ACCOUNT_CREATOR_H_</highlight></codeline>
+<codeline lineno="22"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;linphonecore.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="26"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="28"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="37"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__misc_1ga376d528e7e23474a49c50c5aff06b32a" kindref="member">_LinphoneAccountCreatorStatus</ref><sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LinphoneAccountCreatorOK,</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LinphoneAccountCreatorReqFailed,</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LinphoneAccountCreatorAccountCreated,</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LinphoneAccountCreatorAccountNotCreated,</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LinphoneAccountCreatorAccountExist,</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LinphoneAccountCreatorAccountExistWithAlias,</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LinphoneAccountCreatorAccountNotExist,</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LinphoneAccountCreatorAccountActivated,</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LinphoneAccountCreatorAccountAlreadyActivated,</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LinphoneAccountCreatorAccountNotActivated,</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LinphoneAccountCreatorAccountLinked,</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LinphoneAccountCreatorAccountNotLinked,</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LinphoneAccountCreatorEmailInvalid,</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LinphoneAccountCreatorUsernameInvalid,</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LinphoneAccountCreatorUsernameTooShort,</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LinphoneAccountCreatorUsernameTooLong,</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LinphoneAccountCreatorUsernameInvalidSize,</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LinphoneAccountCreatorPhoneNumberInvalid,</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LinphoneAccountCreatorPhoneNumberTooShort,</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LinphoneAccountCreatorPhoneNumberTooLong,</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LinphoneAccountCreatorPhoneNumberUsedAccount,</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LinphoneAccountCreatorPhoneNumberUsedAlias,</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LinphoneAccountCreatorPhoneNumberNotUsed,</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LinphoneAccountCreatorPasswordTooShort,</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LinphoneAccountCreatorPasswordTooLong,</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LinphoneAccountCreatorDomainInvalid,</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LinphoneAccountCreatorRouteInvalid,</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LinphoneAccountCreatorDisplayNameInvalid,</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LinphoneAccountCreatorTransportNotSupported,</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LinphoneAccountCreatorCountryCodeInvalid,</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LinphoneAccountCreatorErrorServer,</highlight></codeline>
+<codeline lineno="79"><highlight class="normal">}<sp/><ref refid="group__misc_1ga48d937b2f5157737a3ca24f20e6459bc" kindref="member">LinphoneAccountCreatorStatus</ref>;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">_LinphoneAccountCreator<sp/><ref refid="group__misc_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref>;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">_LinphoneAccountCreatorCbs<sp/><ref refid="group__misc_1ga10cba453f1c0c559b8f1282e2c3ab24c" kindref="member">LinphoneAccountCreatorCbs</ref>;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*<ref refid="group__misc_1gad942849e29a336609b594377fc8a5876" kindref="member">LinphoneAccountCreatorCbsStatusCb</ref>)(<ref refid="group__misc_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref><sp/>*creator,<sp/><ref refid="group__misc_1ga48d937b2f5157737a3ca24f20e6459bc" kindref="member">LinphoneAccountCreatorStatus</ref><sp/>status,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>resp);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref><sp/>*<sp/><ref refid="group__misc_1ga01872a5f797fd97a0bd8915ed169637e" kindref="member">linphone_account_creator_new</ref>(<ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref><sp/>*core,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*xmlrpc_url);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref><sp/>*<sp/><ref refid="group__misc_1gab09f020b4281d8709fc26fd519088416" kindref="member">linphone_account_creator_ref</ref>(<ref refid="group__misc_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref><sp/>*creator);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__misc_1ga7830dc91f9632c7ae1d5677188d56eb8" kindref="member">linphone_account_creator_unref</ref>(<ref refid="group__misc_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref><sp/>*creator);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="group__misc_1ga473f21dff2acb5b12cc6f5183f55a7a3" kindref="member">linphone_account_creator_get_user_data</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__misc_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref><sp/>*creator);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__misc_1ga7a9a647987112a74d5b2d80ef9f76f9a" kindref="member">linphone_account_creator_set_user_data</ref>(<ref refid="group__misc_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref><sp/>*creator,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ud);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1ga48d937b2f5157737a3ca24f20e6459bc" kindref="member">LinphoneAccountCreatorStatus</ref><sp/><ref refid="group__misc_1ga65d1a74de5ee2a9d23c56f6bb4af35c2" kindref="member">linphone_account_creator_set_username</ref>(<ref refid="group__misc_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref><sp/>*creator,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*username);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/><ref refid="group__misc_1ga23c955c6f20c34ba4568993325e8b31c" kindref="member">linphone_account_creator_get_username</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__misc_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref><sp/>*creator);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1ga48d937b2f5157737a3ca24f20e6459bc" kindref="member">LinphoneAccountCreatorStatus</ref><sp/><ref refid="group__misc_1ga88fb310596bcd3e96a965ae0fbc3b14d" kindref="member">linphone_account_creator_update_password</ref>(<ref refid="group__misc_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref><sp/>*creator,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*new_pwd);</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1ga48d937b2f5157737a3ca24f20e6459bc" kindref="member">LinphoneAccountCreatorStatus</ref><sp/><ref refid="group__misc_1ga0376b7dbed9946e31329fd089672ca44" kindref="member">linphone_account_creator_set_phone_number</ref>(<ref refid="group__misc_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref><sp/>*creator,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*phone_number,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*country_code);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/><ref refid="group__misc_1ga067d45b4546223c0511ebb483220b5b0" kindref="member">linphone_account_creator_get_phone_number</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__misc_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref><sp/>*creator);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1ga48d937b2f5157737a3ca24f20e6459bc" kindref="member">LinphoneAccountCreatorStatus</ref><sp/><ref refid="group__misc_1gac4f32254116f1df0d4a89805b5b832d9" kindref="member">linphone_account_creator_set_password</ref>(<ref refid="group__misc_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref><sp/>*creator,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*password);</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/><ref refid="group__misc_1gab65e965b5d4c11dd06cc657b0d723079" kindref="member">linphone_account_creator_get_password</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__misc_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref><sp/>*creator);</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1ga48d937b2f5157737a3ca24f20e6459bc" kindref="member">LinphoneAccountCreatorStatus</ref><sp/><ref refid="group__misc_1ga2293c0fb37935f665e248f5897947840" kindref="member">linphone_account_creator_set_ha1</ref>(<ref refid="group__misc_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref><sp/>*creator,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*ha1);</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/><ref refid="group__misc_1ga1560266f1766692fd789f203694ca11d" kindref="member">linphone_account_creator_get_ha1</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__misc_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref><sp/>*creator);</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1ga48d937b2f5157737a3ca24f20e6459bc" kindref="member">LinphoneAccountCreatorStatus</ref><sp/><ref refid="group__misc_1gaaac4841bd4ab0d4a03792d84f5ebcc4e" kindref="member">linphone_account_creator_set_activation_code</ref>(<ref refid="group__misc_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref><sp/>*creator,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*activation_code);</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1ga48d937b2f5157737a3ca24f20e6459bc" kindref="member">LinphoneAccountCreatorStatus</ref><sp/><ref refid="group__misc_1ga8cac5668eb3952468e76dbef19220fe0" kindref="member">linphone_account_creator_set_language</ref>(<ref refid="group__misc_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref><sp/>*creator,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*lang);</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1ga48d937b2f5157737a3ca24f20e6459bc" kindref="member">LinphoneAccountCreatorStatus</ref><sp/><ref refid="group__misc_1gafd2434b60030136e9c6ab1731a7ca236" kindref="member">linphone_account_creator_set_transport</ref>(<ref refid="group__misc_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref><sp/>*creator,<sp/><ref refid="group__linphone__address_1ga3835b7b8ed546312096456602ac0ce1d" kindref="member">LinphoneTransportType</ref><sp/>transport);</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__linphone__address_1ga3835b7b8ed546312096456602ac0ce1d" kindref="member">LinphoneTransportType</ref><sp/><ref refid="group__misc_1ga972792a0534f2892ddfb8d0de9ebb4da" kindref="member">linphone_account_creator_get_transport</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__misc_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref><sp/>*creator);</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1ga48d937b2f5157737a3ca24f20e6459bc" kindref="member">LinphoneAccountCreatorStatus</ref><sp/><ref refid="group__misc_1ga53887ed6c1fd0ead0cf729a523de3463" kindref="member">linphone_account_creator_set_domain</ref>(<ref refid="group__misc_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref><sp/>*creator,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*domain);</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/><ref refid="group__misc_1gad36b9626fee354ee6037536d9d4ca655" kindref="member">linphone_account_creator_get_domain</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__misc_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref><sp/>*creator);</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1ga48d937b2f5157737a3ca24f20e6459bc" kindref="member">LinphoneAccountCreatorStatus</ref><sp/><ref refid="group__misc_1ga7cf7bbb54ab9e34aaeb0c7ad8c3a3273" kindref="member">linphone_account_creator_set_route</ref>(<ref refid="group__misc_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref><sp/>*creator,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*route);</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/><ref refid="group__misc_1gac71b04994c31209749dbc0c025c7c2a0" kindref="member">linphone_account_creator_get_route</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__misc_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref><sp/>*creator);</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight></codeline>
+<codeline lineno="267"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1ga48d937b2f5157737a3ca24f20e6459bc" kindref="member">LinphoneAccountCreatorStatus</ref><sp/><ref refid="group__misc_1gadff0bb66f4aeef51e65cd5f9530c5b86" kindref="member">linphone_account_creator_set_display_name</ref>(<ref refid="group__misc_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref><sp/>*creator,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*display_name);</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight></codeline>
+<codeline lineno="274"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/><ref refid="group__misc_1ga5ee5c74e73382c9a1863495283d20b34" kindref="member">linphone_account_creator_get_display_name</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__misc_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref><sp/>*creator);</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight></codeline>
+<codeline lineno="282"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1ga48d937b2f5157737a3ca24f20e6459bc" kindref="member">LinphoneAccountCreatorStatus</ref><sp/><ref refid="group__misc_1gaa525be678af8172f49f5f089cc1210c6" kindref="member">linphone_account_creator_set_email</ref>(<ref refid="group__misc_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref><sp/>*creator,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*email);</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"></highlight></codeline>
+<codeline lineno="289"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/><ref refid="group__misc_1gabc5b83e25414a1c46aec516df1f9332f" kindref="member">linphone_account_creator_get_email</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__misc_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref><sp/>*creator);</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"></highlight></codeline>
+<codeline lineno="296"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1ga10cba453f1c0c559b8f1282e2c3ab24c" kindref="member">LinphoneAccountCreatorCbs</ref><sp/>*<sp/><ref refid="group__misc_1ga1f91181af688258da8025a4d11de21b7" kindref="member">linphone_account_creator_get_callbacks</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__misc_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref><sp/>*creator);</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"></highlight></codeline>
+<codeline lineno="303"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1ga48d937b2f5157737a3ca24f20e6459bc" kindref="member">LinphoneAccountCreatorStatus</ref><sp/><ref refid="group__misc_1ga31d0f08e49579e67490f7416c24789b1" kindref="member">linphone_account_creator_is_account_used</ref>(<ref refid="group__misc_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref><sp/>*creator);</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"></highlight></codeline>
+<codeline lineno="310"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1ga48d937b2f5157737a3ca24f20e6459bc" kindref="member">LinphoneAccountCreatorStatus</ref><sp/><ref refid="group__misc_1ga89929431634a64bbadbfc4eba1934153" kindref="member">linphone_account_creator_create_account</ref>(<ref refid="group__misc_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref><sp/>*creator);</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"></highlight></codeline>
+<codeline lineno="317"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1ga48d937b2f5157737a3ca24f20e6459bc" kindref="member">LinphoneAccountCreatorStatus</ref><sp/><ref refid="group__misc_1ga5248f54e110168295b72b5e1d02d08d3" kindref="member">linphone_account_creator_activate_account</ref>(<ref refid="group__misc_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref><sp/>*creator);</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"></highlight></codeline>
+<codeline lineno="324"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1ga48d937b2f5157737a3ca24f20e6459bc" kindref="member">LinphoneAccountCreatorStatus</ref><sp/><ref refid="group__misc_1ga9813bddc9285266bef03d672cf695b69" kindref="member">linphone_account_creator_is_account_activated</ref>(<ref refid="group__misc_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref><sp/>*creator);</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"></highlight></codeline>
+<codeline lineno="331"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1ga48d937b2f5157737a3ca24f20e6459bc" kindref="member">LinphoneAccountCreatorStatus</ref><sp/><ref refid="group__misc_1gac0796926224394803e815537b132dc88" kindref="member">linphone_account_creator_is_phone_number_used</ref>(<ref refid="group__misc_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref><sp/>*creator);</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"></highlight></codeline>
+<codeline lineno="338"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1ga48d937b2f5157737a3ca24f20e6459bc" kindref="member">LinphoneAccountCreatorStatus</ref><sp/><ref refid="group__misc_1gafb151875ec1ccb5cb88824fe7c82aaec" kindref="member">linphone_account_creator_link_phone_number_with_account</ref>(<ref refid="group__misc_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref><sp/>*creator);</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"></highlight></codeline>
+<codeline lineno="345"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1ga48d937b2f5157737a3ca24f20e6459bc" kindref="member">LinphoneAccountCreatorStatus</ref><sp/><ref refid="group__misc_1ga2ecafd8fb409102d1e31b42bb051338d" kindref="member">linphone_account_creator_activate_phone_number_link</ref>(<ref refid="group__misc_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref><sp/>*creator);</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"></highlight></codeline>
+<codeline lineno="347"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1ga48d937b2f5157737a3ca24f20e6459bc" kindref="member">LinphoneAccountCreatorStatus</ref><sp/>linphone_account_creator_recover_phone_account(<ref refid="group__misc_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref><sp/>*creator);</highlight></codeline>
+<codeline lineno="348"><highlight class="normal"></highlight></codeline>
+<codeline lineno="354"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1ga48d937b2f5157737a3ca24f20e6459bc" kindref="member">LinphoneAccountCreatorStatus</ref><sp/><ref refid="group__misc_1gae3deac3b5806eccde8042a483556fa67" kindref="member">linphone_account_creator_is_account_linked</ref>(<ref refid="group__misc_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref><sp/>*creator);</highlight></codeline>
+<codeline lineno="355"><highlight class="normal"></highlight></codeline>
+<codeline lineno="361"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref><sp/>*<sp/><ref refid="group__misc_1ga6b5993a70bd49430b5a502a37ad3accf" kindref="member">linphone_account_creator_configure</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__misc_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref><sp/>*creator);</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"></highlight></codeline>
+<codeline lineno="368"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1ga10cba453f1c0c559b8f1282e2c3ab24c" kindref="member">LinphoneAccountCreatorCbs</ref><sp/>*<sp/><ref refid="group__misc_1ga0a5a8f13dbbb2b75a9fea65f5bb3a184" kindref="member">linphone_account_creator_cbs_ref</ref>(<ref refid="group__misc_1ga10cba453f1c0c559b8f1282e2c3ab24c" kindref="member">LinphoneAccountCreatorCbs</ref><sp/>*cbs);</highlight></codeline>
+<codeline lineno="369"><highlight class="normal"></highlight></codeline>
+<codeline lineno="374"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__misc_1gafb2b0bf7213192780baa30aa6c0f8d9b" kindref="member">linphone_account_creator_cbs_unref</ref>(<ref refid="group__misc_1ga10cba453f1c0c559b8f1282e2c3ab24c" kindref="member">LinphoneAccountCreatorCbs</ref><sp/>*cbs);</highlight></codeline>
+<codeline lineno="375"><highlight class="normal"></highlight></codeline>
+<codeline lineno="381"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="group__misc_1ga3df023d6958b80d97f7a2811a2ee212d" kindref="member">linphone_account_creator_cbs_get_user_data</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__misc_1ga10cba453f1c0c559b8f1282e2c3ab24c" kindref="member">LinphoneAccountCreatorCbs</ref><sp/>*cbs);</highlight></codeline>
+<codeline lineno="382"><highlight class="normal"></highlight></codeline>
+<codeline lineno="388"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__misc_1ga65494af8f91fe4f82955d00bac36e815" kindref="member">linphone_account_creator_cbs_set_user_data</ref>(<ref refid="group__misc_1ga10cba453f1c0c559b8f1282e2c3ab24c" kindref="member">LinphoneAccountCreatorCbs</ref><sp/>*cbs,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ud);</highlight></codeline>
+<codeline lineno="389"><highlight class="normal"></highlight></codeline>
+<codeline lineno="395"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1gad942849e29a336609b594377fc8a5876" kindref="member">LinphoneAccountCreatorCbsStatusCb</ref><sp/><ref refid="group__misc_1ga59f19e47fb4634a4228ce1bf01e851c0" kindref="member">linphone_account_creator_cbs_get_update_hash</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__misc_1ga10cba453f1c0c559b8f1282e2c3ab24c" kindref="member">LinphoneAccountCreatorCbs</ref><sp/>*cbs);</highlight></codeline>
+<codeline lineno="396"><highlight class="normal"></highlight></codeline>
+<codeline lineno="402"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__misc_1ga452c20e66e25f565d82651be1c1425aa" kindref="member">linphone_account_creator_cbs_set_update_hash</ref>(<ref refid="group__misc_1ga10cba453f1c0c559b8f1282e2c3ab24c" kindref="member">LinphoneAccountCreatorCbs</ref><sp/>*cbs,<sp/><ref refid="group__misc_1gad942849e29a336609b594377fc8a5876" kindref="member">LinphoneAccountCreatorCbsStatusCb</ref><sp/>cb);</highlight></codeline>
+<codeline lineno="403"><highlight class="normal"></highlight></codeline>
+<codeline lineno="409"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1gad942849e29a336609b594377fc8a5876" kindref="member">LinphoneAccountCreatorCbsStatusCb</ref><sp/><ref refid="group__misc_1ga8c4a79ad32aae4dcc784b786a66fbe9f" kindref="member">linphone_account_creator_cbs_get_is_account_linked</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__misc_1ga10cba453f1c0c559b8f1282e2c3ab24c" kindref="member">LinphoneAccountCreatorCbs</ref><sp/>*cbs);</highlight></codeline>
+<codeline lineno="410"><highlight class="normal"></highlight></codeline>
+<codeline lineno="416"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__misc_1ga3973654ca5db14c6767284c353360245" kindref="member">linphone_account_creator_cbs_set_is_account_linked</ref>(<ref refid="group__misc_1ga10cba453f1c0c559b8f1282e2c3ab24c" kindref="member">LinphoneAccountCreatorCbs</ref><sp/>*cbs,<sp/><ref refid="group__misc_1gad942849e29a336609b594377fc8a5876" kindref="member">LinphoneAccountCreatorCbsStatusCb</ref><sp/>cb);</highlight></codeline>
+<codeline lineno="417"><highlight class="normal"></highlight></codeline>
+<codeline lineno="423"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1gad942849e29a336609b594377fc8a5876" kindref="member">LinphoneAccountCreatorCbsStatusCb</ref><sp/><ref refid="group__misc_1gad07e4df65b86022c1af1ed21d1fe5fbc" kindref="member">linphone_account_creator_cbs_get_is_account_used</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__misc_1ga10cba453f1c0c559b8f1282e2c3ab24c" kindref="member">LinphoneAccountCreatorCbs</ref><sp/>*cbs);</highlight></codeline>
+<codeline lineno="424"><highlight class="normal"></highlight></codeline>
+<codeline lineno="430"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__misc_1ga9024b61f8154c635f4b8452de7bba9c0" kindref="member">linphone_account_creator_cbs_set_is_account_used</ref>(<ref refid="group__misc_1ga10cba453f1c0c559b8f1282e2c3ab24c" kindref="member">LinphoneAccountCreatorCbs</ref><sp/>*cbs,<sp/><ref refid="group__misc_1gad942849e29a336609b594377fc8a5876" kindref="member">LinphoneAccountCreatorCbsStatusCb</ref><sp/>cb);</highlight></codeline>
+<codeline lineno="431"><highlight class="normal"></highlight></codeline>
+<codeline lineno="437"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1gad942849e29a336609b594377fc8a5876" kindref="member">LinphoneAccountCreatorCbsStatusCb</ref><sp/><ref refid="group__misc_1ga8739d83134c5aea0c48c367e8c3d2bea" kindref="member">linphone_account_creator_cbs_get_create_account</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__misc_1ga10cba453f1c0c559b8f1282e2c3ab24c" kindref="member">LinphoneAccountCreatorCbs</ref><sp/>*cbs);</highlight></codeline>
+<codeline lineno="438"><highlight class="normal"></highlight></codeline>
+<codeline lineno="444"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__misc_1ga26dbc6d6ecd0b1dc5d94470fb25f4a26" kindref="member">linphone_account_creator_cbs_set_create_account</ref>(<ref refid="group__misc_1ga10cba453f1c0c559b8f1282e2c3ab24c" kindref="member">LinphoneAccountCreatorCbs</ref><sp/>*cbs,<sp/><ref refid="group__misc_1gad942849e29a336609b594377fc8a5876" kindref="member">LinphoneAccountCreatorCbsStatusCb</ref><sp/>cb);</highlight></codeline>
+<codeline lineno="445"><highlight class="normal"></highlight></codeline>
+<codeline lineno="451"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1gad942849e29a336609b594377fc8a5876" kindref="member">LinphoneAccountCreatorCbsStatusCb</ref><sp/><ref refid="group__misc_1ga3518e6b092dff01f7328394c1fbfb944" kindref="member">linphone_account_creator_cbs_get_activate_account</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__misc_1ga10cba453f1c0c559b8f1282e2c3ab24c" kindref="member">LinphoneAccountCreatorCbs</ref><sp/>*cbs);</highlight></codeline>
+<codeline lineno="452"><highlight class="normal"></highlight></codeline>
+<codeline lineno="458"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__misc_1gaa6ec977f0563771ea6658ddb9b11978c" kindref="member">linphone_account_creator_cbs_set_activate_account</ref>(<ref refid="group__misc_1ga10cba453f1c0c559b8f1282e2c3ab24c" kindref="member">LinphoneAccountCreatorCbs</ref><sp/>*cbs,<sp/><ref refid="group__misc_1gad942849e29a336609b594377fc8a5876" kindref="member">LinphoneAccountCreatorCbsStatusCb</ref><sp/>cb);</highlight></codeline>
+<codeline lineno="459"><highlight class="normal"></highlight></codeline>
+<codeline lineno="465"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1gad942849e29a336609b594377fc8a5876" kindref="member">LinphoneAccountCreatorCbsStatusCb</ref><sp/><ref refid="group__misc_1ga5895f72105624e4636f6b9f9d3ca6b46" kindref="member">linphone_account_creator_cbs_get_link_phone_number_with_account</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__misc_1ga10cba453f1c0c559b8f1282e2c3ab24c" kindref="member">LinphoneAccountCreatorCbs</ref><sp/>*cbs);</highlight></codeline>
+<codeline lineno="466"><highlight class="normal"></highlight></codeline>
+<codeline lineno="472"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__misc_1gac174343be1203b1c381ce9ed363e44b2" kindref="member">linphone_account_creator_cbs_set_link_phone_number_with_account</ref>(<ref refid="group__misc_1ga10cba453f1c0c559b8f1282e2c3ab24c" kindref="member">LinphoneAccountCreatorCbs</ref><sp/>*cbs,<sp/><ref refid="group__misc_1gad942849e29a336609b594377fc8a5876" kindref="member">LinphoneAccountCreatorCbsStatusCb</ref><sp/>cb);</highlight></codeline>
+<codeline lineno="473"><highlight class="normal"></highlight></codeline>
+<codeline lineno="479"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1gad942849e29a336609b594377fc8a5876" kindref="member">LinphoneAccountCreatorCbsStatusCb</ref><sp/><ref refid="group__misc_1gac3cd2cd6c567f833a79d32ee20a1886d" kindref="member">linphone_account_creator_cbs_get_activate_phone_number_link</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__misc_1ga10cba453f1c0c559b8f1282e2c3ab24c" kindref="member">LinphoneAccountCreatorCbs</ref><sp/>*cbs);</highlight></codeline>
+<codeline lineno="480"><highlight class="normal"></highlight></codeline>
+<codeline lineno="486"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__misc_1gab953d655a9cc315c378fb2d6ea11c684" kindref="member">linphone_account_creator_cbs_set_activate_phone_number_link</ref>(<ref refid="group__misc_1ga10cba453f1c0c559b8f1282e2c3ab24c" kindref="member">LinphoneAccountCreatorCbs</ref><sp/>*cbs,<sp/><ref refid="group__misc_1gad942849e29a336609b594377fc8a5876" kindref="member">LinphoneAccountCreatorCbsStatusCb</ref><sp/>cb);</highlight></codeline>
+<codeline lineno="487"><highlight class="normal"></highlight></codeline>
+<codeline lineno="493"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1gad942849e29a336609b594377fc8a5876" kindref="member">LinphoneAccountCreatorCbsStatusCb</ref><sp/><ref refid="group__misc_1ga29ca424ea11e88425fdca98628c23928" kindref="member">linphone_account_creator_cbs_get_is_account_activated</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__misc_1ga10cba453f1c0c559b8f1282e2c3ab24c" kindref="member">LinphoneAccountCreatorCbs</ref><sp/>*cbs);</highlight></codeline>
+<codeline lineno="494"><highlight class="normal"></highlight></codeline>
+<codeline lineno="500"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__misc_1ga0ea7329acf3a1ed60e3099072ebc5d76" kindref="member">linphone_account_creator_cbs_set_is_account_activated</ref>(<ref refid="group__misc_1ga10cba453f1c0c559b8f1282e2c3ab24c" kindref="member">LinphoneAccountCreatorCbs</ref><sp/>*cbs,<sp/><ref refid="group__misc_1gad942849e29a336609b594377fc8a5876" kindref="member">LinphoneAccountCreatorCbsStatusCb</ref><sp/>cb);</highlight></codeline>
+<codeline lineno="501"><highlight class="normal"></highlight></codeline>
+<codeline lineno="507"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1gad942849e29a336609b594377fc8a5876" kindref="member">LinphoneAccountCreatorCbsStatusCb</ref><sp/><ref refid="group__misc_1gac60d65f37e2e0a2168997be49f18fc41" kindref="member">linphone_account_creator_cbs_get_is_phone_number_used</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__misc_1ga10cba453f1c0c559b8f1282e2c3ab24c" kindref="member">LinphoneAccountCreatorCbs</ref><sp/>*cbs);</highlight></codeline>
+<codeline lineno="508"><highlight class="normal"></highlight></codeline>
+<codeline lineno="514"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__misc_1ga8238bd9f6e5c79a2b0a3f372682cba07" kindref="member">linphone_account_creator_cbs_set_is_phone_number_used</ref>(<ref refid="group__misc_1ga10cba453f1c0c559b8f1282e2c3ab24c" kindref="member">LinphoneAccountCreatorCbs</ref><sp/>*cbs,<sp/><ref refid="group__misc_1gad942849e29a336609b594377fc8a5876" kindref="member">LinphoneAccountCreatorCbsStatusCb</ref><sp/>cb);</highlight></codeline>
+<codeline lineno="515"><highlight class="normal"></highlight></codeline>
+<codeline lineno="516"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>linphone_account_creator_cbs_set_recover_phone_account(<ref refid="group__misc_1ga10cba453f1c0c559b8f1282e2c3ab24c" kindref="member">LinphoneAccountCreatorCbs</ref><sp/>*cbs,<sp/><ref refid="group__misc_1gad942849e29a336609b594377fc8a5876" kindref="member">LinphoneAccountCreatorCbsStatusCb</ref><sp/>cb);</highlight></codeline>
+<codeline lineno="517"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1gad942849e29a336609b594377fc8a5876" kindref="member">LinphoneAccountCreatorCbsStatusCb</ref><sp/>linphone_account_creator_cbs_get_recover_phone_account(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__misc_1ga10cba453f1c0c559b8f1282e2c3ab24c" kindref="member">LinphoneAccountCreatorCbs</ref><sp/>*cbs);</highlight></codeline>
+<codeline lineno="518"><highlight class="normal"></highlight></codeline>
+<codeline lineno="524"><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="525"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="526"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="527"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="528"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>LINPHONE_ACCOUNT_CREATOR_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/account_creator.h"/>
+  </compounddef>
+</doxygen>

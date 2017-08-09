@@ -1,0 +1,13 @@
+prefix=/home/mariankh/git/linphone-desktop-maria/OUTPUT/desktop
+exec_prefix=/home/mariankh/git/linphone-desktop-maria/OUTPUT/desktop
+libdir=/home/mariankh/git/linphone-desktop-maria/OUTPUT/desktop/lib
+sharedlibdir=/home/mariankh/git/linphone-desktop-maria/OUTPUT/desktop/lib
+includedir=/home/mariankh/git/linphone-desktop-maria/OUTPUT/desktop/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.8
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}

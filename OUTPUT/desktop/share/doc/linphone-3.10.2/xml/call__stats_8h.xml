@@ -1,0 +1,366 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="call__stats_8h" kind="file">
+    <compoundname>call_stats.h</compoundname>
+    <includedby refid="core_8h" local="yes">core.h</includedby>
+    <innerclass refid="struct__LinphoneCallStats" prot="public">_LinphoneCallStats</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__call__misc_1ga7bb50ca7cd1f49ebea13eec5136ef00e" prot="public" static="no">
+        <name>LINPHONE_CALL_STATS_RECEIVED_RTCP_UPDATE</name>
+        <initializer>(1 &lt;&lt; 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>received_rtcp field of LinphoneCallStats object has been updated </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/call_stats.h" line="32" column="9" bodyfile="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/call_stats.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__call__misc_1ga4418b7518b1479e9329b6de4129ed8c9" prot="public" static="no">
+        <name>LINPHONE_CALL_STATS_SENT_RTCP_UPDATE</name>
+        <initializer>(1 &lt;&lt; 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>sent_rtcp field of LinphoneCallStats object has been updated </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/call_stats.h" line="33" column="9" bodyfile="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/call_stats.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__call__misc_1ga0cb8916aede3c1a00a6e9aa176bf4093" prot="public" static="no">
+        <name>LINPHONE_CALL_STATS_PERIODICAL_UPDATE</name>
+        <initializer>(1 &lt;&lt; 2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Every seconds LinphoneCallStats object has been updated </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/call_stats.h" line="34" column="9" bodyfile="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/call_stats.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__call__misc_1ga4d22764ac0e68a8d77670761429b2ee7" prot="public" static="no">
+        <type>struct <ref refid="struct__LinphoneCallStats" kindref="compound">_LinphoneCallStats</ref></type>
+        <definition>typedef struct _LinphoneCallStats LinphoneCallStats</definition>
+        <argsstring></argsstring>
+        <name>LinphoneCallStats</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The LinphoneCallStats objects carries various statistic informations regarding quality of audio or video streams.</para><para>To receive these informations periodically and as soon as they are computed, the application is invited to place a <ref refid="group__initializing_1gae50aa77005e69df0137977b45bc9e832" kindref="member">LinphoneCoreCallStatsUpdatedCb</ref> callback in the LinphoneCoreVTable structure it passes for instanciating the LinphoneCore object (see <ref refid="group__initializing_1ga02aa44dd39b731e6e1125b8a4798f2a4" kindref="member">linphone_core_new()</ref> ).</para><para>At any time, the application can access last computed statistics using linphone_call_get_audio_stats() or linphone_call_get_video_stats(). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/call_stats.h" line="469" column="1" bodyfile="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/call_stats.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__call__misc_1ga4f67c9815b880887550873c592174b97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float linphone_call_stats_get_sender_loss_rate</definition>
+        <argsstring>(const LinphoneCallStats *stats)</argsstring>
+        <name>linphone_call_stats_get_sender_loss_rate</name>
+        <param>
+          <type>const <ref refid="group__call__misc_1ga4d22764ac0e68a8d77670761429b2ee7" kindref="member">LinphoneCallStats</ref> *</type>
+          <declname>stats</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the local loss rate since last report <simplesect kind="return"><para>The sender loss rate </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/call_stats.h" line="78" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__misc_1ga09496e326d7e82e4b15dbc427d384aa0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float linphone_call_stats_get_receiver_loss_rate</definition>
+        <argsstring>(const LinphoneCallStats *stats)</argsstring>
+        <name>linphone_call_stats_get_receiver_loss_rate</name>
+        <param>
+          <type>const <ref refid="group__call__misc_1ga4d22764ac0e68a8d77670761429b2ee7" kindref="member">LinphoneCallStats</ref> *</type>
+          <declname>stats</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the remote reported loss rate since last report <simplesect kind="return"><para>The receiver loss rate </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/call_stats.h" line="84" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__misc_1ga15c9b2c5e5e5d13656c67f60acbf3389" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float linphone_call_stats_get_sender_interarrival_jitter</definition>
+        <argsstring>(const LinphoneCallStats *stats, LinphoneCall *call)</argsstring>
+        <name>linphone_call_stats_get_sender_interarrival_jitter</name>
+        <param>
+          <type>const <ref refid="group__call__misc_1ga4d22764ac0e68a8d77670761429b2ee7" kindref="member">LinphoneCallStats</ref> *</type>
+          <declname>stats</declname>
+        </param>
+        <param>
+          <type><ref refid="group__call__control_1gac0a4861d7c4702c64f7106f2b893c69e" kindref="member">LinphoneCall</ref> *</type>
+          <declname>call</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the local interarrival jitter <simplesect kind="return"><para>The interarrival jitter at last emitted sender report </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/call_stats.h" line="90" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__misc_1ga886b7917491da4828cfa5ca75c1828eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float linphone_call_stats_get_receiver_interarrival_jitter</definition>
+        <argsstring>(const LinphoneCallStats *stats, LinphoneCall *call)</argsstring>
+        <name>linphone_call_stats_get_receiver_interarrival_jitter</name>
+        <param>
+          <type>const <ref refid="group__call__misc_1ga4d22764ac0e68a8d77670761429b2ee7" kindref="member">LinphoneCallStats</ref> *</type>
+          <declname>stats</declname>
+        </param>
+        <param>
+          <type><ref refid="group__call__control_1gac0a4861d7c4702c64f7106f2b893c69e" kindref="member">LinphoneCall</ref> *</type>
+          <declname>call</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the remote reported interarrival jitter <simplesect kind="return"><para>The interarrival jitter at last received receiver report </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/call_stats.h" line="96" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__misc_1ga14d34d90db7d6cd217a1f49937646faf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>rtp_stats_t</type>
+        <definition>rtp_stats_t linphone_call_stats_get_rtp_stats</definition>
+        <argsstring>(const LinphoneCallStats *statss)</argsstring>
+        <name>linphone_call_stats_get_rtp_stats</name>
+        <param>
+          <type>const <ref refid="group__call__misc_1ga4d22764ac0e68a8d77670761429b2ee7" kindref="member">LinphoneCallStats</ref> *</type>
+          <declname>statss</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/call_stats.h" line="98" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__misc_1gae40d01c01f5124d3a123e83769f4eb7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t linphone_call_stats_get_late_packets_cumulative_number</definition>
+        <argsstring>(const LinphoneCallStats *stats, LinphoneCall *call)</argsstring>
+        <name>linphone_call_stats_get_late_packets_cumulative_number</name>
+        <param>
+          <type>const <ref refid="group__call__misc_1ga4d22764ac0e68a8d77670761429b2ee7" kindref="member">LinphoneCallStats</ref> *</type>
+          <declname>stats</declname>
+        </param>
+        <param>
+          <type><ref refid="group__call__control_1gac0a4861d7c4702c64f7106f2b893c69e" kindref="member">LinphoneCall</ref> *</type>
+          <declname>call</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the cumulative number of late packets <simplesect kind="return"><para>The cumulative number of late packets </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/call_stats.h" line="104" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__misc_1gae8435a45f96caefc4284575ead6ec636" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float linphone_call_stats_get_download_bandwidth</definition>
+        <argsstring>(const LinphoneCallStats *stats)</argsstring>
+        <name>linphone_call_stats_get_download_bandwidth</name>
+        <param>
+          <type>const <ref refid="group__call__misc_1ga4d22764ac0e68a8d77670761429b2ee7" kindref="member">LinphoneCallStats</ref> *</type>
+          <declname>stats</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the bandwidth measurement of the received stream, expressed in kbit/s, including IP/UDP/RTP headers. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">stats</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCallStats object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The bandwidth measurement of the received stream in kbit/s. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/call_stats.h" line="111" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__misc_1ga75d75cf70afffebed65b9bca234120db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float linphone_call_stats_get_upload_bandwidth</definition>
+        <argsstring>(const LinphoneCallStats *stats)</argsstring>
+        <name>linphone_call_stats_get_upload_bandwidth</name>
+        <param>
+          <type>const <ref refid="group__call__misc_1ga4d22764ac0e68a8d77670761429b2ee7" kindref="member">LinphoneCallStats</ref> *</type>
+          <declname>stats</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the bandwidth measurement of the sent stream, expressed in kbit/s, including IP/UDP/RTP headers. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">stats</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCallStats object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The bandwidth measurement of the sent stream in kbit/s. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/call_stats.h" line="118" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__misc_1gab00ca0a997c7f740948d474062fc663c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__initializing_1gaf4faffc512588eda7db03fab8b03adfb" kindref="member">LinphoneIceState</ref></type>
+        <definition>LinphoneIceState linphone_call_stats_get_ice_state</definition>
+        <argsstring>(const LinphoneCallStats *stats)</argsstring>
+        <name>linphone_call_stats_get_ice_state</name>
+        <param>
+          <type>const <ref refid="group__call__misc_1ga4d22764ac0e68a8d77670761429b2ee7" kindref="member">LinphoneCallStats</ref> *</type>
+          <declname>stats</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the state of ICE processing. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">stats</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCallStats object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The state of ICE processing. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/call_stats.h" line="125" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__misc_1gab475f621ff3a8a2e2d6faee0ca608f79" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__initializing_1ga2c19554a0988f7600aec5c3a7588d61a" kindref="member">LinphoneUpnpState</ref></type>
+        <definition>LinphoneUpnpState linphone_call_stats_get_upnp_state</definition>
+        <argsstring>(const LinphoneCallStats *stats)</argsstring>
+        <name>linphone_call_stats_get_upnp_state</name>
+        <param>
+          <type>const <ref refid="group__call__misc_1ga4d22764ac0e68a8d77670761429b2ee7" kindref="member">LinphoneCallStats</ref> *</type>
+          <declname>stats</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the state of uPnP processing. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">stats</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCallStats object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The state of uPnP processing. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/call_stats.h" line="132" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">call_stats.h</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">Copyright<sp/>(C)<sp/>2010-2016<sp/>Belledonne<sp/>Communications<sp/>SARL</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"></highlight></codeline>
+<codeline lineno="5"><highlight class="comment">This<sp/>program<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>2</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">of<sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment">This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"></highlight></codeline>
+<codeline lineno="15"><highlight class="comment">You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">along<sp/>with<sp/>this<sp/>program;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>Street,<sp/>Fifth<sp/>Floor,<sp/>Boston,<sp/>MA<sp/><sp/>02110-1301,<sp/>USA.</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LINPHONE_CALL_STATS_H</highlight></codeline>
+<codeline lineno="21"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>LINPHONE_CALL_STATS_H</highlight></codeline>
+<codeline lineno="22"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="24"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="26"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="32"><highlight class="preprocessor">#define<sp/>LINPHONE_CALL_STATS_RECEIVED_RTCP_UPDATE<sp/>(1<sp/>&lt;&lt;<sp/>0)<sp/></highlight></codeline>
+<codeline lineno="33"><highlight class="preprocessor">#define<sp/>LINPHONE_CALL_STATS_SENT_RTCP_UPDATE<sp/>(1<sp/>&lt;&lt;<sp/>1)<sp/></highlight></codeline>
+<codeline lineno="34"><highlight class="preprocessor">#define<sp/>LINPHONE_CALL_STATS_PERIODICAL_UPDATE<sp/>(1<sp/>&lt;&lt;<sp/>2)<sp/></highlight></codeline>
+<codeline lineno="44"><highlight class="preprocessor">typedef<sp/>struct<sp/>_LinphoneCallStats<sp/>LinphoneCallStats;</highlight></codeline>
+<codeline lineno="45"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="54" refid="struct__LinphoneCallStats" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__LinphoneCallStats" kindref="compound">_LinphoneCallStats</ref><sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__initializing_1ga9a98644da41a4a2b6bf9ee57a94844ea" kindref="member">LinphoneStreamType</ref><sp/><ref refid="struct__LinphoneCallStats_1aeb6f06f1d315a2849f37430149119cd1" kindref="member">type</ref>;<sp/></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>jitter_stats_t<sp/><ref refid="struct__LinphoneCallStats_1a8a8b954105336bfda51e6a1eed7008fb" kindref="member">jitter_stats</ref>;<sp/></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>mblk_t<sp/>*<ref refid="struct__LinphoneCallStats_1ae348f8e725ff57e8b43e1e48a7b9ad15" kindref="member">received_rtcp</ref>;<sp/></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>mblk_t<sp/>*<ref refid="struct__LinphoneCallStats_1a6c4670ac143ef768db848ea7828b0f59" kindref="member">sent_rtcp</ref>;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct__LinphoneCallStats_1ae902e24f2fb3ae64a54f3ea25bb12910" kindref="member">round_trip_delay</ref>;<sp/></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__initializing_1gaf4faffc512588eda7db03fab8b03adfb" kindref="member">LinphoneIceState</ref><sp/><ref refid="struct__LinphoneCallStats_1a9986d647f13d56c2d752ae5f78f28428" kindref="member">ice_state</ref>;<sp/></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__initializing_1ga2c19554a0988f7600aec5c3a7588d61a" kindref="member">LinphoneUpnpState</ref><sp/><sp/><sp/><ref refid="struct__LinphoneCallStats_1a6f78c4d4bb974ecd0a12acab3891fcec" kindref="member">upnp_state</ref>;<sp/></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct__LinphoneCallStats_1a374fba6a87240c558dfbd73a9172ed66" kindref="member">download_bandwidth</ref>;<sp/></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct__LinphoneCallStats_1a76758bb52b889691f2ea8b25fcbc545c" kindref="member">upload_bandwidth</ref>;<sp/></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct__LinphoneCallStats_1a806b9ddc325b0a07895a366f6a470aaf" kindref="member">local_late_rate</ref>;<sp/></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct__LinphoneCallStats_1ac5805dd8961d7c7d053f1fcdc14bbc67" kindref="member">local_loss_rate</ref>;<sp/></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct__LinphoneCallStats_1a8c4a17c47da3942990a657a72855acfd" kindref="member">updated</ref>;<sp/></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct__LinphoneCallStats_1ae6e793441871d1095926bc9baf5e8584" kindref="member">rtcp_download_bandwidth</ref>;<sp/></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct__LinphoneCallStats_1a46e0823cb69c675d068232ad77dfd781" kindref="member">rtcp_upload_bandwidth</ref>;<sp/></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>rtp_stats_t<sp/><ref refid="struct__LinphoneCallStats_1ae0bd33c7e9fc456003ab08880403c060" kindref="member">rtp_stats</ref>;<sp/></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>bool_t<sp/>rtcp_received_via_mux;<sp/></highlight><highlight class="comment">/*private<sp/>flag,<sp/>for<sp/>non-regression<sp/>test<sp/>only*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>rtp_remote_family;<sp/></highlight><highlight class="comment">/*<sp/>Ip<sp/>adress<sp/>family<sp/>of<sp/>the<sp/>remote<sp/>destination<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="group__call__misc_1ga4f67c9815b880887550873c592174b97" kindref="member">linphone_call_stats_get_sender_loss_rate</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__LinphoneCallStats" kindref="compound">LinphoneCallStats</ref><sp/>*stats);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="group__call__misc_1ga09496e326d7e82e4b15dbc427d384aa0" kindref="member">linphone_call_stats_get_receiver_loss_rate</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__LinphoneCallStats" kindref="compound">LinphoneCallStats</ref><sp/>*stats);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="group__call__misc_1ga15c9b2c5e5e5d13656c67f60acbf3389" kindref="member">linphone_call_stats_get_sender_interarrival_jitter</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__LinphoneCallStats" kindref="compound">LinphoneCallStats</ref><sp/>*stats,<sp/><ref refid="group__call__control_1gac0a4861d7c4702c64f7106f2b893c69e" kindref="member">LinphoneCall</ref><sp/>*call);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="group__call__misc_1ga886b7917491da4828cfa5ca75c1828eb" kindref="member">linphone_call_stats_get_receiver_interarrival_jitter</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__LinphoneCallStats" kindref="compound">LinphoneCallStats</ref><sp/>*stats,<sp/><ref refid="group__call__control_1gac0a4861d7c4702c64f7106f2b893c69e" kindref="member">LinphoneCall</ref><sp/>*call);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal">LINPHONE_PUBLIC<sp/>rtp_stats_t<sp/>linphone_call_stats_get_rtp_stats(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__LinphoneCallStats" kindref="compound">LinphoneCallStats</ref><sp/>*statss);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal">LINPHONE_PUBLIC<sp/>uint64_t<sp/><ref refid="group__call__misc_1gae40d01c01f5124d3a123e83769f4eb7a" kindref="member">linphone_call_stats_get_late_packets_cumulative_number</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__LinphoneCallStats" kindref="compound">LinphoneCallStats</ref><sp/>*stats,<sp/><ref refid="group__call__control_1gac0a4861d7c4702c64f7106f2b893c69e" kindref="member">LinphoneCall</ref><sp/>*call);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="group__call__misc_1gae8435a45f96caefc4284575ead6ec636" kindref="member">linphone_call_stats_get_download_bandwidth</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__LinphoneCallStats" kindref="compound">LinphoneCallStats</ref><sp/>*stats);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="group__call__misc_1ga75d75cf70afffebed65b9bca234120db" kindref="member">linphone_call_stats_get_upload_bandwidth</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__LinphoneCallStats" kindref="compound">LinphoneCallStats</ref><sp/>*stats);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__initializing_1gaf4faffc512588eda7db03fab8b03adfb" kindref="member">LinphoneIceState</ref><sp/><ref refid="group__call__misc_1gab00ca0a997c7f740948d474062fc663c" kindref="member">linphone_call_stats_get_ice_state</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__LinphoneCallStats" kindref="compound">LinphoneCallStats</ref><sp/>*stats);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__initializing_1ga2c19554a0988f7600aec5c3a7588d61a" kindref="member">LinphoneUpnpState</ref><sp/><ref refid="group__call__misc_1gab475f621ff3a8a2e2d6faee0ca608f79" kindref="member">linphone_call_stats_get_upnp_state</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__LinphoneCallStats" kindref="compound">LinphoneCallStats</ref><sp/>*stats);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="139"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="141"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>LINPHONE_ADDRESS_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/call_stats.h"/>
+  </compounddef>
+</doxygen>

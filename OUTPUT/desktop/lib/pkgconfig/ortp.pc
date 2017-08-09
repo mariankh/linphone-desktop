@@ -1,0 +1,10 @@
+# This is a comment
+prefix=/home/mariankh/git/linphone-desktop-maria/OUTPUT/desktop
+exec_prefix=/home/mariankh/git/linphone-desktop-maria/OUTPUT/desktop/bin
+includedir=/home/mariankh/git/linphone-desktop-maria/OUTPUT/desktop/include
+
+Name: oRTP 
+Description: Implement the RFC3550 (RTP) with a easy to use API with high and low level access.
+Version: 1.0.0
+Libs: -L/home/mariankh/git/linphone-desktop-maria/OUTPUT/desktop/lib -lortp 
+Cflags: -I/home/mariankh/git/linphone-desktop-maria/OUTPUT/desktop/include 

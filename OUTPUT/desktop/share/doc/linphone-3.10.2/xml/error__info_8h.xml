@@ -1,0 +1,507 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="error__info_8h" kind="file">
+    <compoundname>error_info.h</compoundname>
+    <includes local="no">mediastreamer2/mscommon.h</includes>
+    <includedby refid="call_8h" local="yes">call.h</includedby>
+    <includedby refid="core_8h" local="yes">core.h</includedby>
+    <incdepgraph>
+      <node id="47">
+        <label>error_info.h</label>
+        <link refid="error_info.h"/>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>mediastreamer2/mscommon.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__misc_1gabdc78f1e50da62b72c05221f89716b16" prot="public" static="no">
+        <name>LinphoneReasonBadCredentials</name>
+        <initializer><ref refid="group__misc_1ggaf7346e9b3a064155f3d5d3811d684fb2a481fba28c828e2062c23bd1011d1a5e6" kindref="member">LinphoneReasonForbidden</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/error_info.h" line="63" column="9" bodyfile="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/error_info.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__misc_1gafd34b2420cdccce9f56e3c1a6052b103" prot="public" static="no">
+        <name>LinphoneReasonMedia</name>
+        <initializer><ref refid="group__misc_1ggaf7346e9b3a064155f3d5d3811d684fb2ad603c3a9cb747e35349eb4fa0760d877" kindref="member">LinphoneReasonUnsupportedContent</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/error_info.h" line="66" column="9" bodyfile="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/error_info.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__misc_1gaf7346e9b3a064155f3d5d3811d684fb2" prot="public" static="no">
+        <name>_LinphoneReason</name>
+        <enumvalue id="group__misc_1ggaf7346e9b3a064155f3d5d3811d684fb2af390378a48e0b30faeac92813c6a50ef" prot="public">
+          <name>LinphoneReasonNone</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>No reason has been set by the core </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__misc_1ggaf7346e9b3a064155f3d5d3811d684fb2ac71a4d9109f8eb8a9f5961109d505331" prot="public">
+          <name>LinphoneReasonNoResponse</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>No response received from remote </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__misc_1ggaf7346e9b3a064155f3d5d3811d684fb2a481fba28c828e2062c23bd1011d1a5e6" prot="public">
+          <name>LinphoneReasonForbidden</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Authentication failed due to bad credentials or resource forbidden </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__misc_1ggaf7346e9b3a064155f3d5d3811d684fb2a442fce67ace6491eee2f4a94177f34c6" prot="public">
+          <name>LinphoneReasonDeclined</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The call has been declined </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__misc_1ggaf7346e9b3a064155f3d5d3811d684fb2adf8c424e8f8e89efaf51e187c04ae7d5" prot="public">
+          <name>LinphoneReasonNotFound</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Destination of the call was not found </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__misc_1ggaf7346e9b3a064155f3d5d3811d684fb2a528a41c31768cff46c03b6a5e2fcb073" prot="public">
+          <name>LinphoneReasonNotAnswered</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The call was not answered in time (request timeout) </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__misc_1ggaf7346e9b3a064155f3d5d3811d684fb2a8ef78446b3e27f4acd2f69356f7836fa" prot="public">
+          <name>LinphoneReasonBusy</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Phone line was busy </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__misc_1ggaf7346e9b3a064155f3d5d3811d684fb2ad603c3a9cb747e35349eb4fa0760d877" prot="public">
+          <name>LinphoneReasonUnsupportedContent</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Unsupported content </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__misc_1ggaf7346e9b3a064155f3d5d3811d684fb2a6018a6fcf4fbf14fc8528e41df772b01" prot="public">
+          <name>LinphoneReasonIOError</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Transport error: connection failures, disconnections etc... </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__misc_1ggaf7346e9b3a064155f3d5d3811d684fb2a1a9456d0092d6472a0d9d9a9f3903d7d" prot="public">
+          <name>LinphoneReasonDoNotDisturb</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Do not disturb reason </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__misc_1ggaf7346e9b3a064155f3d5d3811d684fb2ab7457897bc2f2c0125f7d3580a236689" prot="public">
+          <name>LinphoneReasonUnauthorized</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Operation is unauthorized because missing credential </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__misc_1ggaf7346e9b3a064155f3d5d3811d684fb2aa48a9c03a443b3f89727823890860f0a" prot="public">
+          <name>LinphoneReasonNotAcceptable</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Operation is rejected due to incompatible or unsupported media parameters </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__misc_1ggaf7346e9b3a064155f3d5d3811d684fb2a4f5a4d3401cfdca4fe674574423c43d4" prot="public">
+          <name>LinphoneReasonNoMatch</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Operation could not be executed by server or remote client because it didn&apos;t have any context for it </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__misc_1ggaf7346e9b3a064155f3d5d3811d684fb2af363d824057c7dc81b9b9547ed2db3ed" prot="public">
+          <name>LinphoneReasonMovedPermanently</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Resource moved permanently </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__misc_1ggaf7346e9b3a064155f3d5d3811d684fb2aeec5f49f4d8469e70718ee04cc39b787" prot="public">
+          <name>LinphoneReasonGone</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Resource no longer exists </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__misc_1ggaf7346e9b3a064155f3d5d3811d684fb2a75ded372e5686dc2f6ee9269740ea9f7" prot="public">
+          <name>LinphoneReasonTemporarilyUnavailable</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Temporarily unavailable </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__misc_1ggaf7346e9b3a064155f3d5d3811d684fb2a4485dfc349ec155e3b6d25759b9e3b69" prot="public">
+          <name>LinphoneReasonAddressIncomplete</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Address incomplete </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__misc_1ggaf7346e9b3a064155f3d5d3811d684fb2af4ec78f5d1c2b63cfc2122cd950ea6ac" prot="public">
+          <name>LinphoneReasonNotImplemented</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Not implemented </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__misc_1ggaf7346e9b3a064155f3d5d3811d684fb2a005ef425565c3b5099f783ed40b298b8" prot="public">
+          <name>LinphoneReasonBadGateway</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Bad gateway </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__misc_1ggaf7346e9b3a064155f3d5d3811d684fb2a9f2b51f340cd01ea8014267552860c89" prot="public">
+          <name>LinphoneReasonServerTimeout</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Server timeout </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__misc_1ggaf7346e9b3a064155f3d5d3811d684fb2a3fa52bc410a926ff5f5aa519cdd90e94" prot="public">
+          <name>LinphoneReasonUnknown</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Unknown reason </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enum describing various failure reasons or contextual information for some events. <simplesect kind="see"><para><ref refid="group__call__control_1ga312c73999c94f7e59f307423d40d16b2" kindref="member">linphone_call_get_reason()</ref> </para><simplesectsep/><para><ref refid="group__proxies_1ga245ddcd6772adad4ac8ecc64a10494ce" kindref="member">linphone_proxy_config_get_error()</ref> </para><simplesectsep/><para><ref refid="group__misc_1ga3297420b41659c4bd1ffb64a1e6b7d64" kindref="member">linphone_error_info_get_reason()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/error_info.h" line="39" column="1" bodyfile="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/error_info.h" bodystart="39" bodyend="61"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__misc_1gabe82a1a1ffc3d6b4e0b51a03028513b7" prot="public" static="no">
+        <type>enum <ref refid="group__misc_1gaf7346e9b3a064155f3d5d3811d684fb2" kindref="member">_LinphoneReason</ref></type>
+        <definition>typedef enum _LinphoneReason LinphoneReason</definition>
+        <argsstring></argsstring>
+        <name>LinphoneReason</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enum describing failure reasons. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/error_info.h" line="60" column="1" bodyfile="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/error_info.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__misc_1ga8f3b35ce44e1284465ac2859ffbb9db7" prot="public" static="no">
+        <type>struct _LinphoneErrorInfo</type>
+        <definition>typedef struct _LinphoneErrorInfo LinphoneErrorInfo</definition>
+        <argsstring></argsstring>
+        <name>LinphoneErrorInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Object representing full details about a signaling error or status. All LinphoneErrorInfo object returned by the liblinphone API are readonly and transcients. For safety they must be used immediately after obtaining them. Any other function call to the liblinphone may change their content or invalidate the pointer. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/error_info.h" line="60" column="1" bodyfile="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/error_info.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__misc_1ga55b055097d13c171e08ead648869cdc1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_reason_to_string</definition>
+        <argsstring>(LinphoneReason err)</argsstring>
+        <name>linphone_reason_to_string</name>
+        <param>
+          <type><ref refid="group__misc_1gabe82a1a1ffc3d6b4e0b51a03028513b7" kindref="member">LinphoneReason</ref></type>
+          <declname>err</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Converts a LinphoneReason enum to a string. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">err</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A <ref refid="group__misc_1gabe82a1a1ffc3d6b4e0b51a03028513b7" kindref="member">LinphoneReason</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The string representation of the specified LinphoneReason </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/error_info.h" line="90" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga6ec089a96ceec879ad068f1b83c053ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1gabe82a1a1ffc3d6b4e0b51a03028513b7" kindref="member">LinphoneReason</ref></type>
+        <definition>LinphoneReason linphone_error_code_to_reason</definition>
+        <argsstring>(int err)</argsstring>
+        <name>linphone_error_code_to_reason</name>
+        <param>
+          <type>int</type>
+          <declname>err</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Converts an error code to a LinphoneReason. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">err</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An error code </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The LinphoneReason corresponding to the specified error code </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/error_info.h" line="97" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1gad159596910f381b7b396a79f97a36e2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int linphone_reason_to_error_code</definition>
+        <argsstring>(LinphoneReason reason)</argsstring>
+        <name>linphone_reason_to_error_code</name>
+        <param>
+          <type><ref refid="group__misc_1gabe82a1a1ffc3d6b4e0b51a03028513b7" kindref="member">LinphoneReason</ref></type>
+          <declname>reason</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Converts a LinphoneReason to an error code. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">reason</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A LinphoneReason </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The error code corresponding to the specified LinphoneReason </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/error_info.h" line="104" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga3297420b41659c4bd1ffb64a1e6b7d64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1gabe82a1a1ffc3d6b4e0b51a03028513b7" kindref="member">LinphoneReason</ref></type>
+        <definition>LinphoneReason linphone_error_info_get_reason</definition>
+        <argsstring>(const LinphoneErrorInfo *ei)</argsstring>
+        <name>linphone_error_info_get_reason</name>
+        <param>
+          <type>const <ref refid="group__misc_1ga8f3b35ce44e1284465ac2859ffbb9db7" kindref="member">LinphoneErrorInfo</ref> *</type>
+          <declname>ei</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get reason code from the error info. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ei</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ErrorInfo object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A <ref refid="group__misc_1gabe82a1a1ffc3d6b4e0b51a03028513b7" kindref="member">LinphoneReason</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/error_info.h" line="111" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1gad9b4b4688a97c4de2ce1c9b77748ff16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_error_info_get_phrase</definition>
+        <argsstring>(const LinphoneErrorInfo *ei)</argsstring>
+        <name>linphone_error_info_get_phrase</name>
+        <param>
+          <type>const <ref refid="group__misc_1ga8f3b35ce44e1284465ac2859ffbb9db7" kindref="member">LinphoneErrorInfo</ref> *</type>
+          <declname>ei</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get textual phrase from the error info. This is the text that is provided by the peer in the protocol (SIP). <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ei</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ErrorInfo object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The error phrase </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/error_info.h" line="119" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1gae1f6626b2d2e029f9d0761686e299f5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_error_info_get_details</definition>
+        <argsstring>(const LinphoneErrorInfo *ei)</argsstring>
+        <name>linphone_error_info_get_details</name>
+        <param>
+          <type>const <ref refid="group__misc_1ga8f3b35ce44e1284465ac2859ffbb9db7" kindref="member">LinphoneErrorInfo</ref> *</type>
+          <declname>ei</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Provides additional information regarding the failure. With SIP protocol, the &quot;Reason&quot; and &quot;Warning&quot; headers are returned. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ei</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ErrorInfo object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>More details about the failure </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/error_info.h" line="127" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1gac4ea3eb351188c7219852246a96127a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int linphone_error_info_get_protocol_code</definition>
+        <argsstring>(const LinphoneErrorInfo *ei)</argsstring>
+        <name>linphone_error_info_get_protocol_code</name>
+        <param>
+          <type>const <ref refid="group__misc_1ga8f3b35ce44e1284465ac2859ffbb9db7" kindref="member">LinphoneErrorInfo</ref> *</type>
+          <declname>ei</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the status code from the low level protocol (ex a SIP status code). <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ei</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ErrorInfo object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The status code </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/error_info.h" line="134" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">error_info.h</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">Copyright<sp/>(C)<sp/>2016<sp/><sp/>Belledonne<sp/>Communications<sp/>SARL</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"></highlight></codeline>
+<codeline lineno="5"><highlight class="comment">This<sp/>program<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>2</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">of<sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment">This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"></highlight></codeline>
+<codeline lineno="15"><highlight class="comment">You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">along<sp/>with<sp/>this<sp/>program;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>Street,<sp/>Fifth<sp/>Floor,<sp/>Boston,<sp/>MA<sp/><sp/>02110-1301,<sp/>USA.</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LINPHONE_ERROR_INFO_H</highlight></codeline>
+<codeline lineno="21"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>LINPHONE_ERROR_INFO_H</highlight></codeline>
+<codeline lineno="22"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;mediastreamer2/mscommon.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LINPHONE_PUBLIC</highlight></codeline>
+<codeline lineno="25"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>LINPHONE_PUBLIC<sp/>MS2_PUBLIC</highlight></codeline>
+<codeline lineno="26"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="27"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="39"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__misc_1gaf7346e9b3a064155f3d5d3811d684fb2" kindref="member">_LinphoneReason</ref>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__misc_1ggaf7346e9b3a064155f3d5d3811d684fb2af390378a48e0b30faeac92813c6a50ef" kindref="member">LinphoneReasonNone</ref>,<sp/></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__misc_1ggaf7346e9b3a064155f3d5d3811d684fb2ac71a4d9109f8eb8a9f5961109d505331" kindref="member">LinphoneReasonNoResponse</ref>,<sp/></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__misc_1ggaf7346e9b3a064155f3d5d3811d684fb2a481fba28c828e2062c23bd1011d1a5e6" kindref="member">LinphoneReasonForbidden</ref>,<sp/></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__misc_1ggaf7346e9b3a064155f3d5d3811d684fb2a442fce67ace6491eee2f4a94177f34c6" kindref="member">LinphoneReasonDeclined</ref>,<sp/></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__misc_1ggaf7346e9b3a064155f3d5d3811d684fb2adf8c424e8f8e89efaf51e187c04ae7d5" kindref="member">LinphoneReasonNotFound</ref>,<sp/></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__misc_1ggaf7346e9b3a064155f3d5d3811d684fb2a528a41c31768cff46c03b6a5e2fcb073" kindref="member">LinphoneReasonNotAnswered</ref>,<sp/></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__misc_1ggaf7346e9b3a064155f3d5d3811d684fb2a8ef78446b3e27f4acd2f69356f7836fa" kindref="member">LinphoneReasonBusy</ref>,<sp/></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__misc_1ggaf7346e9b3a064155f3d5d3811d684fb2ad603c3a9cb747e35349eb4fa0760d877" kindref="member">LinphoneReasonUnsupportedContent</ref>,<sp/></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__misc_1ggaf7346e9b3a064155f3d5d3811d684fb2a6018a6fcf4fbf14fc8528e41df772b01" kindref="member">LinphoneReasonIOError</ref>,<sp/></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__misc_1ggaf7346e9b3a064155f3d5d3811d684fb2a1a9456d0092d6472a0d9d9a9f3903d7d" kindref="member">LinphoneReasonDoNotDisturb</ref>,<sp/></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__misc_1ggaf7346e9b3a064155f3d5d3811d684fb2ab7457897bc2f2c0125f7d3580a236689" kindref="member">LinphoneReasonUnauthorized</ref>,<sp/></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__misc_1ggaf7346e9b3a064155f3d5d3811d684fb2aa48a9c03a443b3f89727823890860f0a" kindref="member">LinphoneReasonNotAcceptable</ref>,<sp/></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__misc_1ggaf7346e9b3a064155f3d5d3811d684fb2a4f5a4d3401cfdca4fe674574423c43d4" kindref="member">LinphoneReasonNoMatch</ref>,<sp/></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__misc_1ggaf7346e9b3a064155f3d5d3811d684fb2af363d824057c7dc81b9b9547ed2db3ed" kindref="member">LinphoneReasonMovedPermanently</ref>,<sp/></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__misc_1ggaf7346e9b3a064155f3d5d3811d684fb2aeec5f49f4d8469e70718ee04cc39b787" kindref="member">LinphoneReasonGone</ref>,<sp/></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__misc_1ggaf7346e9b3a064155f3d5d3811d684fb2a75ded372e5686dc2f6ee9269740ea9f7" kindref="member">LinphoneReasonTemporarilyUnavailable</ref>,<sp/></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__misc_1ggaf7346e9b3a064155f3d5d3811d684fb2a4485dfc349ec155e3b6d25759b9e3b69" kindref="member">LinphoneReasonAddressIncomplete</ref>,<sp/></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__misc_1ggaf7346e9b3a064155f3d5d3811d684fb2af4ec78f5d1c2b63cfc2122cd950ea6ac" kindref="member">LinphoneReasonNotImplemented</ref>,<sp/></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__misc_1ggaf7346e9b3a064155f3d5d3811d684fb2a005ef425565c3b5099f783ed40b298b8" kindref="member">LinphoneReasonBadGateway</ref>,<sp/></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__misc_1ggaf7346e9b3a064155f3d5d3811d684fb2a9f2b51f340cd01ea8014267552860c89" kindref="member">LinphoneReasonServerTimeout</ref>,<sp/></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__misc_1ggaf7346e9b3a064155f3d5d3811d684fb2a3fa52bc410a926ff5f5aa519cdd90e94" kindref="member">LinphoneReasonUnknown</ref><sp/></highlight></codeline>
+<codeline lineno="61"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LinphoneReasonBadCredentials<sp/>LinphoneReasonForbidden</highlight></codeline>
+<codeline lineno="64"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="comment">/*for<sp/>compatibility*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LinphoneReasonMedia<sp/>LinphoneReasonUnsupportedContent</highlight></codeline>
+<codeline lineno="67"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="71"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__misc_1gaf7346e9b3a064155f3d5d3811d684fb2" kindref="member">_LinphoneReason</ref><sp/><ref refid="group__misc_1gabe82a1a1ffc3d6b4e0b51a03028513b7" kindref="member">LinphoneReason</ref>;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">_LinphoneErrorInfo<sp/><ref refid="group__misc_1ga8f3b35ce44e1284465ac2859ffbb9db7" kindref="member">LinphoneErrorInfo</ref>;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="82"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="84"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="group__misc_1ga55b055097d13c171e08ead648869cdc1" kindref="member">linphone_reason_to_string</ref>(<ref refid="group__misc_1gabe82a1a1ffc3d6b4e0b51a03028513b7" kindref="member">LinphoneReason</ref><sp/>err);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1gabe82a1a1ffc3d6b4e0b51a03028513b7" kindref="member">LinphoneReason</ref><sp/><ref refid="group__misc_1ga6ec089a96ceec879ad068f1b83c053ba" kindref="member">linphone_error_code_to_reason</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>err);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__misc_1gad159596910f381b7b396a79f97a36e2f" kindref="member">linphone_reason_to_error_code</ref>(<ref refid="group__misc_1gabe82a1a1ffc3d6b4e0b51a03028513b7" kindref="member">LinphoneReason</ref><sp/>reason);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1gabe82a1a1ffc3d6b4e0b51a03028513b7" kindref="member">LinphoneReason</ref><sp/><ref refid="group__misc_1ga3297420b41659c4bd1ffb64a1e6b7d64" kindref="member">linphone_error_info_get_reason</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__misc_1ga8f3b35ce44e1284465ac2859ffbb9db7" kindref="member">LinphoneErrorInfo</ref><sp/>*ei);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/><ref refid="group__misc_1gad9b4b4688a97c4de2ce1c9b77748ff16" kindref="member">linphone_error_info_get_phrase</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__misc_1ga8f3b35ce44e1284465ac2859ffbb9db7" kindref="member">LinphoneErrorInfo</ref><sp/>*ei);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/><ref refid="group__misc_1gae1f6626b2d2e029f9d0761686e299f5c" kindref="member">linphone_error_info_get_details</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__misc_1ga8f3b35ce44e1284465ac2859ffbb9db7" kindref="member">LinphoneErrorInfo</ref><sp/>*ei);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__misc_1gac4ea3eb351188c7219852246a96127a7" kindref="member">linphone_error_info_get_protocol_code</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__misc_1ga8f3b35ce44e1284465ac2859ffbb9db7" kindref="member">LinphoneErrorInfo</ref><sp/>*ei);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="141"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="143"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>LINPHONE_ERROR_INFO_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/home/mariankh/git/linphone-desktop-maria/submodules/linphone/include/linphone/error_info.h"/>
+  </compounddef>
+</doxygen>
